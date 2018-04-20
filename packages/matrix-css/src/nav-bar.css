@@ -1,6 +1,6 @@
 @import './common/var.css';
 
-.van-nav-bar {
+.m-nav-bar {
   height: 46px;
   position: relative;
   user-select: none;
@@ -8,7 +8,7 @@
   line-height: 46px;
   background-color: $white;
 
-  .van-icon {
+  .m-icon {
     color: $blue;
     vertical-align: middle;
   }
@@ -16,7 +16,7 @@
   &__arrow {
     transform: rotate(180deg);
 
-    + .van-nav-bar__text {
+    + .m-nav-bar__text {
       margin-left: -20px;
       padding-left: 25px;
     }

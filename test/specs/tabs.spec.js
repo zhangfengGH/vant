@@ -18,17 +18,17 @@ describe('Tabs', () => {
       }
     });
 
-    expect(wrapper.hasClass('van-tabs')).to.be.true;
-    expect(wrapper.hasClass('van-tabs--card')).to.be.true;
+    expect(wrapper.hasClass('m-tabs')).to.be.true;
+    expect(wrapper.hasClass('m-tabs--card')).to.be.true;
   });
 
   it('create a tabs with four tab', (done) => {
     wrapper = mount(TabsTestComponent);
 
-    expect(wrapper.hasClass('van-tabs')).to.be.true;
-    expect(wrapper.hasClass('van-tabs--line')).to.be.true;
+    expect(wrapper.hasClass('m-tabs')).to.be.true;
+    expect(wrapper.hasClass('m-tabs--line')).to.be.true;
 
-    const tabsContainer = wrapper.find('.van-tabs')[0];
+    const tabsContainer = wrapper.find('.m-tabs')[0];
     expect(tabsContainer.vNode.child.curActive).to.equal(0);
 
     wrapper.vm.active = 1;
@@ -48,7 +48,7 @@ describe('Tabs', () => {
     wrapper.vm.$on('click', clickSpy);
 
     wrapper.vm.$nextTick(() => {
-      const nTab = wrapper.find('.van-tab')[0];
+      const nTab = wrapper.find('.m-tab')[0];
       nTab.trigger('click');
       expect(clickSpy.calledOnce).to.be.true;
       done();
@@ -64,7 +64,7 @@ describe('Tabs', () => {
     wrapper.vm.$on('disabled', clickDisabledSpy);
 
     wrapper.vm.$nextTick(() => {
-      const nTab = wrapper.find('.van-tab')[2];
+      const nTab = wrapper.find('.m-tab')[2];
       nTab.trigger('click');
       expect(clickDisabledSpy.calledOnce).to.be.true;
       done();
@@ -83,7 +83,7 @@ describe('Tabs', () => {
     });
  
     wrapper.vm.$nextTick(() => {
-      const nTab = wrapper.find('.van-tab')[4];
+      const nTab = wrapper.find('.m-tab')[4];
       nTab.trigger('click');
       done();
     });
@@ -98,7 +98,7 @@ describe('Tabs', () => {
     });
 
     wrapper.vm.$nextTick(() => {
-      const nTab = wrapper.find('.van-tab')[6];
+      const nTab = wrapper.find('.m-tab')[6];
       nTab.trigger('click');
       done();
     });
@@ -110,7 +110,7 @@ describe('Tabs', () => {
     wrapper.vm.firstTabDisabled = true;
 
     wrapper.vm.$nextTick(() => {
-      expect(wrapper.find('.van-tab')[0].text().replace(/\n|\s/g, '')).to.equal('测试标题');
+      expect(wrapper.find('.m-tab')[0].text().replace(/\n|\s/g, '')).to.equal('测试标题');
       done();
     });
   });
@@ -139,8 +139,8 @@ describe('Tabs', () => {
       }      
     });
 
-    const tabsContainer = wrapper.find('.van-tabs')[0];
-    const tabContent = wrapper.find('.van-tabs__content')[0];
+    const tabsContainer = wrapper.find('.m-tabs')[0];
+    const tabContent = wrapper.find('.m-tabs__content')[0];
 
     expect(tabsContainer.vNode.child.curActive).to.equal(0);
 

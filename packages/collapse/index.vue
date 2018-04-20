@@ -1,5 +1,5 @@
 <template>
-  <div class="van-collapse van-hairline--top-bottom">
+  <div class="m-collapse m-hairline--top-bottom">
     <slot />
   </div>
 </template>

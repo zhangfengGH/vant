@@ -12,7 +12,7 @@ Vue.use(DatetimePicker);
 #### 选择完整时间
 
 ```html
-<van-datetime-picker
+<m-datetime-picker
   v-model="currentDate"
   type="datetime"
   :min-date="minDate"
@@ -37,7 +37,7 @@ export default {
 #### 选择日期（年月日）
 
 ```html
-<van-datetime-picker
+<m-datetime-picker
   v-model="currentDate"
   type="date"
   :min-date="minDate"
@@ -57,7 +57,7 @@ export default {
 #### 选择日期（年月）
 
 ```html
-<van-datetime-picker
+<m-datetime-picker
   v-model="currentDate"
   type="year-month"
   :min-date="minDate"
@@ -77,7 +77,7 @@ export default {
 #### 选择时间
 
 ```html
-<van-datetime-picker
+<m-datetime-picker
   v-model="currentDate"
   type="time"
   :min-hour="minHour"

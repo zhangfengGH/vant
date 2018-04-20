@@ -1,32 +1,32 @@
 <template>
-  <transition name="van-slide-bottom">
-    <div class="van-actionsheet" :class="{ 'van-actionsheet--withtitle': title }" v-show="value">
-      <div class="van-actionsheet__header van-hairline--top-bottom" v-if="title">
+  <transition name="m-slide-bottom">
+    <div class="m-actionsheet" :class="{ 'm-actionsheet--withtitle': title }" v-show="value">
+      <div class="m-actionsheet__header m-hairline--top-bottom" v-if="title">
         <div v-text="title" />
         <icon name="close" @click="handleCancel" />
       </div>
-      <ul v-else class="van-hairline--bottom">
+      <ul v-else class="m-hairline--bottom">
         <li
           v-for="(item, index) in actions"
           :key="index"
-          class="van-actionsheet__item van-hairline--top"
-          :class="[item.className, { 'van-actionsheet__item--loading': item.loading }]"
+          class="m-actionsheet__item m-hairline--top"
+          :class="[item.className, { 'm-actionsheet__item--loading': item.loading }]"
           @click.stop="onClickItem(item)"
         >
           <template v-if="!item.loading">
-            <span class="van-actionsheet__name">{{ item.name }}</span>
-            <span class="van-actionsheet__subname" v-if="item.subname">{{ item.subname }}</span>
+            <span class="m-actionsheet__name">{{ item.name }}</span>
+            <span class="m-actionsheet__subname" v-if="item.subname">{{ item.subname }}</span>
           </template>
-          <loading v-else class="van-actionsheet__loading" size="20px" />
+          <loading v-else class="m-actionsheet__loading" size="20px" />
         </li>
       </ul>
       <div
         v-if="cancelText"
         v-text="cancelText"
-        class="van-actionsheet__item van-actionsheet__cancel van-hairline--top"
+        class="m-actionsheet__item m-actionsheet__cancel m-hairline--top"
         @click="handleCancel"
       />
-      <div v-else class="van-actionsheet__content">
+      <div v-else class="m-actionsheet__content">
         <slot />
       </div>
     </div>

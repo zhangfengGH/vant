@@ -13,7 +13,7 @@ describe('ActionSheet', () => {
       propsData: {}
     });
 
-    expect(wrapper.hasClass('van-actionsheet')).to.be.true;
+    expect(wrapper.hasClass('m-actionsheet')).to.be.true;
     expect(wrapper.instance().actions.length).to.equal(0);
     expect(wrapper.instance().overlay).to.be.true;
     expect(wrapper.instance().closeOnClickOverlay).to.be.true;
@@ -28,7 +28,7 @@ describe('ActionSheet', () => {
 
     DOMChecker(wrapper, {
       noStyle: {
-        '.van-actionsheet': {
+        '.m-actionsheet': {
           display: 'none'
         }
       }
@@ -42,9 +42,9 @@ describe('ActionSheet', () => {
       }
     });
 
-    expect(wrapper.hasClass('van-actionsheet--withtitle')).to.be.true;
-    expect(wrapper.contains('.van-actionsheet__header')).to.be.true;
-    expect(wrapper.contains('.van-actionsheet__content')).to.be.true;
+    expect(wrapper.hasClass('m-actionsheet--withtitle')).to.be.true;
+    expect(wrapper.contains('.m-actionsheet__header')).to.be.true;
+    expect(wrapper.contains('.m-actionsheet__content')).to.be.true;
   });
 
   it('create actions actionsheet', () => {
@@ -63,12 +63,12 @@ describe('ActionSheet', () => {
       }
     });
 
-    const actionItems = wrapper.find('.van-actionsheet__item');
+    const actionItems = wrapper.find('.m-actionsheet__item');
 
     expect(actionItems.length).to.equal(2);
-    expect(actionItems[0].contains('.van-actionsheet__name')).to.be.true;
-    expect(actionItems[0].contains('.van-actionsheet__subname')).to.be.true;
-    expect(actionItems[1].contains('.van-actionsheet__loading')).to.be.true;
+    expect(actionItems[0].contains('.m-actionsheet__name')).to.be.true;
+    expect(actionItems[0].contains('.m-actionsheet__subname')).to.be.true;
+    expect(actionItems[1].contains('.m-actionsheet__loading')).to.be.true;
   });
 
   it('handle actionsheet item click with callback', () => {
@@ -89,11 +89,11 @@ describe('ActionSheet', () => {
       }
     });
 
-    const actionItem = wrapper.find('.van-actionsheet__item')[0];
+    const actionItem = wrapper.find('.m-actionsheet__item')[0];
     actionItem.trigger('click');
     expect(called).to.be.true;
 
-    const secondActionItem = wrapper.find('.van-actionsheet__item')[1];
+    const secondActionItem = wrapper.find('.m-actionsheet__item')[1];
     secondActionItem.trigger('click');
   });
 
@@ -104,8 +104,8 @@ describe('ActionSheet', () => {
       }
     });
 
-    const cancelButton = wrapper.find('.van-actionsheet__cancel')[0];
-    expect(wrapper.contains('.van-actionsheet__cancel')).to.be.true;
+    const cancelButton = wrapper.find('.m-actionsheet__cancel')[0];
+    expect(wrapper.contains('.m-actionsheet__cancel')).to.be.true;
     expect(cancelButton.text()).to.equal('cancel');
     
     const eventStub = sinon.stub(wrapper.vm, '$emit');
@@ -124,7 +124,7 @@ describe('ActionSheet', () => {
     const eventStub = sinon.stub(wrapper.vm, '$emit');
     DOMChecker(wrapper, {
       style: {
-        '.van-actionsheet': {
+        '.m-actionsheet': {
           display: 'none'
         }
       }
@@ -135,7 +135,7 @@ describe('ActionSheet', () => {
     wrapper.vm.$nextTick(() => {
       DOMChecker(wrapper, {
         noStyle: {
-          '.van-actionsheet': {
+          '.m-actionsheet': {
             display: 'none'
           }
         }

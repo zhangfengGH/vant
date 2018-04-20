@@ -1,5 +1,5 @@
 <template>
-  <div class="van-tabbar van-hairline--top-bottom" :class="{ 'van-tabbar--fixed': fixed }">
+  <div class="m-tabbar m-hairline--top-bottom" :class="{ 'm-tabbar--fixed': fixed }">
     <slot />
   </div>
 </template>

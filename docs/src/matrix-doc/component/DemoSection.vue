@@ -1,5 +1,5 @@
 <template>
-  <section class="van-doc-demo-section" :class="`demo-${demoName}`" :style="style">
+  <section class="m-doc-demo-section" :class="`demo-${demoName}`" :style="style">
     <slot></slot>
   </section>
 </template>
@@ -8,7 +8,7 @@
 import Vue from 'vue';
 
 export default {
-  name: 'van-doc-demo-section',
+  name: 'm-doc-demo-section',
 
   props: {
     name: String,
@@ -41,7 +41,7 @@ export default {
 <style lang="postcss">
 @import '../style/variable';
 
-.van-doc-demo-section {
+.m-doc-demo-section {
   min-height: 100vh;
   padding-bottom: 20px;
   box-sizing: border-box;
@@ -54,8 +54,8 @@ export default {
     font-weight: normal;
     text-transform: capitalize;
 
-    + .van-doc-demo-block {
-      .van-doc-demo-block__title {
+    + .m-doc-demo-block {
+      .m-doc-demo-block__title {
         padding-top: 0;
       }
     }

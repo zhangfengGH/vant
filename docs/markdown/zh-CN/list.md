@@ -13,13 +13,13 @@ Vue.use(List);
 #### 基础用法
 
 ```html
-<van-list
+<m-list
   v-model="loading"
   :finished="finished"
   @load="onLoad"
 >
-  <van-cell v-for="item in list" :key="item" :title="item + ''" />
-</van-list>
+  <m-cell v-for="item in list" :key="item" :title="item + ''" />
+</m-list>
 ```
 
 ```js

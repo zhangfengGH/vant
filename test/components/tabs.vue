@@ -1,5 +1,5 @@
 <template>
-  <van-tabs
+  <m-tabs
     :active="active"
     :duration="duration"
     :sticky="sticky"
@@ -7,11 +7,11 @@
     @click="$emit('click')"
     @disabled="$emit('disabled')"
   >
-    <van-tab :title="firstTabTitle" :disabled="firstTabDisabled">内容一</van-tab>
-    <van-tab title="选项二">内容二</van-tab>
-    <van-tab title="选项三" disabled>内容三</van-tab>
-    <van-tab title="选项四">内容四</van-tab>
-  </van-tabs>
+    <m-tab :title="firstTabTitle" :disabled="firstTabDisabled">内容一</m-tab>
+    <m-tab title="选项二">内容二</m-tab>
+    <m-tab title="选项三" disabled>内容三</m-tab>
+    <m-tab title="选项四">内容四</m-tab>
+  </m-tabs>
 </template>
 
 <script>

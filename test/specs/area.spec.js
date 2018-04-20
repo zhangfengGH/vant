@@ -15,7 +15,7 @@ describe('Area', () => {
       }
     });
 
-    expect(wrapper.hasClass('van-area')).to.be.true;
+    expect(wrapper.hasClass('m-area')).to.be.true;
   });
 
   it('create an area with default value', done => {
@@ -26,7 +26,7 @@ describe('Area', () => {
       }
     });
 
-    const confirmBtn = wrapper.find('.van-picker__confirm')[0];
+    const confirmBtn = wrapper.find('.m-picker__confirm')[0];
     const eventStub = sinon.stub(wrapper.vm, '$emit');
 
     confirmBtn.trigger('click');
@@ -98,7 +98,7 @@ describe('Area', () => {
       }
     });
 
-    const cancelBtn = wrapper.find('.van-picker__cancel')[0];
+    const cancelBtn = wrapper.find('.m-picker__cancel')[0];
     const eventStub = sinon.stub(wrapper.vm, '$emit');
 
     cancelBtn.trigger('click');

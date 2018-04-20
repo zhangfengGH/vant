@@ -74,8 +74,8 @@ export default {
     box-sizing: border-box;
   }
 
-  .van-doc-demo-block__title,
-  .van-doc-demo-section__title {
+  .m-doc-demo-block__title,
+  .m-doc-demo-section__title {
     padding-left: 0;
   }
 }

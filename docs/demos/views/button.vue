@@ -1,44 +1,44 @@
 <template>
   <demo-section>
     <demo-block :title="$t('title1')">
-      <van-button type="default">{{ $t('default') }}</van-button>
-      <van-button type="primary">{{ $t('primary') }}</van-button>
-      <van-button type="danger">{{ $t('danger') }}</van-button>
+      <m-button type="default">{{ $t('default') }}</m-button>
+      <m-button type="primary">{{ $t('primary') }}</m-button>
+      <m-button type="danger">{{ $t('danger') }}</m-button>
     </demo-block>
 
     <demo-block :title="$t('title2')">
-      <van-button size="large">{{ $t('large') }}</van-button>
-      <van-button size="normal">{{ $t('normal') }}</van-button>
-      <van-button size="small">{{ $t('small') }}</van-button>
-      <van-button size="mini">{{ $t('mini') }}</van-button>
+      <m-button size="large">{{ $t('large') }}</m-button>
+      <m-button size="normal">{{ $t('normal') }}</m-button>
+      <m-button size="small">{{ $t('small') }}</m-button>
+      <m-button size="mini">{{ $t('mini') }}</m-button>
     </demo-block>
 
     <demo-block :title="$t('disabled')">
-      <van-button disabled>{{ $t('disabled') }}</van-button>
+      <m-button disabled>{{ $t('disabled') }}</m-button>
     </demo-block>
 
     <demo-block :title="$t('title3')">
-      <van-button loading />
-      <van-button loading type="primary" />
+      <m-button loading />
+      <m-button loading type="primary" />
     </demo-block>
 
     <demo-block :title="$t('title4')">
-      <van-button tag="a" href="https://www.youzan.com" target="_blank">
+      <m-button tag="a" href="https://www.youzan.com" target="_blank">
         {{ $t('button') }}
-      </van-button>
+      </m-button>
     </demo-block>
 
     <demo-block :title="$t('title5')">
-      <van-button type="primary" bottom-action>{{ $t('button') }}</van-button>
+      <m-button type="primary" bottom-action>{{ $t('button') }}</m-button>
 
-      <van-row>
-        <van-col span="12">
-          <van-button bottom-action>{{ $t('button') }}</van-button>
-        </van-col>
-        <van-col span="12">
-          <van-button type="primary" bottom-action>{{ $t('button') }}</van-button>
-        </van-col>
-      </van-row>
+      <m-row>
+        <m-col span="12">
+          <m-button bottom-action>{{ $t('button') }}</m-button>
+        </m-col>
+        <m-col span="12">
+          <m-button type="primary" bottom-action>{{ $t('button') }}</m-button>
+        </m-col>
+      </m-row>
     </demo-block>
   </demo-section>
 </template>
@@ -80,7 +80,7 @@ export default {
 
 <style lang="postcss">
 .demo-button {
-  .van-button {
+  .m-button {
     user-select: none;
 
     &--large,
@@ -93,16 +93,16 @@ export default {
       margin-right: 10px;
     }
 
-    .van-loading {
+    .m-loading {
       margin: 0 18px;
     }
   }
 
-  .van-doc-demo-block {
+  .m-doc-demo-block {
     padding: 0 15px;
   }
 
-  .van-doc-demo-block__title {
+  .m-doc-demo-block__title {
     padding-left: 0;
   }
 }

@@ -1,19 +1,19 @@
 <template>
   <demo-section>
     <demo-block :title="$t('basicUsage')">
-      <van-notice-bar
+      <m-notice-bar
         :text="$t('text')"
         left-icon="//img.yzcdn.cn/public_files/2017/8/10/6af5b7168eed548100d9041f07b7c616.png"
       />
     </demo-block>
 
     <demo-block :title="$t('title2')">
-      <van-notice-bar :scrollable="false" :text="$t('text')" />
+      <m-notice-bar :scrollable="false" :text="$t('text')" />
     </demo-block>
 
     <demo-block :title="$t('title3')">
-      <van-notice-bar mode="closeable" :text="$t('text')" />
-      <van-notice-bar mode="link" :text="$t('text')" />
+      <m-notice-bar mode="closeable" :text="$t('text')" />
+      <m-notice-bar mode="link" :text="$t('text')" />
     </demo-block>
   </demo-section>
 </template>
@@ -37,7 +37,7 @@ export default {
 
 <style lang="postcss">
 .demo-notice-bar {
-  .van-notice-bar:not(:first-of-type) {
+  .m-notice-bar:not(:first-of-type) {
     margin-top: 15px;
   }
 }

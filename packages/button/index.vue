@@ -3,22 +3,22 @@
     :is="tag"
     :type="nativeType"
     :disabled="disabled"
-    class="van-button"
+    class="m-button"
     :class="[
-      'van-button--' + type,
-      'van-button--' + size,
+      'm-button--' + type,
+      'm-button--' + size,
       {
-        'van-button--disabled': disabled,
-        'van-button--loading': loading,
-        'van-button--block': block,
-        'van-button--bottom-action': bottomAction,
-        'van-button--unclickable': disabled || loading
+        'm-button--disabled': disabled,
+        'm-button--loading': loading,
+        'm-button--block': block,
+        'm-button--bottom-action': bottomAction,
+        'm-button--unclickable': disabled || loading
       }
     ]"
     @click="onClick"
   >
     <loading v-if="loading" size="20px" :color="type === 'default' ? 'black' : 'white'" />
-    <span class="van-button__text">
+    <span class="m-button__text">
       <slot>{{ text }}</slot>
     </span>
   </component>

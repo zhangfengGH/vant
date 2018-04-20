@@ -15,15 +15,15 @@ describe('Stepper', () => {
       }
     });
 
-    expect(wrapper.hasClass('van-stepper')).to.be.true;
+    expect(wrapper.hasClass('m-stepper')).to.be.true;
     expect(wrapper.data().currentValue).to.equal(1);
 
-    const plusButton = wrapper.find('.van-stepper__plus')[0];
+    const plusButton = wrapper.find('.m-stepper__plus')[0];
     plusButton.trigger('click');
 
     expect(wrapper.data().currentValue).to.equal(2);
 
-    const minusButton = wrapper.find('.van-stepper__minus')[0];
+    const minusButton = wrapper.find('.m-stepper__minus')[0];
     minusButton.trigger('click');
     expect(wrapper.data().currentValue).to.equal(1);
   });
@@ -35,9 +35,9 @@ describe('Stepper', () => {
       }
     });
 
-    expect(wrapper.hasClass('van-stepper')).to.be.true;
-    const minusButton = wrapper.find('.van-stepper__minus')[0];
-    expect(minusButton.hasClass('van-stepper__minus--disabled')).to.be.true;
+    expect(wrapper.hasClass('m-stepper')).to.be.true;
+    const minusButton = wrapper.find('.m-stepper__minus')[0];
+    expect(minusButton.hasClass('m-stepper__minus--disabled')).to.be.true;
 
     const eventStub = sinon.stub(wrapper.vm, '$emit');
     minusButton.trigger('click');
@@ -48,8 +48,8 @@ describe('Stepper', () => {
       done();
     });
 
-    const plusButton = wrapper.find('.van-stepper__plus')[0];
-    expect(plusButton.hasClass('van-stepper__plus--disabled')).to.be.true;
+    const plusButton = wrapper.find('.m-stepper__plus')[0];
+    expect(plusButton.hasClass('m-stepper__plus--disabled')).to.be.true;
 
     plusButton.trigger('click');
 
@@ -67,7 +67,7 @@ describe('Stepper', () => {
       }
     });
 
-    const input = wrapper.find('.van-stepper__input')[0];
+    const input = wrapper.find('.m-stepper__input')[0];
     expect(input.hasAttribute('disabled', 'disabled')).to.be.true;
   });
 
@@ -78,7 +78,7 @@ describe('Stepper', () => {
       }
     });
 
-    expect(wrapper.hasClass('van-stepper')).to.be.true;
+    expect(wrapper.hasClass('m-stepper')).to.be.true;
 
     wrapper.vm.value = 2;
     wrapper.update();
@@ -96,7 +96,7 @@ describe('Stepper', () => {
       }
     });
 
-    expect(wrapper.hasClass('van-stepper')).to.be.true;
+    expect(wrapper.hasClass('m-stepper')).to.be.true;
     expect(wrapper.vm.currentValue).to.equal(30);
     const eventStub = sinon.stub(wrapper.vm, '$emit');
 
@@ -123,7 +123,7 @@ describe('Stepper', () => {
       }
     });
 
-    const input = wrapper.find('.van-stepper__input')[0];
+    const input = wrapper.find('.m-stepper__input')[0];
     input.element.value = 2;
     input.trigger('input');
 

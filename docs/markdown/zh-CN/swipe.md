@@ -13,23 +13,23 @@ Vue.use(Swipe).use(SwipeItem);
 通过`autoplay`属性设置自动轮播间隔
 
 ```html
-<van-swipe :autoplay="3000">
-  <van-swipe-item>1</van-swipe-item>
-  <van-swipe-item>2</van-swipe-item>
-  <van-swipe-item>3</van-swipe-item>
-  <van-swipe-item>4</van-swipe-item>
-</van-swipe>
+<m-swipe :autoplay="3000">
+  <m-swipe-item>1</m-swipe-item>
+  <m-swipe-item>2</m-swipe-item>
+  <m-swipe-item>3</m-swipe-item>
+  <m-swipe-item>4</m-swipe-item>
+</m-swipe>
 ```
 
 #### 图片懒加载
 配合 [Lazyload](#/zh-CN/lazyload) 组件实现图片懒加载
 
 ```html
-<van-swipe :autoplay="3000">
-  <van-swipe-item v-for="(image, index) in images" :key="index">
+<m-swipe :autoplay="3000">
+  <m-swipe-item v-for="(image, index) in images" :key="index">
     <img v-lazy="image" />
-  </van-swipe-item>
-</van-swipe>
+  </m-swipe-item>
+</m-swipe>
 ```
 
 ```javascript
@@ -48,12 +48,12 @@ export default {
 #### 监听 change 事件
 
 ```html
-<van-swipe @change="onChange">
-  <van-swipe-item>1</van-swipe-item>
-  <van-swipe-item>2</van-swipe-item>
-  <van-swipe-item>3</van-swipe-item>
-  <van-swipe-item>4</van-swipe-item>
-</van-swipe>
+<m-swipe @change="onChange">
+  <m-swipe-item>1</m-swipe-item>
+  <m-swipe-item>2</m-swipe-item>
+  <m-swipe-item>3</m-swipe-item>
+  <m-swipe-item>4</m-swipe-item>
+</m-swipe>
 ```
 
 ```js

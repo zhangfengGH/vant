@@ -1,6 +1,6 @@
 <template>
   <keep-alive>
-    <van-number-keyboard v-if="showKeyboard" />
+    <m-number-keyboard v-if="showKeyboard" />
   </keep-alive>
 </template>
 

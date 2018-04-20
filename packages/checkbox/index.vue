@@ -1,16 +1,16 @@
 <template>
-  <div class="van-checkbox">
+  <div class="m-checkbox">
     <icon
       name="success"
-      class="van-checkbox__icon"
+      class="m-checkbox__icon"
       :class="[
-        `van-checkbox--${shape}`, {
-          'van-checkbox--disabled': isDisabled,
-          'van-checkbox--checked': isChecked
+        `m-checkbox--${shape}`, {
+          'm-checkbox--disabled': isDisabled,
+          'm-checkbox--checked': isChecked
       }]"
       @click="onClick"
     />
-    <span class="van-checkbox__label" @click="onClick('label')">
+    <span class="m-checkbox__label" @click="onClick('label')">
       <slot />
     </span>
   </div>
@@ -96,7 +96,7 @@ export default create({
   },
 
   created() {
-    this.findParent('van-checkbox-group');
+    this.findParent('m-checkbox-group');
   },
 
   methods: {

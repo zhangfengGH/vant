@@ -13,7 +13,7 @@ Vue.use(TreeSelect);
 
 
 ```html
-<van-tree-select
+<m-tree-select
   :items="items"
   :main-active-index="mainActiveIndex"
   :active-id="activeId"

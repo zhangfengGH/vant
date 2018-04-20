@@ -13,7 +13,7 @@ Vue.use(Circle);
 通过 `rate` 指定目标进度，`v-model` 代表当前进度，`speed` 控制动画速度
 
 ```html
-<van-circle
+<m-circle
   v-model="currentRate"
   :rate="30"
   :speed="100"
@@ -39,7 +39,7 @@ export default {
 #### 样式定制
 
 ```html
-<van-circle
+<m-circle
   v-model="currentRate"
   color="#13ce66"
   fill="#fff"

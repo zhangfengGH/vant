@@ -12,7 +12,7 @@ Vue.use(NavBar);
 #### 基础用法
 
 ```html
-<van-nav-bar
+<m-nav-bar
   title="标题"
   left-text="返回"
   right-text="按钮"
@@ -39,9 +39,9 @@ export default {
 通过 slot 定制内容
 
 ```html
-<van-nav-bar title="标题" left-text="返回" left-arrow>
-  <van-icon name="search" slot="right" />
-</van-nav-bar>
+<m-nav-bar title="标题" left-text="返回" left-arrow>
+  <m-icon name="search" slot="right" />
+</m-nav-bar>
 ```
 
 

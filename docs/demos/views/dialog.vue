@@ -1,33 +1,33 @@
 <template>
   <demo-section>
     <demo-block :title="$t('title1')">
-      <van-button @click="onClickAlert">Alert</van-button>
-      <van-button @click="onClickAlert2">{{ $t('alert2') }}</van-button>
+      <m-button @click="onClickAlert">Alert</m-button>
+      <m-button @click="onClickAlert2">{{ $t('alert2') }}</m-button>
     </demo-block>
 
     <demo-block :title="$t('title2')">
-      <van-button @click="onClickConfirm">Confirm</van-button>
+      <m-button @click="onClickConfirm">Confirm</m-button>
     </demo-block>
 
     <demo-block :title="$t('advancedUsage')">
-      <van-button @click="show = true">{{ $t('advancedUsage') }}</van-button>
-      <van-dialog
+      <m-button @click="show = true">{{ $t('advancedUsage') }}</m-button>
+      <m-dialog
         v-model="show"
         show-cancel-button
         :before-close="beforeClose"
       >
-        <van-field
+        <m-field
           v-model="username"
           :label="$t('username')"
           :placeholder="$t('usernamePlaceholder')"
         />
-        <van-field
+        <m-field
           v-model="password"
           type="password"
           :label="$t('password')"
           :placeholder="$t('passwordPlaceholder')"
         />
-      </van-dialog>
+      </m-dialog>
     </demo-block>
   </demo-section>
 </template>
@@ -89,7 +89,7 @@ export default {
 
 <style lang="postcss">
 .demo-dialog {
-  .van-doc-demo-block > .van-button {
+  .m-doc-demo-block > .m-button {
     margin: 15px;
   }
 }

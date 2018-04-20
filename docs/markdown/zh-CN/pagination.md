@@ -14,7 +14,7 @@ Vue.use(Pagination);
 
 
 ```html
-<van-pagination 
+<m-pagination 
   v-model="currentPage" 
   :total-items="24" 
   :items-per-page="5"
@@ -34,7 +34,7 @@ export default {
 #### 简单模式
 
 ```html
-<van-pagination 
+<m-pagination 
   v-model="currentPage" 
   :page-count="12"
   mode="simple" 
@@ -44,7 +44,7 @@ export default {
 #### 显示省略号
 
 ```html
-<van-pagination 
+<m-pagination 
   v-model="currentPage" 
   :total-items="125" 
   :show-page-size="3" 

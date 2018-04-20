@@ -1,10 +1,10 @@
 <template>
   <demo-section>
     <demo-block :title="$t('title')">
-      <van-col span="8" v-for="icon in icons" :key="icon">
-        <van-icon :name="icon" />
+      <m-col span="8" v-for="icon in icons" :key="icon">
+        <m-icon :name="icon" />
         <span>{{ icon }}</span>
-      </van-col>
+      </m-col>
     </demo-block>
   </demo-section>
 </template>
@@ -33,7 +33,7 @@ export default {
 .demo-icon {
   font-size: 0;
 
-  .van-col {
+  .m-col {
     text-align: center;
     height: 100px;
     float: none;
@@ -41,7 +41,7 @@ export default {
     vertical-align: middle;
   }
 
-  .van-icon {
+  .m-icon {
     display: block;
     font-size: 32px;
     margin: 15px 0;

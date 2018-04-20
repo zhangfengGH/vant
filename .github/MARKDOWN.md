@@ -31,9 +31,9 @@
   ```
 
   ```html
-    <van-button :size="size">
+    <m-button :size="size">
       Large
-    </van-button>
+    </m-button>
   ```
     
 代码演示的几个书写原则：

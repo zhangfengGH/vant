@@ -12,9 +12,9 @@ describe('Progress', () => {
     wrapper = mount(TabbarExample);
 
     wrapper.vm.$nextTick(() => {
-      expect(wrapper.find('.van-tabbar-item').length).to.equal(4);
+      expect(wrapper.find('.m-tabbar-item').length).to.equal(4);
 
-      wrapper.find('.van-tabbar-item')[3].element.click();
+      wrapper.find('.m-tabbar-item')[3].element.click();
       expect(wrapper.vm.active).to.equal(3);
       expect(wrapper.vm.changeRecord).to.equal(3);
       done();

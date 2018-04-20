@@ -1,6 +1,6 @@
 <template>
   <picker
-    class="van-area"
+    class="m-area"
     ref="picker"
     show-toolbar
     value-key="name"

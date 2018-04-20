@@ -1,6 +1,6 @@
 @import './common/var.css';
 
-.van-pagination {
+.m-pagination {
   display: flex;
   text-align: center;
   line-height: 40px;
@@ -32,7 +32,7 @@
 
   &__prev,
   &__next {
-    &.van-pagination__item {
+    &.m-pagination__item {
       padding: 0 5px;
     }
   }
@@ -40,7 +40,7 @@
   &__page {
     flex-grow: 0;
 
-    &.van-pagination--active {
+    &.m-pagination--active {
       background-color: $blue;
       color: $white;
     }
@@ -48,7 +48,7 @@
 
   &--disabled {
 
-    &.van-pagination__item {
+    &.m-pagination__item {
       background-color: $background-color;
       color: $gray-darker;
       opacity: 0.6;
@@ -62,12 +62,12 @@
   }
 }
 
-.van-pagination-simple {
+.m-pagination-simple {
 
-  .van-pagination__prev,
-  .van-pagination__next {
+  .m-pagination__prev,
+  .m-pagination__next {
 
-    &.van-pagination__item::after {
+    &.m-pagination__item::after {
       border-width: 1px;
     }
   }

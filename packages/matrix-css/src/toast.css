@@ -1,6 +1,6 @@
 @import './common/var.css';
 
-.van-toast {
+.m-toast {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -27,15 +27,15 @@
     min-height: 120px;
     padding: 15px;
 
-    .van-toast__icon {
+    .m-toast__icon {
       font-size: 50px;
     }
 
-    .van-loading {
+    .m-loading {
       margin: 10px 0 5px;
     }
 
-    .van-toast__text {
+    .m-toast__text {
       font-size: 14px;
       padding-top: 10px;
     }

@@ -13,33 +13,33 @@ Vue.use(Button);
 支持`default`、`primary`、`danger`三种类型，默认为`default`
 
 ```html
-<van-button type="default">默认按钮</van-button>
-<van-button type="primary">主要按钮</van-button>
-<van-button type="danger">危险按钮</van-button>
+<m-button type="default">默认按钮</m-button>
+<m-button type="primary">主要按钮</m-button>
+<m-button type="danger">危险按钮</m-button>
 ```
 
 #### 按钮尺寸
 支持`large`、`normal`、`small`、`mini`四种尺寸，默认为`normal`
 
 ```html 
-<van-button size="large">大号按钮</van-button>
-<van-button size="normal">普通按钮</van-button>
-<van-button size="small">小型按钮</van-button>
-<van-button size="mini">迷你按钮</van-button>
+<m-button size="large">大号按钮</m-button>
+<m-button size="normal">普通按钮</m-button>
+<m-button size="small">小型按钮</m-button>
+<m-button size="mini">迷你按钮</m-button>
 ```
 
 #### 禁用状态
 通过`disabled`属性来禁用按钮，此时按钮不可点击
 
 ```html
-<van-button disabled>禁用状态</van-button>
+<m-button disabled>禁用状态</m-button>
 ```
 
 #### 加载状态
 
 ```html 
-<van-button loading />
-<van-button loading type="primary" />
+<m-button loading />
+<m-button loading type="primary" />
 ```
 
 #### 自定义按钮标签
@@ -47,24 +47,24 @@ Vue.use(Button);
 按钮标签默认为`button`，可以使用`tag`属性来修改按钮标签
 
 ```html 
-<van-button tag="a" href="https://www.youzan.com" target="_blank">
+<m-button tag="a" href="https://www.youzan.com" target="_blank">
   按钮
-</van-button>
+</m-button>
 ```
 
 #### 页面底部操作按钮
 
 ```html 
-<van-button type="primary" bottom-action>按钮</van-button>
+<m-button type="primary" bottom-action>按钮</m-button>
 
-<van-row>
-  <van-col span="12">
-    <van-button bottom-action>按钮</van-button>
-  </van-col>
-  <van-col span="12">
-    <van-button type="primary" bottom-action>按钮</van-button>
-  </van-col>
-</van-row>
+<m-row>
+  <m-col span="12">
+    <m-button bottom-action>按钮</m-button>
+  </m-col>
+  <m-col span="12">
+    <m-button type="primary" bottom-action>按钮</m-button>
+  </m-col>
+</m-row>
 ```
 
 ### API

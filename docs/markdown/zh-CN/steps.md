@@ -12,12 +12,12 @@ Vue.use(Step).use(Steps);
 #### 基础用法
 
 ```html
-<van-steps :active="active">
-  <van-step>买家下单</van-step>
-  <van-step>商家接单</van-step>
-  <van-step>买家提货</van-step>
-  <van-step>交易完成</van-step>
-</van-steps>
+<m-steps :active="active">
+  <m-step>买家下单</m-step>
+  <m-step>商家接单</m-step>
+  <m-step>买家提货</m-step>
+  <m-step>交易完成</m-step>
+</m-steps>
 ```
 
 ```javascript
@@ -35,37 +35,37 @@ export default {
 通过`title`和`description`属性来定义描述信息信息
 
 ```html
-<van-steps
+<m-steps
   :active="active"
   icon="logistics"
   title="标题"
   description="描述信息"
 >
-  <van-step>买家下单</van-step>
-  <van-step>商家接单</van-step>
-  <van-step>买家提货</van-step>
-  <van-step>交易完成</van-step>
-</van-steps>
+  <m-step>买家下单</m-step>
+  <m-step>商家接单</m-step>
+  <m-step>买家提货</m-step>
+  <m-step>交易完成</m-step>
+</m-steps>
 ```
 
 #### 竖向步骤条
 可以通过设置`direction`属性来改变步骤条的显示方式
 
 ```html
-<van-steps direction="vertical" :active="0" active-color="#f60">
-  <van-step>
+<m-steps direction="vertical" :active="0" active-color="#f60">
+  <m-step>
     <h3>【城市】物流状态1</h3>
     <p>2016-07-12 12:40</p>
-  </van-step>
-  <van-step>
+  </m-step>
+  <m-step>
     <h3>【城市】物流状态2</h3>
     <p>2016-07-11 10:00</p>
-  </van-step>
-  <van-step>
+  </m-step>
+  <m-step>
     <h3>快件已发货</h3>
     <p>2016-07-10 09:30</p>
-  </van-step>
-</van-steps>
+  </m-step>
+</m-steps>
 ```
 
 ### Steps API

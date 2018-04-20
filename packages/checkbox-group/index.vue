@@ -1,5 +1,5 @@
 <template>
-  <div class="van-checkbox-group">
+  <div class="m-checkbox-group">
     <slot />
   </div>
 </template>

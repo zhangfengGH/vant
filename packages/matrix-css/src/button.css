@@ -1,6 +1,6 @@
 @import './common/var.css';
 
-.van-button {
+.m-button {
   position: relative;
   padding: 0;
   display: inline-block;
@@ -73,11 +73,11 @@
   }
 
   &--loading {
-    .van-loading {
+    .m-loading {
       display: inline-block;
     }
 
-    .van-button__text {
+    .m-button__text {
       display: none;
     }
   }
@@ -90,7 +90,7 @@
     line-height: 20px;
     font-size: 10px;
 
-    & + .van-button--mini {
+    & + .m-button--mini {
       margin-left: 5px;
     }
   }
@@ -110,7 +110,7 @@
     color: $button-bottom-action-default-color;
     background-color: $button-bottom-action-default-background-color;
 
-    &.van-button--primary {
+    &.m-button--primary {
       background-color: $button-bottom-action-primary-background-color;
     }
   }

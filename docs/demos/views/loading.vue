@@ -1,18 +1,18 @@
 <template>
   <demo-section>
     <demo-block :title="$t('title1')">
-      <van-loading color="black" />
-      <van-loading color="white" />
+      <m-loading color="black" />
+      <m-loading color="white" />
     </demo-block>
 
     <demo-block :title="$t('title2')">
-      <van-loading type="spinner" color="black" />
-      <van-loading type="spinner" color="white" />
+      <m-loading type="spinner" color="black" />
+      <m-loading type="spinner" color="white" />
     </demo-block>
 
     <demo-block :title="$t('title3')">
-      <van-loading type="circle" color="black" />
-      <van-loading type="circle" color="white" />
+      <m-loading type="circle" color="black" />
+      <m-loading type="circle" color="white" />
     </demo-block>
   </demo-section>
 </template>
@@ -36,12 +36,12 @@ export default {
 
 <style lang="postcss">
 .demo-loading {
-  .van-loading {
+  .m-loading {
     display: inline-block;
     margin: 5px 0 5px 20px;
   }
 
-  .van-loading--white {
+  .m-loading--white {
     padding: 10px;
     border-radius: 3px;
     background-color: rgba(0, 0, 0, .5);

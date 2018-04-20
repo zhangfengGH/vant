@@ -1,16 +1,16 @@
 @import './common/var.css';
 
-.van-list {
+.m-list {
   &__loading {
     text-align: center;
 
-    .van-loading,
+    .m-loading,
     &-text {
       display: inline-block;
       vertical-align: middle;
     }
 
-    .van-loading {
+    .m-loading {
       width: 16px;
       height: 16px;
       margin-right: 5px;

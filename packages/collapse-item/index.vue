@@ -1,15 +1,15 @@
 <template>
   <div
-    class="van-collapse-item"
+    class="m-collapse-item"
     :class="{
-      'van-hairline--top': index,
-      'van-collapse-item--expanded': expanded
+      'm-hairline--top': index,
+      'm-collapse-item--expanded': expanded
     }"
   >
-    <cell class="van-collapse-item__title" is-link @click="onClick">
+    <cell class="m-collapse-item__title" is-link @click="onClick">
       <slot name="title">{{ title }}</slot>
     </cell>
-    <div class="van-collapse-item__content" v-show="expanded">
+    <div class="m-collapse-item__content" v-show="expanded">
       <slot />
     </div>
   </div>
@@ -52,7 +52,7 @@ export default create({
   },
 
   created() {
-    this.findParent('van-collapse');
+    this.findParent('m-collapse');
     this.items.push(this);
   },
 

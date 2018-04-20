@@ -1,14 +1,14 @@
 <template>
   <demo-section>
     <demo-block :title="$t('basicUsage')">
-      <van-cell-group>
-        <van-field v-model="value" :placeholder="$t('usernamePlaceholder')" />
-      </van-cell-group>
+      <m-cell-group>
+        <m-field v-model="value" :placeholder="$t('usernamePlaceholder')" />
+      </m-cell-group>
     </demo-block>
 
     <demo-block :title="$t('title2')">
-      <van-cell-group>
-        <van-field
+      <m-cell-group>
+        <m-field
           v-model="username"
           :label="$t('username')"
           icon="clear"
@@ -17,42 +17,42 @@
           @click-icon="username = ''"
         />
 
-        <van-field
+        <m-field
           v-model="password"
           type="password"
           :label="$t('password')"
           :placeholder="$t('passwordPlaceholder')"
           required
         />
-      </van-cell-group>
+      </m-cell-group>
     </demo-block>
 
     <demo-block :title="$t('title3')">
-      <van-cell-group>
-        <van-field :value="$t('inputDisabled')" :label="$t('username')" disabled />
-      </van-cell-group>
+      <m-cell-group>
+        <m-field :value="$t('inputDisabled')" :label="$t('username')" disabled />
+      </m-cell-group>
     </demo-block>
 
     <demo-block :title="$t('title4')">
-      <van-cell-group>
-        <van-field
+      <m-cell-group>
+        <m-field
           v-model="username2"
           :label="$t('username')"
           :placeholder="$t('usernamePlaceholder')"
           error
         />
-        <van-field
+        <m-field
           v-model="phone"
           :label="$t('phone')"
           :placeholder="$t('phonePlaceholder')"
           :error-message="$t('phoneError')"
         />
-      </van-cell-group>
+      </m-cell-group>
     </demo-block>
 
     <demo-block :title="$t('title5')">
-      <van-cell-group>
-        <van-field
+      <m-cell-group>
+        <m-field
           v-model="message"
           :label="$t('message')"
           type="textarea"
@@ -60,12 +60,12 @@
           rows="1"
           autosize
         />
-      </van-cell-group>
+      </m-cell-group>
     </demo-block>
 
     <demo-block :title="$t('title6')">
-      <van-cell-group>
-        <van-field
+      <m-cell-group>
+        <m-field
           center
           v-model="sms"
           :label="$t('sms')"
@@ -73,9 +73,9 @@
           icon="clear"
           @click-icon="sms = ''"
         >
-          <van-button slot="button" size="small" type="primary">{{ $t('sendSMS') }}</van-button>
-        </van-field>
-      </van-cell-group>
+          <m-button slot="button" size="small" type="primary">{{ $t('sendSMS') }}</m-button>
+        </m-field>
+      </m-cell-group>
     </demo-block>
   </demo-section>
 </template>

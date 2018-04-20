@@ -1,25 +1,25 @@
 <template>
   <div>
     <demo-section>
-      <van-notice-bar>{{ $t('tips') }}</van-notice-bar>
+      <m-notice-bar>{{ $t('tips') }}</m-notice-bar>
       <demo-block :title="$t('basicUsage')">
-        <van-cell-swipe :right-width="65" :left-width="65">
+        <m-cell-swipe :right-width="65" :left-width="65">
           <span slot="left">{{ $t('button1') }}</span>
-          <van-cell-group>
-            <van-cell :title="$t('title')" :value="$t('content')" />
-          </van-cell-group>
+          <m-cell-group>
+            <m-cell :title="$t('title')" :value="$t('content')" />
+          </m-cell-group>
           <span slot="right">{{ $t('button2') }}</span>
-        </van-cell-swipe>
+        </m-cell-swipe>
       </demo-block>
 
       <demo-block :title="$t('title2')">
-        <van-cell-swipe :right-width="65" :left-width="65" :on-close="onClose">
+        <m-cell-swipe :right-width="65" :left-width="65" :on-close="onClose">
           <span slot="left">{{ $t('button1') }}</span>
-          <van-cell-group>
-            <van-cell :title="$t('title')" :value="$t('content')" />
-          </van-cell-group>
+          <m-cell-group>
+            <m-cell :title="$t('title')" :value="$t('content')" />
+          </m-cell-group>
           <span slot="right">{{ $t('button2') }}</span>
-        </van-cell-swipe>
+        </m-cell-swipe>
       </demo-block>
     </demo-section>
   </div>
@@ -71,7 +71,7 @@ export default {
 .demo-cell-swipe {
   user-select: none;
 
-  .van-cell-swipe {
+  .m-cell-swipe {
     &__left,
     &__right {
       color: #FFFFFF;

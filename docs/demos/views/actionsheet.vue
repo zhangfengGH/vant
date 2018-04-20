@@ -1,20 +1,20 @@
 <template>
   <demo-section>
     <demo-block :title="$t('basicUsage')">
-      <van-button @click="show1 = true">{{ $t('button1') }}</van-button>
-      <van-actionsheet v-model="show1" :actions="actions" />
+      <m-button @click="show1 = true">{{ $t('button1') }}</m-button>
+      <m-actionsheet v-model="show1" :actions="actions" />
     </demo-block>
 
     <demo-block :title="$t('title2')">
-      <van-button @click="show2 = true">{{ $t('button2') }}</van-button>
-      <van-actionsheet v-model="show2" :actions="actions" :cancel-text="$t('cancel')" @cancel="handleCancel" />
+      <m-button @click="show2 = true">{{ $t('button2') }}</m-button>
+      <m-actionsheet v-model="show2" :actions="actions" :cancel-text="$t('cancel')" @cancel="handleCancel" />
     </demo-block>
 
     <demo-block :title="$t('title3')">
-      <van-button @click="show3 = true">{{ $t('button3') }}</van-button>
-      <van-actionsheet v-model="show3" :title="$t('title')">
+      <m-button @click="show3 = true">{{ $t('button3') }}</m-button>
+      <m-actionsheet v-model="show3" :title="$t('title')">
         <p>{{ $t('content') }}</p>
-      </van-actionsheet>
+      </m-actionsheet>
     </demo-block>
   </demo-section>
 </template>
@@ -76,7 +76,7 @@ export default {
     color: #06bf04;
   }
 
-  .van-button {
+  .m-button {
     margin-left: 15px;
   }
 

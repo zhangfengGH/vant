@@ -10,7 +10,7 @@ describe('Loading', () => {
   it('create default', () => {
     wrapper = mount(Loading);
 
-    expect(wrapper.hasClass('van-loading')).to.be.true;
+    expect(wrapper.hasClass('m-loading')).to.be.true;
   });
 
   it('create gradient-circle black', () => {
@@ -20,9 +20,9 @@ describe('Loading', () => {
         color: 'black'
       }
     });
-    const spinner = wrapper.find('.van-loading__spinner')[0];
+    const spinner = wrapper.find('.m-loading__spinner')[0];
 
-    expect(spinner.hasClass('van-loading__spinner--gradient-circle')).to.be.true;
+    expect(spinner.hasClass('m-loading__spinner--gradient-circle')).to.be.true;
   });
 
   it('create gradient-circle white', () => {
@@ -32,9 +32,9 @@ describe('Loading', () => {
         color: 'white'
       }
     });
-    const spinner = wrapper.find('.van-loading__spinner')[0];
+    const spinner = wrapper.find('.m-loading__spinner')[0];
 
-    expect(spinner.hasClass('van-loading__spinner--gradient-circle')).to.be.true;
+    expect(spinner.hasClass('m-loading__spinner--gradient-circle')).to.be.true;
   });
 
   it('create circle black', () => {
@@ -44,9 +44,9 @@ describe('Loading', () => {
         color: 'black'
       }
     });
-    const spinner = wrapper.find('.van-loading__spinner')[0];
+    const spinner = wrapper.find('.m-loading__spinner')[0];
 
-    expect(spinner.hasClass('van-loading__spinner--circle')).to.be.true;
+    expect(spinner.hasClass('m-loading__spinner--circle')).to.be.true;
   });
 
   it('create circle white', () => {
@@ -56,9 +56,9 @@ describe('Loading', () => {
         color: 'white'
       }
     });
-    const spinner = wrapper.find('.van-loading__spinner')[0];
+    const spinner = wrapper.find('.m-loading__spinner')[0];
 
-    expect(spinner.hasClass('van-loading__spinner--circle')).to.be.true;
+    expect(spinner.hasClass('m-loading__spinner--circle')).to.be.true;
   });
 
   it('loading size', () => {

@@ -1,13 +1,13 @@
 <template>
-  <van-row gutter="10">
-    <van-col span="8">
+  <m-row gutter="10">
+    <m-col span="8">
       <div class="gray">span: 8</div>
-    </van-col>
-    <van-col span="8">
+    </m-col>
+    <m-col span="8">
       <div class="gray">span: 8</div>
-    </van-col>
-    <van-col span="8">
+    </m-col>
+    <m-col span="8">
       <div class="gray">span: 8</div>
-    </van-col>
-  </van-row>
+    </m-col>
+  </m-row>
 </template>

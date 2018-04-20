@@ -1,7 +1,7 @@
 @import './common/var.css';
-$van-swipe-indicator: 6px;
+$m-swipe-indicator: 6px;
 
-.van-swipe {
+.m-swipe {
   overflow: hidden;
   position: relative;
   user-select: none;
@@ -20,7 +20,7 @@ $van-swipe-indicator: 6px;
     left: 50%;
     bottom: 10px;
     position: absolute;
-    height: $van-swipe-indicator;
+    height: $m-swipe-indicator;
     transform: translate3d(-50%, 0, 0);
 
     > i {
@@ -28,14 +28,14 @@ $van-swipe-indicator: 6px;
       vertical-align: top;
       display: inline-block;
       background-color: $gray-dark;
-      width: $van-swipe-indicator;
-      height: $van-swipe-indicator;
+      width: $m-swipe-indicator;
+      height: $m-swipe-indicator;
       &:not(:last-child) {
-        margin-right: $van-swipe-indicator;
+        margin-right: $m-swipe-indicator;
       }
     }
 
-    .van-swipe__indicator {
+    .m-swipe__indicator {
       &--active {
         background-color: $orange;
       }

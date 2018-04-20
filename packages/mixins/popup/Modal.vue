@@ -1,8 +1,8 @@
 <template>
-  <transition name="van-fade">
+  <transition name="m-fade">
     <div
       v-show="visible"
-      class="van-modal"
+      class="m-modal"
       :class="className"
       :style="style"
       @touchmove.prevent.stop

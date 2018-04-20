@@ -1,32 +1,32 @@
 <template>
-  <div class="van-tabs" :class="`van-tabs--${type}`">
+  <div class="m-tabs" :class="`m-tabs--${type}`">
     <div
       ref="wrap"
-      class="van-tabs__wrap"
-      :class="[`van-tabs__wrap--${position}`, {
-        'van-tabs--scrollable': scrollable,
-        'van-hairline--top-bottom': type === 'line'
+      class="m-tabs__wrap"
+      :class="[`m-tabs__wrap--${position}`, {
+        'm-tabs--scrollable': scrollable,
+        'm-hairline--top-bottom': type === 'line'
       }]"
     >
-      <div class="van-tabs__nav" :class="`van-tabs__nav--${type}`" ref="nav">
-        <div v-if="type === 'line'" class="van-tabs__nav-bar" :style="navBarStyle" />
+      <div class="m-tabs__nav" :class="`m-tabs__nav--${type}`" ref="nav">
+        <div v-if="type === 'line'" class="m-tabs__nav-bar" :style="navBarStyle" />
         <div
           v-for="(tab, index) in tabs"
           :key="index"
           ref="tabs"
-          class="van-tab"
+          class="m-tab"
           :class="{
-            'van-tab--active': index === curActive,
-            'van-tab--disabled': tab.disabled
+            'm-tab--active': index === curActive,
+            'm-tab--disabled': tab.disabled
           }"
           @click="onClick(index)"
         >
-          <van-node v-if="tab.$slots.title" :node="tab.$slots.title" />
-          <span class="van-ellipsis" v-else>{{ tab.title }}</span>
+          <m-node v-if="tab.$slots.title" :node="tab.$slots.title" />
+          <span class="m-ellipsis" v-else>{{ tab.title }}</span>
         </div>
       </div>
     </div>
-    <div class="van-tabs__content" ref="content">
+    <div class="m-tabs__content" ref="content">
       <slot />
     </div>
   </div>

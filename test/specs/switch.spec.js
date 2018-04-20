@@ -16,8 +16,8 @@ describe('Switch', () => {
       }
     });
 
-    expect(wrapper.hasClass('van-switch')).to.be.true;
-    expect(wrapper.hasClass('van-switch--on')).to.be.true;
+    expect(wrapper.hasClass('m-switch')).to.be.true;
+    expect(wrapper.hasClass('m-switch--on')).to.be.true;
   });
 
   it('create loading switch', () => {
@@ -28,7 +28,7 @@ describe('Switch', () => {
     });
     const loading = wrapper.find(VanLoading)[0];
 
-    expect(wrapper.hasClass('van-switch')).to.be.true;
+    expect(wrapper.hasClass('m-switch')).to.be.true;
     expect(loading.isVueComponent).to.be.true;
   });
 
@@ -40,9 +40,9 @@ describe('Switch', () => {
       }
     });
 
-    expect(wrapper.hasClass('van-switch--on')).to.be.true;
+    expect(wrapper.hasClass('m-switch--on')).to.be.true;
     wrapper.trigger('click');
-    expect(wrapper.hasClass('van-switch--on')).to.be.true;
+    expect(wrapper.hasClass('m-switch--on')).to.be.true;
   });
 
   it('create disabled switch', () => {
@@ -52,8 +52,8 @@ describe('Switch', () => {
       }
     });
 
-    expect(wrapper.hasClass('van-switch')).to.be.true;
-    expect(wrapper.hasClass('van-switch--disabled')).to.be.true;
+    expect(wrapper.hasClass('m-switch')).to.be.true;
+    expect(wrapper.hasClass('m-switch--disabled')).to.be.true;
   });
 
   it('disabled switch should be unclickable', () => {
@@ -64,9 +64,9 @@ describe('Switch', () => {
       }
     });
 
-    expect(wrapper.hasClass('van-switch--on')).to.be.false;
+    expect(wrapper.hasClass('m-switch--on')).to.be.false;
     wrapper.trigger('click');
-    expect(wrapper.hasClass('van-switch--on')).to.be.false;
+    expect(wrapper.hasClass('m-switch--on')).to.be.false;
   });
 
   it('click should toggle the switch', () => {
@@ -80,8 +80,8 @@ describe('Switch', () => {
       wrapper.vm.value = val;
     });
 
-    expect(wrapper.hasClass('van-switch--on')).to.be.false;
+    expect(wrapper.hasClass('m-switch--on')).to.be.false;
     wrapper.trigger('click');
-    expect(wrapper.hasClass('van-switch--on')).to.be.true;
+    expect(wrapper.hasClass('m-switch--on')).to.be.true;
   });
 });

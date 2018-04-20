@@ -1,6 +1,6 @@
 <template>
-  <cell center :title="title" :border="border" class="van-switch-cell">
-    <van-switch v-bind="$props" @input="$emit('input', $event)" />
+  <cell center :title="title" :border="border" class="m-switch-cell">
+    <m-switch v-bind="$props" @input="$emit('input', $event)" />
   </cell>
 </template>
 

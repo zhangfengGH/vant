@@ -1,6 +1,6 @@
 @import './common/var.css';
 
-.van-switch {
+.m-switch {
   height: 1em;
   width: 1.6em;
   display: inline-block;
@@ -34,7 +34,7 @@
   &--on {
     background-color: #44db5e;
 
-    .van-switch__node {
+    .m-switch__node {
       transform: translateX(.6em);
     }
   }

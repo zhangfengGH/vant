@@ -13,7 +13,7 @@ Vue.use(Icon);
 设置`name`属性为对应的图标名称即可，所有可用的图标名称见右侧列表
 
 ```html
-<van-icon name="success" />
+<m-icon name="success" />
 ```
 
 #### 使用本地字体文件
@@ -32,17 +32,17 @@ import 'matrix/lib/matrix-css/icon-local.css';
   src: url('./iconfont.ttf') format('truetype');
 }
 
-.van-icon {
+.m-icon {
   font-family: 'matrix-icon', 'custom-iconfont' !important;
 }
 
-.van-icon-extra:before {
+.m-icon-extra:before {
   content: '\e626';
 }
 ```
 
 ```html
-<van-icon name="extra" />
+<m-icon name="extra" />
 ```
 
 ### API

@@ -1,6 +1,6 @@
 @import './common/var.css';
 
-.van-picker {
+.m-picker {
   overflow: hidden;
   user-select: none;
   position: relative;
@@ -47,7 +47,7 @@
     }
   }
 
-  &__loading .van-loading,
+  &__loading .m-loading,
   &__frame {
     top: 50%;
     left: 0;

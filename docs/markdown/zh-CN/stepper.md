@@ -12,7 +12,7 @@ Vue.use(Stepper);
 #### 基础用法
 
 ```html
-<van-stepper v-model="value" />
+<m-stepper v-model="value" />
 ```
 
 ```javascript
@@ -29,7 +29,7 @@ export default {
 通过设置`disabled`属性来禁用 stepper
 
 ```html
-<van-stepper v-model="value" disabled />
+<m-stepper v-model="value" disabled />
 ```
 
 #### 高级用法
@@ -37,7 +37,7 @@ export default {
 默认是每次加减为1，可以对组件设置`step`、`min`、`max`、`default-value`属性
 
 ```html
-<van-stepper
+<m-stepper
   v-model="value"
   :min="5"
   :max="40"

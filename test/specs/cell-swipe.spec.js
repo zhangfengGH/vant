@@ -17,14 +17,14 @@ describe('CellSwipe', () => {
 
   it('render left or right part when has width', () => {
     wrapper = mount(CellSwipe, defaultProps);
-    expect(wrapper.find('.van-cell-swipe__left').length).to.equal(1);
-    expect(wrapper.find('.van-cell-swipe__right').length).to.equal(1);
+    expect(wrapper.find('.m-cell-swipe__left').length).to.equal(1);
+    expect(wrapper.find('.m-cell-swipe__right').length).to.equal(1);
   });
 
   it('not render left or right part when width is 0', () => {
     wrapper = mount(CellSwipe);
-    expect(wrapper.find('.van-cell-swipe__left').length).to.equal(0);
-    expect(wrapper.find('.van-cell-swipe__right').length).to.equal(0);
+    expect(wrapper.find('.m-cell-swipe__left').length).to.equal(0);
+    expect(wrapper.find('.m-cell-swipe__right').length).to.equal(0);
   });
 
   it('drag and show left part', done => {
@@ -132,10 +132,10 @@ describe('CellSwipe', () => {
     wrapper.trigger('click');
     expect(clickPosition).to.equal('cell');
 
-    wrapper.find('.van-cell-swipe__left')[0].trigger('click');
+    wrapper.find('.m-cell-swipe__left')[0].trigger('click');
     expect(clickPosition).to.equal('left');
 
-    wrapper.find('.van-cell-swipe__right')[0].trigger('click');
+    wrapper.find('.m-cell-swipe__right')[0].trigger('click');
     expect(clickPosition).to.equal('right');
 
     instance.close();

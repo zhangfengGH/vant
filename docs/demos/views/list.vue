@@ -2,15 +2,15 @@
   <demo-section>
     <demo-block :title="$t('basicUsage')">
       <p class="page-desc">{{ $t('text') }}</p>
-      <van-pull-refresh v-model="refreshing" @refresh="onRefresh">
-        <van-list
+      <m-pull-refresh v-model="refreshing" @refresh="onRefresh">
+        <m-list
           v-model="loading"
           :finished="finished"
           @load="onLoad"
         >
-          <van-cell v-for="item in list" :key="item" :title="item + ''" />
-        </van-list>
-      </van-pull-refresh>
+          <m-cell v-for="item in list" :key="item" :title="item + ''" />
+        </m-list>
+      </m-pull-refresh>
     </demo-block>
   </demo-section>
 </template>
@@ -64,7 +64,7 @@ export default {
 
 <style lang="postcss">
 .demo-list {
-  .van-cell {
+  .m-cell {
     justify-content: center;
   }
 

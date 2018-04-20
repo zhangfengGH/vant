@@ -1,10 +1,10 @@
 <template>
-  <div class="van-uploader">
+  <div class="m-uploader">
     <slot />
     <input
       ref="input"
       type="file"
-      class="van-uploader__input"
+      class="m-uploader__input"
       v-bind="$attrs"
       :disabled="disabled"
       @change="onChange"

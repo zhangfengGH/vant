@@ -1,16 +1,16 @@
-@keyframes van-slide-bottom-enter {
+@keyframes m-slide-bottom-enter {
   from {
     transform: translate3d(0, 100%, 0);
   }
 }
 
-@keyframes van-slide-bottom-leave {
+@keyframes m-slide-bottom-leave {
   to {
     transform: translate3d(0, 100%, 0);
   }
 }
 
-@keyframes van-fade-in {
+@keyframes m-fade-in {
   from {
     opacity: 0;
   }
@@ -19,7 +19,7 @@
   }
 }
 
-@keyframes van-fade-out {
+@keyframes m-fade-out {
   from {
     opacity: 1;
   }
@@ -28,7 +28,7 @@
   }
 }
 
-@keyframes van-rotate {
+@keyframes m-rotate {
   from {
     transform: rotate(0deg);
   }
@@ -37,22 +37,22 @@
   }
 }
 
-.van-fade {
+.m-fade {
   &-enter-active {
-    animation: .3s van-fade-in;
+    animation: .3s m-fade-in;
   }
 
   &-leave-active {
-    animation: .3s van-fade-out;
+    animation: .3s m-fade-out;
   }
 }
 
-.van-slide-bottom {
+.m-slide-bottom {
   &-enter-active {
-    animation: van-slide-bottom-enter .3s both ease;
+    animation: m-slide-bottom-enter .3s both ease;
   }
 
   &-leave-active {
-    animation: van-slide-bottom-leave .3s both ease;
+    animation: m-slide-bottom-leave .3s both ease;
   }
 }

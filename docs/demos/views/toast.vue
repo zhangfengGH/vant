@@ -1,20 +1,20 @@
 <template>
   <demo-section>
     <demo-block :title="$t('title1')">
-      <van-button @click="showToast">{{ $t('title1') }}</van-button>
+      <m-button @click="showToast">{{ $t('title1') }}</m-button>
     </demo-block>
 
     <demo-block :title="$t('title2')">
-      <van-button @click="showLoadingToast">{{ $t('title2') }}</van-button>
+      <m-button @click="showLoadingToast">{{ $t('title2') }}</m-button>
     </demo-block>
 
     <demo-block :title="$t('title3')">
-      <van-button @click="showSuccessToast">{{ $t('success') }}</van-button>
-      <van-button @click="showFailToast">{{ $t('fail') }}</van-button>
+      <m-button @click="showSuccessToast">{{ $t('success') }}</m-button>
+      <m-button @click="showFailToast">{{ $t('fail') }}</m-button>
     </demo-block>
 
     <demo-block :title="$t('advancedUsage')">
-      <van-button @click="showCustomizedToast">{{ $t('advancedUsage') }}</van-button>
+      <m-button @click="showCustomizedToast">{{ $t('advancedUsage') }}</m-button>
     </demo-block>
   </demo-section>
 </template>
@@ -88,7 +88,7 @@ export default {
 
 <style lang="postcss">
 .demo-toast {
-  .van-button {
+  .m-button {
     margin-left: 15px;
   }
 }

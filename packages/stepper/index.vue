@@ -1,20 +1,20 @@
 <template>
-  <div class="van-stepper" :class="{ 'van-stepper--disabled': disabled }">
+  <div class="m-stepper" :class="{ 'm-stepper--disabled': disabled }">
     <button
-      class="van-stepper__stepper van-stepper__minus"
-      :class="{ 'van-stepper__minus--disabled': isMinusDisabled }"
+      class="m-stepper__stepper m-stepper__minus"
+      :class="{ 'm-stepper__minus--disabled': isMinusDisabled }"
       @click="onChange('minus')"
     />
     <input
       type="number"
-      class="van-stepper__input"
+      class="m-stepper__input"
       :value="currentValue"
       :disabled="disabled || disableInput"
       @input="onInput"
     >
     <button
-      class="van-stepper__stepper van-stepper__plus"
-      :class="{ 'van-stepper__plus--disabled': isPlusDisabled }"
+      class="m-stepper__stepper m-stepper__plus"
+      :class="{ 'm-stepper__plus--disabled': isPlusDisabled }"
       @click="onChange('plus')"
     />
   </div>

@@ -1,8 +1,8 @@
 <template>
   <div class="app">
-    <van-doc :simulators="simulators" :current-simulator="currentSimulator" :config="config" :base="base">
+    <m-doc :simulators="simulators" :current-simulator="currentSimulator" :config="config" :base="base">
       <router-view @changeDemoURL="onChangeDemoURL" />
-    </van-doc>
+    </m-doc>
   </div>
 </template>
 
@@ -41,7 +41,7 @@ export default {
 </script>
 
 <style lang="postcss">
-.van-doc-intro {
+.m-doc-intro {
   text-align: center;
   font-family: "Dosis", "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 

@@ -1,8 +1,8 @@
 @import "./common/var.css";
 
-$van-number-keyboard-key-height: 54px;
+$m-number-keyboard-key-height: 54px;
 
-.van-number-keyboard {
+.m-number-keyboard {
   left: 0;
   bottom: 0;
   width: 100%;
@@ -41,25 +41,25 @@ $van-number-keyboard-key-height: 54px;
     bottom: 0;
     width: 25%;
     position: absolute;
-    height: calc($van-number-keyboard-key-height * 4);
+    height: calc($m-number-keyboard-key-height * 4);
   }
 
   &--custom {
-    .van-number-keyboard__body {
+    .m-number-keyboard__body {
       padding-right: 25%;
     }
   }
 }
 
-.van-key {
+.m-key {
   width: calc(100%/3);
   font-size: 24px;
   font-style: normal;
   text-align: center;
   display: inline-block;
   vertical-align: middle;
-  height: $van-number-keyboard-key-height;
-  line-height: $van-number-keyboard-key-height;
+  height: $m-number-keyboard-key-height;
+  line-height: $m-number-keyboard-key-height;
 
   &::after {
     border-width: 1px 1px 0 0;
@@ -71,8 +71,8 @@ $van-number-keyboard-key-height: 54px;
 
   &--big {
     width: 100%;
-    height: calc($van-number-keyboard-key-height * 2);
-    line-height: calc($van-number-keyboard-key-height * 2);
+    height: calc($m-number-keyboard-key-height * 2);
+    line-height: calc($m-number-keyboard-key-height * 2);
   }
 
   &--green {
@@ -80,7 +80,7 @@ $van-number-keyboard-key-height: 54px;
     color: $white;
     background-color: $green;
 
-    &.van-key--active {
+    &.m-key--active {
       background-color: #308305;
     }
 

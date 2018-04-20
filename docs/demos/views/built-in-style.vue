@@ -1,24 +1,24 @@
 <template>
   <demo-section>
     <demo-block :title="$t('ellipsis')">
-      <div class="van-ellipsis">{{ $t('text') }}</div>
+      <div class="m-ellipsis">{{ $t('text') }}</div>
     </demo-block>
 
     <demo-block :title="$t('hairline')">
-      <div class="van-hairline--top" />
+      <div class="m-hairline--top" />
     </demo-block>
 
     <demo-block :title="$t('animation')">
-      <van-switch-cell v-model="show" :title="$t('toggle')" :border="false" />
-      <van-row>
-        <transition name="van-fade">
-          <van-col span="8" v-show="show">Fade</van-col>
+      <m-switch-cell v-model="show" :title="$t('toggle')" :border="false" />
+      <m-row>
+        <transition name="m-fade">
+          <m-col span="8" v-show="show">Fade</m-col>
         </transition>
 
-        <transition name="van-slide-bottom">
-          <van-col span="8" v-show="show">Slide Bottom</van-col>
+        <transition name="m-slide-bottom">
+          <m-col span="8" v-show="show">Slide Bottom</m-col>
         </transition>
-      </van-row>
+      </m-row>
     </demo-block>
   </demo-section>
 </template>
@@ -52,13 +52,13 @@ export default {
 
 <style lang="postcss">
 .demo-built-in-style {
-  .van-ellipsis {
+  .m-ellipsis {
     font-size: 13px;
     margin-left: 15px;
     max-width: 250px;
   }
 
-  .van-hairline--top {
+  .m-hairline--top {
     height: 30px;
     background-color: #fff;
 
@@ -67,7 +67,7 @@ export default {
     }
   }
 
-  .van-col {
+  .m-col {
     height: 50px;
     color: #fff;
     font-size: 14px;
@@ -78,7 +78,7 @@ export default {
     background-color: #39a9ed;
   }
 
-  .van-switch-cell {
+  .m-switch-cell {
     margin-bottom: 15px;
   }
 }

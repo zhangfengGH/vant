@@ -12,7 +12,7 @@ Vue.use(NoticeBar);
 #### 基础用法
 
 ```html
-<van-notice-bar
+<m-notice-bar
   text="足协杯战线连续第2年上演广州德比战，上赛季半决赛上恒大以两回合5-3的总比分淘汰富力。"
   left-icon="https://img.yzcdn.cn/1.png"
 />
@@ -22,9 +22,9 @@ Vue.use(NoticeBar);
 文字内容多于一行时，可通过`scrollable`参数控制是否开启滚动
 
 ```html
-<van-notice-bar :scrollable="false">
+<m-notice-bar :scrollable="false">
   足协杯战线连续第2年上演广州德比战，上赛季半决赛上恒大以两回合5-3的总比分淘汰富力。
-</van-notice-bar>
+</m-notice-bar>
 ```
 
 #### 通告栏模式
@@ -32,14 +32,14 @@ Vue.use(NoticeBar);
 
 ```html
 <!-- closeable 模式，在右侧显示关闭按钮 -->
-<van-notice-bar mode="closeable">
+<m-notice-bar mode="closeable">
   足协杯战线连续第2年上演广州德比战，上赛季半决赛上恒大以两回合5-3的总比分淘汰富力。
-</van-notice-bar>
+</m-notice-bar>
 
 <!-- link 模式，在右侧显示链接箭头 -->
-<van-notice-bar mode="link">
+<m-notice-bar mode="link">
   足协杯战线连续第2年上演广州德比战，上赛季半决赛上恒大以两回合5-3的总比分淘汰富力。
-</van-notice-bar>
+</m-notice-bar>
 ```
 
 ### API

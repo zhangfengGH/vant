@@ -1,25 +1,25 @@
 <template>
-  <div class="van-doc-footer-nav">
+  <div class="m-doc-footer-nav">
     <div
       v-if="leftNav"
-      class="van-doc-footer-nav__link van-doc-footer-nav__left"
+      class="m-doc-footer-nav__link m-doc-footer-nav__left"
       @click="handleNavClick('prev')">
-      <div class="van-doc-footer-nav__arrow-left"></div>
+      <div class="m-doc-footer-nav__arrow-left"></div>
       <span>{{ leftNav.title }}</span>
     </div>
     <div
       v-if="rightNav"
-      class="van-doc-footer-nav__link van-doc-footer-nav__right"
+      class="m-doc-footer-nav__link m-doc-footer-nav__right"
       @click="handleNavClick('next')">
       <span>{{ rightNav.title }}</span>
-      <div class="van-doc-footer-nav__arrow-right"></div>
+      <div class="m-doc-footer-nav__arrow-right"></div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'van-doc-footer-nav',
+  name: 'm-doc-footer-nav',
 
   props: {
     base: String,
@@ -106,7 +106,7 @@ export default {
 <style lang="postcss">
 @import '../style/variable';
 
-.van-doc-footer-nav {
+.m-doc-footer-nav {
   left: 0;
   right: 0;
   bottom: 0;
@@ -120,15 +120,15 @@ export default {
     line-height: 1.5;
     cursor: pointer;
     opacity: .7;
-    color: $van-doc-code-color;
+    color: $m-doc-code-color;
     transition: .3s;
 
     &:hover {
       opacity: 1;
-      color: $van-doc-blue;
+      color: $m-doc-blue;
     }
 
-    .van-icon {
+    .m-icon {
       font-size: 12px;
       line-height: 16px;
     }

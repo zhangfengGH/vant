@@ -11,7 +11,7 @@ describe('CheckboxGroup', () => {
   it('create a checkbox-group', () => {
     wrapper = mount(CheckboxTestComponent);
 
-    expect(wrapper.hasClass('van-checkbox-group')).to.be.true;
+    expect(wrapper.hasClass('m-checkbox-group')).to.be.true;
 
     expect(wrapper.vNode.child.value.length).to.equal(2);
     expect(wrapper.vNode.child.disabled).to.be.false;
@@ -40,7 +40,7 @@ describe('CheckboxGroup', () => {
 
     const eventStub = sinon.stub(wrapper.vNode.child, '$emit');
 
-    const firstCheckboxLabel = wrapper.find('.van-checkbox')[0].find('.van-checkbox__label')[0];
+    const firstCheckboxLabel = wrapper.find('.m-checkbox')[0].find('.m-checkbox__label')[0];
     firstCheckboxLabel.trigger('click');
 
     wrapper.update();
@@ -56,7 +56,7 @@ describe('CheckboxGroup', () => {
 
     const eventStub = sinon.stub(wrapper.vNode.child, '$emit');
 
-    const lastCheckboxLabel = wrapper.find('.van-checkbox')[3].find('.van-checkbox__label')[0];
+    const lastCheckboxLabel = wrapper.find('.m-checkbox')[3].find('.m-checkbox__label')[0];
     lastCheckboxLabel.trigger('click');
 
     wrapper.update();
@@ -74,7 +74,7 @@ describe('CheckboxGroup', () => {
       'max': 2
     });
 
-    const lastCheckboxLabel = wrapper.find('.van-checkbox')[3].find('.van-checkbox__label')[0];
+    const lastCheckboxLabel = wrapper.find('.m-checkbox')[3].find('.m-checkbox__label')[0];
     lastCheckboxLabel.trigger('click');
 
     wrapper.update();
@@ -89,7 +89,7 @@ describe('CheckboxGroup', () => {
 
     const eventStub = sinon.stub(wrapper.vNode.child, '$emit');
 
-    const disabledLabel = wrapper.find('.van-checkbox')[2].find('.van-checkbox__label')[0];
+    const disabledLabel = wrapper.find('.m-checkbox')[2].find('.m-checkbox__label')[0];
     disabledLabel.trigger('click');
 
     wrapper.update();
@@ -115,7 +115,7 @@ describe('Checkbox', () => {
       }
     });
 
-    expect(wrapper.hasClass('van-checkbox')).to.be.true;
+    expect(wrapper.hasClass('m-checkbox')).to.be.true;
     expect(wrapper.vm.currentValue).to.be.true;
     expect(wrapper.vm.isDisabled).to.be.false;
     expect(wrapper.vm.isChecked).to.be.true;
@@ -129,7 +129,7 @@ describe('Checkbox', () => {
       }
     });
 
-    expect(wrapper.hasClass('van-checkbox')).to.be.true;
+    expect(wrapper.hasClass('m-checkbox')).to.be.true;
     expect(!!wrapper.vm.isChecked).to.be.false;
   });
 
@@ -141,7 +141,7 @@ describe('Checkbox', () => {
       }
     });
 
-    expect(wrapper.hasClass('van-checkbox')).to.be.true;
+    expect(wrapper.hasClass('m-checkbox')).to.be.true;
     expect(wrapper.vm.currentValue).to.equal('test');
     expect(wrapper.vm.isDisabled).to.be.false;
     expect(wrapper.vm.isChecked).to.be.true;
@@ -162,10 +162,10 @@ describe('Checkbox', () => {
       }
     });
 
-    expect(wrapper.hasClass('van-checkbox')).to.be.true;
+    expect(wrapper.hasClass('m-checkbox')).to.be.true;
     const eventStub = sinon.stub(wrapper.vm, '$emit');
 
-    const checkboxLabel = wrapper.find('.van-checkbox__label')[0];
+    const checkboxLabel = wrapper.find('.m-checkbox__label')[0];
     checkboxLabel.trigger('click');
 
     wrapper.update();
@@ -184,12 +184,12 @@ describe('Checkbox', () => {
       }
     });
 
-    expect(wrapper.hasClass('van-checkbox')).to.be.true;
-    expect(wrapper.find('.van-checkbox--disabled').length).to.equal(1);
+    expect(wrapper.hasClass('m-checkbox')).to.be.true;
+    expect(wrapper.find('.m-checkbox--disabled').length).to.equal(1);
     expect(wrapper.vm.currentValue).to.be.false;
     expect(wrapper.vm.isDisabled).to.be.true;
 
-    const checkboxLabel = wrapper.find('.van-checkbox__label')[0];
+    const checkboxLabel = wrapper.find('.m-checkbox__label')[0];
     checkboxLabel.trigger('click');
 
     expect(wrapper.vm.currentValue).to.be.false;
@@ -203,10 +203,10 @@ describe('Checkbox', () => {
       }
     });
 
-    expect(wrapper.hasClass('van-checkbox')).to.be.true;
+    expect(wrapper.hasClass('m-checkbox')).to.be.true;
     expect(wrapper.vm.currentValue).to.be.false;
 
-    const checkboxLabel = wrapper.find('.van-checkbox__label')[0];
+    const checkboxLabel = wrapper.find('.m-checkbox__label')[0];
     checkboxLabel.trigger('click');
 
     expect(wrapper.vm.currentValue).to.be.false;

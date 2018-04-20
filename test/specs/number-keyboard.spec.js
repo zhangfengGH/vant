@@ -4,14 +4,14 @@ import { mount } from 'avoriaz';
 import { triggerTouch } from '../utils';
 
 function mockKeyDown(wrapper, keyIndex) {
-  const key = wrapper.element.querySelectorAll('.van-key')[keyIndex];
+  const key = wrapper.element.querySelectorAll('.m-key')[keyIndex];
   const touchStart = document.createEvent('CustomEvent');
   touchStart.initCustomEvent('touchstart', true, true, {});
   key.dispatchEvent(touchStart);
 }
 
 function mockKeyUp(wrapper, keyIndex) {
-  const key = wrapper.element.querySelectorAll('.van-key')[keyIndex];
+  const key = wrapper.element.querySelectorAll('.m-key')[keyIndex];
   const touchEnd = document.createEvent('CustomEvent');
   touchEnd.initCustomEvent('touchend', true, true, {});
   key.dispatchEvent(touchEnd);
@@ -25,7 +25,7 @@ describe('NumberKeyboard', () => {
 
   it('create a NumberKeyboard', () => {
     wrapper = mount(NumberKeyboard, {});
-    expect(wrapper.hasClass('van-number-keyboard')).to.be.true;
+    expect(wrapper.hasClass('m-number-keyboard')).to.be.true;
   });
 
   it('click a keyboard key', (done) => {
@@ -158,11 +158,11 @@ describe('NumberKeyboard', () => {
       }
     });
 
-    expect(wrapper.find('.van-number-keyboard').length).to.equal(1);
+    expect(wrapper.find('.m-number-keyboard').length).to.equal(1);
 
     wrapper.vm.showKeyboard = false;
     wrapper.vm.$nextTick(() => {
-      expect(wrapper.find('.van-number-keyboard').length).to.equal(0);
+      expect(wrapper.find('.m-number-keyboard').length).to.equal(0);
       done();
     });
   });

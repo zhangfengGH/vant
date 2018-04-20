@@ -1,21 +1,21 @@
-$van-doc-blue: #3498db;
-$van-doc-text-color: #333;
-$van-doc-text-light-blue: rgba(69, 90, 100, .6);
-$van-doc-grey: #999;
-$van-doc-dark-grey: #666;
-$van-doc-light-grey: #ccc;
-$van-doc-border-color: #eaeefb;;
-$van-doc-code-color: #455a64;
-$van-doc-padding: 40px;
-$van-doc-row-max-width: 1440px;
+$m-doc-blue: #3498db;
+$m-doc-text-color: #333;
+$m-doc-text-light-blue: rgba(69, 90, 100, .6);
+$m-doc-grey: #999;
+$m-doc-dark-grey: #666;
+$m-doc-light-grey: #ccc;
+$m-doc-border-color: #eaeefb;;
+$m-doc-code-color: #455a64;
+$m-doc-padding: 40px;
+$m-doc-row-max-width: 1440px;
 
 /* header */
-$van-doc-header-top-height: 60px;
-$van-doc-header-bottom-height: 50px;
+$m-doc-header-top-height: 60px;
+$m-doc-header-bottom-height: 50px;
 
 /* simulator */
-$van-doc-simulator-width: 360px;
-$van-doc-simulator-small-width: 320px;
-$van-doc-simulator-height: 620px;
-$van-doc-simulator-small-height: 560px;
+$m-doc-simulator-width: 360px;
+$m-doc-simulator-small-width: 320px;
+$m-doc-simulator-height: 620px;
+$m-doc-simulator-small-height: 560px;
 

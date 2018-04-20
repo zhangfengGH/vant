@@ -11,31 +11,31 @@ Vue.use(Cell).use(CellGroup);
 
 #### 基础用法
 
-将`van-cell-group`组件看成一个容器即可
+将`m-cell-group`组件看成一个容器即可
 
 ```html
-<van-cell-group>
-  <van-cell title="单元格" value="内容" />
-  <van-cell title="单元格" value="内容" label="描述信息" />
-</van-cell-group>
+<m-cell-group>
+  <m-cell title="单元格" value="内容" />
+  <m-cell title="单元格" value="内容" label="描述信息" />
+</m-cell-group>
 ```
 
 #### 只设置value
 只设置`value`时会向左对齐
 
 ```html
-<van-cell-group>
-  <van-cell value="内容" />
-</van-cell-group>
+<m-cell-group>
+  <m-cell value="内容" />
+</m-cell-group>
 ```
 
 #### 展示图标
 通过`icon`属性在标题左侧展示图标
 
 ```html
-<van-cell-group>
-  <van-cell title="单元格" icon="location" />
-</van-cell-group>
+<m-cell-group>
+  <m-cell title="单元格" icon="location" />
+</m-cell-group>
 ```
 
 
@@ -43,28 +43,28 @@ Vue.use(Cell).use(CellGroup);
 传入`is-link`属性则会在右侧显示箭头
 
 ```html
-<van-cell-group>
-  <van-cell title="单元格" is-link />
-  <van-cell title="单元格" is-link value="内容" />
-</van-cell-group>
+<m-cell-group>
+  <m-cell title="单元格" is-link />
+  <m-cell title="单元格" is-link value="内容" />
+</m-cell-group>
 ```
 
 #### 高级用法
 如以上用法不能满足你的需求，可以使用对应的`slot`来自定义显示的内容
 
 ```html
-<van-cell-group>
-  <van-cell value="内容" icon="shop" is-link>
+<m-cell-group>
+  <m-cell value="内容" icon="shop" is-link>
     <template slot="title">
-      <span class="van-cell-text">单元格</span>
-      <van-tag type="danger">标签</van-tag>
+      <span class="m-cell-text">单元格</span>
+      <m-tag type="danger">标签</m-tag>
     </template>
-  </van-cell>
-  <van-cell title="单元格" icon="location" is-link />
-  <van-cell title="单元格">
-    <van-icon slot="right-icon" name="search" class="van-cell__right-icon" />
-  </van-cell>
-</van-cell-group>
+  </m-cell>
+  <m-cell title="单元格" icon="location" is-link />
+  <m-cell title="单元格">
+    <m-icon slot="right-icon" name="search" class="m-cell__right-icon" />
+  </m-cell>
+</m-cell-group>
 ```
 
 ### CellGroup API

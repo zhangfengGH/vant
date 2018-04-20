@@ -1,6 +1,6 @@
 @import './common/var.css';
 
-.van-row {
+.m-row {
   &:after {
     content: "";
     display: table;

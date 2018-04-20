@@ -1,12 +1,12 @@
 <template>
-  <div :class="['van-doc-content', `van-doc-content--${currentPage}`]">
+  <div :class="['m-doc-content', `m-doc-content--${currentPage}`]">
     <slot></slot>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'van-doc-content',
+  name: 'm-doc-content',
 
   computed: {
     currentPage() {
@@ -23,17 +23,17 @@ export default {
 <style lang="postcss">
 @import '../style/variable';
 
-.van-doc-content {
+.m-doc-content {
   flex: 1;
   position: relative;
   padding: 0 0 75px;
 
   a {
-    color: $van-doc-blue;
+    color: $m-doc-blue;
   }
 
   section {
-    padding: 10px $van-doc-padding;
+    padding: 10px $m-doc-padding;
     overflow: hidden;
 
     > h1,
@@ -77,14 +77,14 @@ export default {
 
     > h6 {
       font-size: 14px;
-      color: $van-doc-dark-grey;
+      color: $m-doc-dark-grey;
     }
 
     > p {
       margin: 15px 0;
       font-size: 14px;
       line-height: 20px;
-      color: $van-doc-dark-grey;
+      color: $m-doc-dark-grey;
     }
 
     > ul,
@@ -112,7 +112,7 @@ export default {
         margin-top: 8px;
         border-radius: 50%;
         box-sizing: border-box;
-        border: 1px solid $van-doc-dark-grey;
+        border: 1px solid $m-doc-dark-grey;
       }
 
       li {
@@ -141,14 +141,14 @@ export default {
     margin-bottom: 45px;
     background-color: #fff;
     border-collapse: collapse;
-    color: $van-doc-text-color;
+    color: $m-doc-text-color;
 
     th {
       padding: 8px 10px;
       text-align: left;
       font-weight: normal;
       background-color: #f5f7fa;
-      border: 1px solid $van-doc-border-color;
+      border: 1px solid $m-doc-border-color;
 
       &:first-child {
         padding-left: 10px;
@@ -157,7 +157,7 @@ export default {
 
     td {
       padding: 8px;
-      border: 1px solid $van-doc-border-color;
+      border: 1px solid $m-doc-border-color;
     }
 
     code {

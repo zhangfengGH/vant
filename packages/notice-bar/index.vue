@@ -1,18 +1,18 @@
 <template>
   <div
     v-show="showNoticeBar"
-    class="van-notice-bar"
-    :class="{ 'van-notice-bar--withicon': mode }"
+    class="m-notice-bar"
+    :class="{ 'm-notice-bar--withicon': mode }"
     :style="barStyle"
     @click="$emit('click')"
   >
-    <div class="van-notice-bar__left-icon" v-if="leftIcon">
+    <div class="m-notice-bar__left-icon" v-if="leftIcon">
       <img :src="leftIcon" >
     </div>
-    <div class="van-notice-bar__content-wrap" ref="contentWrap">
+    <div class="m-notice-bar__content-wrap" ref="contentWrap">
       <div
         ref="content"
-        class="van-notice-bar__content"
+        class="m-notice-bar__content"
         :class="animationClass"
         :style="contentStyle"
         @animationend="onAnimationEnd"
@@ -21,7 +21,7 @@
         <slot>{{ text }}</slot>
       </div>
     </div>
-    <icon class="van-notice-bar__right-icon" :name="iconName" v-if="iconName" @click="onClickIcon" />
+    <icon class="m-notice-bar__right-icon" :name="iconName" v-if="iconName" @click="onClickIcon" />
   </div>
 </template>
 
@@ -99,7 +99,7 @@ export default create({
       this.firstRound = false;
       this.$nextTick(() => {
         this.duration = (this.offsetWidth + this.wrapWidth) / this.speed;
-        this.animationClass = 'van-notice-bar__play--infinite';
+        this.animationClass = 'm-notice-bar__play--infinite';
       });
     },
     initAnimation() {
@@ -109,7 +109,7 @@ export default create({
         this.wrapWidth = wrapWidth;
         this.offsetWidth = offsetWidth;
         this.duration = offsetWidth / this.speed;
-        this.animationClass = 'van-notice-bar__play';
+        this.animationClass = 'm-notice-bar__play';
       }
     }
   }

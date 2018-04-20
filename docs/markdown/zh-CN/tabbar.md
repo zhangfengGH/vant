@@ -13,12 +13,12 @@ Vue.use(Tabbar).use(TabbarItem);
 
 
 ```html
-<van-tabbar v-model="active">
-  <van-tabbar-item icon="shop">标签</van-tabbar-item>
-  <van-tabbar-item icon="chat" dot>标签</van-tabbar-item>
-  <van-tabbar-item icon="records" info="5">标签</van-tabbar-item>
-  <van-tabbar-item icon="gold-coin" info="20">标签</van-tabbar-item>
-</van-tabbar>
+<m-tabbar v-model="active">
+  <m-tabbar-item icon="shop">标签</m-tabbar-item>
+  <m-tabbar-item icon="chat" dot>标签</m-tabbar-item>
+  <m-tabbar-item icon="records" info="5">标签</m-tabbar-item>
+  <m-tabbar-item icon="gold-coin" info="20">标签</m-tabbar-item>
+</m-tabbar>
 ```
 
 ```javascript
@@ -37,16 +37,16 @@ export default {
 
 
 ```html
-<van-tabbar v-model="active">
-  <van-tabbar-item icon="shop">
+<m-tabbar v-model="active">
+  <m-tabbar-item icon="shop">
     <span>自定义</span>
     <template slot="icon" slot-scope="props">
       <img :src="props.active ? icon.active : icon.normal" />
     </template>
-  </van-tabbar-item>
-  <van-tabbar-item icon="chat">标签</van-tabbar-item>
-  <van-tabbar-item icon="records">标签</van-tabbar-item>
-</van-tabbar>
+  </m-tabbar-item>
+  <m-tabbar-item icon="chat">标签</m-tabbar-item>
+  <m-tabbar-item icon="records">标签</m-tabbar-item>
+</m-tabbar>
 ```
 
 ```javascript

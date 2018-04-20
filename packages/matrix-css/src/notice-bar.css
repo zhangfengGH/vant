@@ -1,6 +1,6 @@
 @import './common/var.css';
 
-.van-notice-bar {
+.m-notice-bar {
   display: flex;
   color: $orange;
   padding: 9px 15px;
@@ -47,11 +47,11 @@
   }
 
   &__play {
-    animation: van-notice-bar-play linear both;
+    animation: m-notice-bar-play linear both;
   }
 
   &__play--infinite {
-    animation: van-notice-bar-play-infinite linear infinite both;
+    animation: m-notice-bar-play-infinite linear infinite both;
   }
 }
 
@@ -59,9 +59,9 @@
  * Declare two same keyframes
  * In case that some mobile browsers can continue animation when className changed
  */
-@keyframes van-notice-bar-play {
+@keyframes m-notice-bar-play {
   to { transform: translate3d(-100%, 0, 0) }
 }
-@keyframes van-notice-bar-play-infinite {
+@keyframes m-notice-bar-play-infinite {
   to { transform: translate3d(-100%, 0, 0) }
 }

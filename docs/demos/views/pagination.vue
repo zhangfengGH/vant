@@ -1,7 +1,7 @@
 <template>
   <demo-section>
     <demo-block :title="$t('basicUsage')">
-      <van-pagination
+      <m-pagination
         v-model="currentPage1"
         :total-items="24"
         :items-per-page="5"
@@ -11,7 +11,7 @@
     </demo-block>
 
     <demo-block :title="$t('title2')">
-      <van-pagination
+      <m-pagination
         v-model="currentPage2"
         :page-count="12"
         :previous-text= "$t('prevText')"
@@ -22,7 +22,7 @@
     </demo-block>
 
     <demo-block :title="$t('title3')">
-      <van-pagination
+      <m-pagination
         force-ellipses
         v-model="currentPage3"
         :total-items="125"
@@ -63,16 +63,16 @@ export default {
 
 <style lang="postcss">
 .demo-pagination {
-  .van-pagination {
+  .m-pagination {
     margin: 5px 0;
     width: 100%;
   }
 
-  .van-doc-demo-block {
+  .m-doc-demo-block {
     padding: 0 15px;
   }
 
-  .van-doc-demo-block__title {
+  .m-doc-demo-block__title {
     padding-left: 0;
   }
 }

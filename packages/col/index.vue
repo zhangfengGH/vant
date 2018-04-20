@@ -1,7 +1,7 @@
 <template>
   <div
-    class="van-col"
-    :class="{ [`van-col-${span}`]: span, [`van-col-offset-${offset}`]: offset}"
+    class="m-col"
+    :class="{ [`m-col-${span}`]: span, [`m-col-offset-${offset}`]: offset}"
     :style="style"
   >
     <slot />

@@ -12,25 +12,25 @@ Vue.use(CellSwipe);
 #### 基础用法
 
 ```html
-<van-cell-swipe :right-width="65" :left-width="65">
+<m-cell-swipe :right-width="65" :left-width="65">
   <span slot="left">选择</span>
-  <van-cell-group>
-    <van-cell title="单元格" value="内容" />
-  </van-cell-group>
+  <m-cell-group>
+    <m-cell title="单元格" value="内容" />
+  </m-cell-group>
   <span slot="right">删除</span>
-</van-cell-swipe>
+</m-cell-swipe>
 ```
 
 #### 异步关闭
 
 ```html
-<van-cell-swipe :right-width="65" :left-width="65" :on-close="onClose">
+<m-cell-swipe :right-width="65" :left-width="65" :on-close="onClose">
   <span slot="left">选择</span>
-  <van-cell-group>
-    <van-cell title="单元格" value="内容" />
-  </van-cell-group>
+  <m-cell-group>
+    <m-cell title="单元格" value="内容" />
+  </m-cell-group>
   <span slot="right">删除</span>
-</van-cell-swipe>
+</m-cell-swipe>
 ```
 
 ```js

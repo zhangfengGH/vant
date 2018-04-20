@@ -33,7 +33,7 @@ describe('Picker', () => {
       }
     });
 
-    expect(wrapper.hasClass('van-picker')).to.be.true;
+    expect(wrapper.hasClass('m-picker')).to.be.true;
 
     expect(wrapper.vm.getColumnValues(0).length).to.equal(2);
     expect(wrapper.vm.getValues().length).to.equal(2);
@@ -84,7 +84,7 @@ describe('Picker', () => {
       }
     });
 
-    expect(wrapper.hasClass('van-picker')).to.be.true;
+    expect(wrapper.hasClass('m-picker')).to.be.true;
     expect(wrapper.vm.currentColumns.length).to.equal(0);
   });
 
@@ -121,12 +121,12 @@ describe('Picker', () => {
       }
     });
 
-    expect(wrapper.hasClass('van-picker')).to.be.true;
-    expect(wrapper.contains('.van-picker__toolbar')).to.be.true;
+    expect(wrapper.hasClass('m-picker')).to.be.true;
+    expect(wrapper.contains('.m-picker__toolbar')).to.be.true;
     expect(wrapper.vm.currentColumns.length).to.equal(0);
 
     const eventStub = sinon.stub(wrapper.vm, '$emit');
-    const cancelBtn = wrapper.find('.van-picker__cancel')[0];
+    const cancelBtn = wrapper.find('.m-picker__cancel')[0];
     cancelBtn.trigger('click');
 
     wrapper.vm.$nextTick(() => {
@@ -143,11 +143,11 @@ describe('Picker', () => {
       }
     });
 
-    expect(wrapper.hasClass('van-picker')).to.be.true;
-    expect(wrapper.contains('.van-picker__toolbar')).to.be.true;
+    expect(wrapper.hasClass('m-picker')).to.be.true;
+    expect(wrapper.contains('.m-picker__toolbar')).to.be.true;
 
     const eventStub = sinon.stub(wrapper.vm, '$emit');
-    const cancelBtn = wrapper.find('.van-picker__confirm')[0];
+    const cancelBtn = wrapper.find('.m-picker__confirm')[0];
     cancelBtn.trigger('click');
 
     wrapper.vm.$nextTick(() => {
@@ -166,7 +166,7 @@ describe('Picker', () => {
     });
 
     const eventStub = sinon.stub(wrapper.vm, '$emit');
-    const cancelBtn = wrapper.find('.van-picker__confirm')[0];
+    const cancelBtn = wrapper.find('.m-picker__confirm')[0];
     cancelBtn.trigger('click');
 
     wrapper.vm.$nextTick(() => {
@@ -186,7 +186,7 @@ describe('PickerColumn', () => {
   it('create a picker-column', () => {
     wrapper = mount(PickerColumn);
 
-    expect(wrapper.hasClass('van-picker-column')).to.be.true;
+    expect(wrapper.hasClass('m-picker-column')).to.be.true;
     expect(wrapper.vm.options.length).to.equal(0);
   });
 
@@ -260,7 +260,7 @@ describe('PickerColumn', () => {
       }
     });
 
-    expect(wrapper.find('.van-picker-column--disabled').length).to.equal(1);
+    expect(wrapper.find('.m-picker-column--disabled').length).to.equal(1);
     expect(wrapper.vm.currentIndex).to.equal(undefined);
   });
 
@@ -273,7 +273,7 @@ describe('PickerColumn', () => {
     });
     expect(wrapper.vm.currentIndex).to.equal(0);
 
-    const column = wrapper.find('.van-picker-column')[0];
+    const column = wrapper.find('.m-picker-column')[0];
     dragHelper(column, 0, 0);
     expect(wrapper.vm.currentIndex).to.equal(0);
 

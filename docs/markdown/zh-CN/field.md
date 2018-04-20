@@ -15,17 +15,17 @@ Vue.use(Field);
 通过 v-model 绑定输入框的值
 
 ```html
-<van-cell-group>
-  <van-field v-model="value" placeholder="请输入用户名" />
-</van-cell-group>
+<m-cell-group>
+  <m-field v-model="value" placeholder="请输入用户名" />
+</m-cell-group>
 ```
 
 #### 自定义类型
 根据`type`属性定义不同类型的输入框
 
 ```html
-<van-cell-group>
-  <van-field
+<m-cell-group>
+  <m-field
     v-model="username"
     label="用户名"
     icon="clear"
@@ -34,54 +34,54 @@ Vue.use(Field);
     @click-icon="username = ''"
   />
 
-  <van-field
+  <m-field
     v-model="password"
     type="password"
     label="密码"
     placeholder="请输入密码"
     required
   />
-</van-cell-group>
+</m-cell-group>
 ```
 
 #### 禁用输入框
 
 ```html
-<van-cell-group>
-  <van-field
+<m-cell-group>
+  <m-field
     value="输入框已禁用"
     label="用户名"
     disabled
   />
-</van-cell-group>
+</m-cell-group>
 ```
 
 #### 错误提示
 通过`error`或者`error-message`属性增加对应的错误提示
 
 ```html
-<van-cell-group>
-  <van-field
+<m-cell-group>
+  <m-field
     v-model="username"
     label="用户名"
     placeholder="请输入用户名"
     error
   />
-  <van-field
+  <m-field
     v-model="phone"
     label="手机号"
     placeholder="请输入手机号"
     error-message="手机号格式错误"
   />
-</van-cell-group>
+</m-cell-group>
 ```
 
 #### 高度自适应
 对于 textarea，可以通过`autosize`属性设置高度自适应
 
 ```html
-<van-cell-group>
-  <van-field
+<m-cell-group>
+  <m-field
     v-model="message"
     label="留言"
     type="textarea"
@@ -89,15 +89,15 @@ Vue.use(Field);
     rows="1"
     autosize
   />
-</van-cell-group>
+</m-cell-group>
 ```
 
 #### 插入按钮
 通过 button slot 可以在输入框尾部插入按钮
 
 ```html
-<van-cell-group>
-  <van-field
+<m-cell-group>
+  <m-field
     center
     v-model="sms"
     label="短信验证码"
@@ -105,9 +105,9 @@ Vue.use(Field);
     icon="clear"
     @click-icon="sms = ''"
   >
-    <van-button slot="button" size="small" type="primary">发送验证码</van-button>
-  </van-field>
-</van-cell-group>
+    <m-button slot="button" size="small" type="primary">发送验证码</m-button>
+  </m-field>
+</m-cell-group>
 ```
 
 ### API

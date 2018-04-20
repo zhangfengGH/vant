@@ -1,6 +1,6 @@
 @import './common/var.css';
 
-.van-search {
+.m-search {
   display: flex;
   align-items: center;
   box-sizing: border-box;
@@ -58,7 +58,7 @@
     }
   }
 
-  .van-icon-search {
+  .m-icon-search {
     color: $gray-darker;
     position: absolute;
     top: 50%;
@@ -67,7 +67,7 @@
     font-size: 16px;
   }
 
-  .van-icon-clear {
+  .m-icon-clear {
     font-size: 14px;
     position: absolute;
     right: 0;

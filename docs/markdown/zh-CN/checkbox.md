@@ -13,7 +13,7 @@ Vue.use(Checkbox).use(CheckboxGroup);
 通过`v-model`绑定 checkbox 的勾选状态
 
 ```html
-<van-checkbox v-model="checked">复选框 1</van-checkbox>
+<m-checkbox v-model="checked">复选框 1</m-checkbox>
 ```
 
 ```javascript
@@ -29,27 +29,27 @@ export default {
 #### 禁用状态
 
 ```html
-<van-checkbox v-model="checked" disabled>复选框 2</van-checkbox>
+<m-checkbox v-model="checked" disabled>复选框 2</m-checkbox>
 ```
 #### 禁用内容部分点击事件
 
 ```html
-<van-checkbox v-model="checked" label-disabled>复选框 3</van-checkbox>
+<m-checkbox v-model="checked" label-disabled>复选框 3</m-checkbox>
 ```
 #### Checkbox 组
 
-需要与`van-checkbox-group`一起使用，选中值是一个数组，通过`v-model`绑定在`van-checkbox-group`上，数组中的项即为选中的`Checkbox`的`name`属性设置的值
+需要与`m-checkbox-group`一起使用，选中值是一个数组，通过`v-model`绑定在`m-checkbox-group`上，数组中的项即为选中的`Checkbox`的`name`属性设置的值
 
 ```html
-<van-checkbox-group v-model="result">
-  <van-checkbox
+<m-checkbox-group v-model="result">
+  <m-checkbox
     v-for="(item, index) in list"
     :key="item"
     :name="item"
   >
     复选框 {{ item }}
-  </van-checkbox>
-</van-checkbox-group>
+  </m-checkbox>
+</m-checkbox-group>
 ```
 
 ```javascript
@@ -66,15 +66,15 @@ export default {
 #### 设置最大可选数
 
 ```html
-<van-checkbox-group v-model="result" :max="2">
-  <van-checkbox
+<m-checkbox-group v-model="result" :max="2">
+  <m-checkbox
     v-for="(item, index) in list"
     :key="item"
     :name="item"
   >
     复选框 {{ item }}
-  </van-checkbox>
-</van-checkbox-group>
+  </m-checkbox>
+</m-checkbox-group>
 ```
 
 #### 与 Cell 组件一起使用
@@ -82,13 +82,13 @@ export default {
 此时你需要再引入`Cell`和`CellGroup`组件
 
 ```html
-<van-checkbox-group v-model="result">
-  <van-cell-group>
-    <van-cell v-for="(item, index) in list" :key="item">
-      <van-checkbox :name="item">复选框 {{ item }}</van-checkbox>
-    </van-cell>
-  </van-cell-group>
-</van-checkbox-group>
+<m-checkbox-group v-model="result">
+  <m-cell-group>
+    <m-cell v-for="(item, index) in list" :key="item">
+      <m-checkbox :name="item">复选框 {{ item }}</m-checkbox>
+    </m-cell>
+  </m-cell-group>
+</m-checkbox-group>
 ```
 
 ### Checkbox API

@@ -1,6 +1,6 @@
 @import './common/var.css';
 
-.van-tree-select {
+.m-tree-select {
   user-select: none;
   position: relative;
 

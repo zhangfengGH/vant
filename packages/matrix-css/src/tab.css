@@ -1,9 +1,9 @@
 @import './common/var.css';
 
-$van-tabs-line-height: 44px;
-$van-tabs-card-height: 30px;
+$m-tabs-line-height: 44px;
+$m-tabs-card-height: 30px;
 
-.van-tabs {
+.m-tabs {
   position: relative;
 
   &__wrap {
@@ -40,19 +40,19 @@ $van-tabs-card-height: 30px;
       margin: 0 15px;
       border-radius: 2px;
       box-sizing: border-box;
-      height: $van-tabs-card-height;
+      height: $m-tabs-card-height;
       border: 1px solid $gray-darker;
 
-      .van-tab {
+      .m-tab {
         color: $gray-darker;
         border-right: 1px solid $gray-darker;
-        line-height: calc($van-tabs-card-height - 2px);
+        line-height: calc($m-tabs-card-height - 2px);
 
         &:last-child {
           border-right: none;
         }
 
-        &.van-tab--active {
+        &.m-tab--active {
           color: $white;
           background-color: $gray-darker;
         }
@@ -70,11 +70,11 @@ $van-tabs-card-height: 30px;
   }
 
   &--scrollable {
-    .van-tab {
+    .m-tab {
       flex: 0 0 22%;
     }
 
-    .van-tabs__nav {
+    .m-tabs__nav {
       overflow: hidden;
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
@@ -86,30 +86,30 @@ $van-tabs-card-height: 30px;
   }
 
   &--line {
-    padding-top: $van-tabs-line-height;
+    padding-top: $m-tabs-line-height;
 
-    .van-tabs__wrap {
-      height: $van-tabs-line-height;
+    .m-tabs__wrap {
+      height: $m-tabs-line-height;
     }
   }
 
   &--card {
-    padding-top: $van-tabs-card-height;
+    padding-top: $m-tabs-card-height;
 
-    .van-tabs__wrap {
-      height: $van-tabs-card-height;
+    .m-tabs__wrap {
+      height: $m-tabs-card-height;
     }
   }
 }
 
-.van-tab {
+.m-tab {
   flex: 1;
   cursor: pointer;
   padding: 0 5px;
   font-size: 14px;
   position: relative;
   color: $text-color;
-  line-height: $van-tabs-line-height;
+  line-height: $m-tabs-line-height;
   text-align: center;
   box-sizing: border-box;
   background-color: $white;

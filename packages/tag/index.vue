@@ -1,10 +1,10 @@
 <template>
   <span
-    class="van-tag van-hairline--surround"
+    class="m-tag m-hairline--surround"
     :class="{
-      [`van-tag--${type}`]: type,
-      'van-tag--plain': plain,
-      'van-tag--mark': mark
+      [`m-tag--${type}`]: type,
+      'm-tag--plain': plain,
+      'm-tag--mark': mark
     }"
   >
     <slot />

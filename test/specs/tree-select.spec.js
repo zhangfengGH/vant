@@ -25,7 +25,7 @@ describe('TreeSelect', () => {
         maxHeight: 200
       }
     });
-    expect(wrapper.hasClass('van-tree-select')).to.be.true;
+    expect(wrapper.hasClass('m-tree-select')).to.be.true;
     expect(wrapper.hasStyle('height', '44px')).to.be.true;
     expect(wrapper.vm.maxHeight).to.equal(200);
   });
@@ -58,10 +58,10 @@ describe('TreeSelect', () => {
     wrapper.vm.$on('itemclick', item => {
       wrapper.vm.activeId = item.id;
     });
-    const secondNav = wrapper.find('.van-tree-select__nitem')[1];
+    const secondNav = wrapper.find('.m-tree-select__nitem')[1];
     secondNav.trigger('click');
     expect(wrapper.vm.mainActiveIndex).to.equal(1);
-    const target = wrapper.find('.van-tree-select__item')[0];
+    const target = wrapper.find('.m-tree-select__item')[0];
     target.trigger('click');
     expect(wrapper.vm.activeId).to.equal(345);
   });

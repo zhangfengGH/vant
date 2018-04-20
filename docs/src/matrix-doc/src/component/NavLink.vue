@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'van-doc-nav-link',
+  name: 'm-doc-nav-link',
   props: ['base', 'item'],
 
   computed: {

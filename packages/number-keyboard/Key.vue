@@ -5,7 +5,7 @@
     @touchmove="onBlur"
     @touchend="onBlur"
     @touchcancel="onBlur"
-    class="van-hairline van-key"
+    class="m-hairline m-key"
     :class="className"
   />
 </template>
@@ -31,7 +31,7 @@ export default {
       const types = this.type.slice(0);
       this.active && types.push('active');
 
-      return types.map(type => `van-key--${type}`);
+      return types.map(type => `m-key--${type}`);
     }
   },
 

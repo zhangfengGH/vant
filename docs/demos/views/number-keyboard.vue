@@ -1,11 +1,11 @@
 <template>
   <demo-section>
     <demo-block :title="$t('default')">
-      <van-button @touchstart.native.stop="keyboard = 'default'">
+      <m-button @touchstart.native.stop="keyboard = 'default'">
         {{ $t('button1') }}
-      </van-button>
+      </m-button>
 
-      <van-number-keyboard
+      <m-number-keyboard
         :show="keyboard === 'default'"
         :close-button-text="$t('close')"
         extra-key="."
@@ -16,11 +16,11 @@
     </demo-block>
 
     <demo-block :title="$t('custom')">
-      <van-button @touchstart.native.stop="keyboard = 'custom'">
+      <m-button @touchstart.native.stop="keyboard = 'custom'">
         {{ $t('button2') }}
-      </van-button>
+      </m-button>
 
-      <van-number-keyboard
+      <m-number-keyboard
         :show="keyboard === 'custom'"
         :close-button-text="$t('close')"
         theme="custom"
@@ -71,7 +71,7 @@ export default {
 
 <style lang="postcss">
 .demo-number-keyboard {
-  .van-button {
+  .m-button {
     margin-left: 15px;
   }
 }

@@ -14,7 +14,7 @@ Vue.use(Picker);
 #### 基础用法
 
 ```html
-<van-picker :columns="columns" @change="onChange" />
+<m-picker :columns="columns" @change="onChange" />
 ```
 
 ```javascript
@@ -36,7 +36,7 @@ export default {
 选项可以为对象结构，通过设置 disabled 来禁用该选项
 
 ```html
-<van-picker :columns="columns" />
+<m-picker :columns="columns" />
 ```
 
 ```javascript
@@ -56,7 +56,7 @@ export default {
 #### 展示顶部栏
 
 ```html
-<van-picker
+<m-picker
   show-toolbar
   :title="标题"
   :columns="columns"
@@ -86,7 +86,7 @@ export default {
 #### 多列联动
 
 ```html
-<van-picker :columns="columns" @change="onChange" />
+<m-picker :columns="columns" @change="onChange" />
 ```
 
 ```javascript
@@ -123,7 +123,7 @@ export default {
 当 Picker 数据是通过异步获取时，可以通过 `loading` 属性显示加载提示
 
 ```html
-<van-picker :columns="columns" loading />
+<m-picker :columns="columns" loading />
 ```
 
 ### API

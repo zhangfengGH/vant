@@ -1,26 +1,26 @@
 <template>
   <demo-section>
     <demo-block :title="$t('basicUsage')">
-      <van-radio-group v-model="radio1" class="demo-radio-group">
-        <van-radio name="1">{{ $t('radio') }} 1</van-radio>
-        <van-radio name="2">{{ $t('radio') }} 2</van-radio>
-      </van-radio-group>
+      <m-radio-group v-model="radio1" class="demo-radio-group">
+        <m-radio name="1">{{ $t('radio') }} 1</m-radio>
+        <m-radio name="2">{{ $t('radio') }} 2</m-radio>
+      </m-radio-group>
     </demo-block>
 
     <demo-block :title="$t('disabled')">
-      <van-radio-group v-model="radio2" class="demo-radio-group" disabled>
-        <van-radio name="1">{{ $t('radio') }} 1</van-radio>
-        <van-radio name="2">{{ $t('radio') }} 2</van-radio>
-      </van-radio-group>
+      <m-radio-group v-model="radio2" class="demo-radio-group" disabled>
+        <m-radio name="1">{{ $t('radio') }} 1</m-radio>
+        <m-radio name="2">{{ $t('radio') }} 2</m-radio>
+      </m-radio-group>
     </demo-block>
 
     <demo-block :title="$t('title3')">
-      <van-radio-group v-model="radio3">
-        <van-cell-group>
-          <van-cell><van-radio name="1">{{ $t('radio') }}1</van-radio></van-cell>
-          <van-cell><van-radio name="2">{{ $t('radio') }}2</van-radio></van-cell>
-        </van-cell-group>
-      </van-radio-group>
+      <m-radio-group v-model="radio3">
+        <m-cell-group>
+          <m-cell><m-radio name="1">{{ $t('radio') }}1</m-radio></m-cell>
+          <m-cell><m-radio name="2">{{ $t('radio') }}2</m-radio></m-cell>
+        </m-cell-group>
+      </m-radio-group>
     </demo-block>
   </demo-section>
 </template>
@@ -57,18 +57,18 @@ export default {
   &-group {
     padding: 0 17px;
 
-    .van-radio {
+    .m-radio {
       margin-bottom: 10px;
     }
   }
 
-  .van-cell {
-    .van-radio__input {
+  .m-cell {
+    .m-radio__input {
       float: right;
       position: static;
     }
 
-    .van-radio__label {
+    .m-radio__label {
       margin: 0;
     }
   }

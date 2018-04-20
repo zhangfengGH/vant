@@ -1,13 +1,13 @@
 <template>
-  <div class="van-step van-hairline" :class="[`van-step--${$parent.direction}`, { [`van-step--${status}`]: status }]">
-    <div class="van-step__circle-container">
-      <i class="van-step__circle" v-if="status !== 'process'" />
+  <div class="m-step m-hairline" :class="[`m-step--${$parent.direction}`, { [`m-step--${status}`]: status }]">
+    <div class="m-step__circle-container">
+      <i class="m-step__circle" v-if="status !== 'process'" />
       <icon v-else name="checked" :style="{ color: $parent.activeColor }" />
     </div>
-    <div class="van-step__title" :style="titleStyle">
+    <div class="m-step__title" :style="titleStyle">
       <slot />
     </div>
-    <div class="van-step__line" />
+    <div class="m-step__line" />
   </div>
 </template>
 

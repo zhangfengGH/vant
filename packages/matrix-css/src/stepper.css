@@ -1,12 +1,12 @@
 @import './common/var.css';
 
-.van-stepper {
+.m-stepper {
   font-size: 0;
 
   &--disabled {
-    .van-stepper__input,
-    .van-stepper__minus,
-    .van-stepper__plus {
+    .m-stepper__input,
+    .m-stepper__minus,
+    .m-stepper__plus {
       border-color: $active-color;
     }
   }

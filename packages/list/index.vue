@@ -1,10 +1,10 @@
 <template>
-  <div class="van-list">
+  <div class="m-list">
     <slot />
-    <div class="van-list__loading" v-show="loading">
+    <div class="m-list__loading" v-show="loading">
       <slot name="loading">
         <loading />
-        <span class="van-list__loading-text">{{ $t('loadingTip') }}</span>
+        <span class="m-list__loading-text">{{ $t('loadingTip') }}</span>
       </slot>
     </div>
   </div>

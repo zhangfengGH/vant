@@ -1,5 +1,5 @@
 <template>
-  <div class="van-tab__pane" :class="{ 'van-tab__pane--select': index === parent.curActive }">
+  <div class="m-tab__pane" :class="{ 'm-tab__pane--select': index === parent.curActive }">
     <slot />
   </div>
 </template>
@@ -25,7 +25,7 @@ export default create({
   },
 
   created() {
-    this.findParent('van-tabs');
+    this.findParent('m-tabs');
     this.parent.tabs.push(this);
   },
 

@@ -1,7 +1,7 @@
 <template>
   <demo-section>
     <demo-block :title="$t('title1')">
-      <van-datetime-picker
+      <m-datetime-picker
         v-model="currentDate1"
         type="datetime"
         :min-date="minDate"
@@ -10,7 +10,7 @@
     </demo-block>
 
     <demo-block :title="$t('title2')">
-      <van-datetime-picker
+      <m-datetime-picker
         v-model="currentDate2"
         type="date"
         :min-date="minDate"
@@ -18,7 +18,7 @@
     </demo-block>
 
     <demo-block :title="$t('title3')">
-      <van-datetime-picker
+      <m-datetime-picker
         v-model="currentDate3"
         type="year-month"
         :min-date="minDate"
@@ -26,7 +26,7 @@
     </demo-block>
 
     <demo-block :title="$t('title4')">
-      <van-datetime-picker
+      <m-datetime-picker
         v-model="currentDate4"
         type="time"
         :min-hour="minHour"

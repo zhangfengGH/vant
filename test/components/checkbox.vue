@@ -1,7 +1,7 @@
 <template>
-  <van-checkbox-group v-model="result" :max="max">
-    <van-checkbox v-for="(item, index) in list" :key="index" :name="item" :disabled="index === 2">复选框{{ item }}</van-checkbox>
-  </van-checkbox-group>
+  <m-checkbox-group v-model="result" :max="max">
+    <m-checkbox v-for="(item, index) in list" :key="index" :name="item" :disabled="index === 2">复选框{{ item }}</m-checkbox>
+  </m-checkbox-group>
 </template>
 
 <script>

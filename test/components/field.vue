@@ -1,7 +1,7 @@
 <template>
-  <van-field @click-icon="onIconClick" @blur="$emit('blur')">
+  <m-field @click-icon="onIconClick" @blur="$emit('blur')">
     <div slot="icon">icon</div>
-  </van-field>
+  </m-field>
 </template>
 
 <script>

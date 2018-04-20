@@ -1,14 +1,14 @@
 <template>
-  <div class="van-password-input">
-    <ul class="van-password-input__security van-hairline--surround" @touchstart.stop="$emit('focus')">
-      <li v-for="visibility in points" class="van-hairline">
+  <div class="m-password-input">
+    <ul class="m-password-input__security m-hairline--surround" @touchstart.stop="$emit('focus')">
+      <li v-for="visibility in points" class="m-hairline">
         <i :style="`visibility: ${visibility}`" />
       </li>
     </ul>
     <div
       v-if="errorInfo || info"
       v-text="errorInfo || info"
-      :class="errorInfo ? 'van-password-input__error-info' : 'van-password-input__info'"
+      :class="errorInfo ? 'm-password-input__error-info' : 'm-password-input__info'"
     />
   </div>
 </template>

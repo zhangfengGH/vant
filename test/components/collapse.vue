@@ -1,9 +1,9 @@
 <template>
-  <van-collapse v-model="active" :accordion="accordion">
-    <van-collapse-item title="a" name="first">content</van-collapse-item>
-    <van-collapse-item title="b">content</van-collapse-item>
-    <van-collapse-item title="c">content</van-collapse-item>
-  </van-collapse>
+  <m-collapse v-model="active" :accordion="accordion">
+    <m-collapse-item title="a" name="first">content</m-collapse-item>
+    <m-collapse-item title="b">content</m-collapse-item>
+    <m-collapse-item title="c">content</m-collapse-item>
+  </m-collapse>
 </template>
 
 <script>

@@ -17,9 +17,9 @@ describe('Dialog', () => {
     });
 
     setTimeout(() => {
-      expect(document.querySelector('.van-dialog')).to.exist;
-      expect(document.querySelector('.van-dialog__cancel').style.display).to.equal('none');
-      document.querySelector('.van-dialog__confirm').click();
+      expect(document.querySelector('.m-dialog')).to.exist;
+      expect(document.querySelector('.m-dialog__cancel').style.display).to.equal('none');
+      document.querySelector('.m-dialog__confirm').click();
     }, 300);
   });
 
@@ -32,10 +32,10 @@ describe('Dialog', () => {
       done();
     });
 
-    expect(document.querySelector('.van-dialog')).to.exist;
+    expect(document.querySelector('.m-dialog')).to.exist;
 
     setTimeout(() => {
-      document.querySelector('.van-dialog__cancel').click();
+      document.querySelector('.m-dialog__cancel').click();
     }, 300);
   });
 
@@ -48,7 +48,7 @@ describe('Dialog', () => {
     });
 
     setTimeout(() => {
-      document.querySelector('.van-dialog__cancel').click();
+      document.querySelector('.m-dialog__cancel').click();
     }, 300);
   });
 
@@ -63,7 +63,7 @@ describe('Dialog', () => {
 
   it('register component', () => {
     Vue.use(Dialog);
-    expect(!!Vue.component('van-dialog')).to.be.true;
+    expect(!!Vue.component('m-dialog')).to.be.true;
   });
 
   it('before close', (done) => {
@@ -72,7 +72,7 @@ describe('Dialog', () => {
         setTimeout(() => {
           dialogDone();
           setTimeout(() => {
-            expect(document.querySelector('.van-dialog').style.display).to.equal('none');
+            expect(document.querySelector('.m-dialog').style.display).to.equal('none');
             done();
           }, 300);
         });
@@ -80,8 +80,8 @@ describe('Dialog', () => {
     });
 
     setTimeout(() => {
-      document.querySelector('.van-dialog__confirm').click();
-      expect(document.querySelector('.van-dialog').style.display).to.equal('');
+      document.querySelector('.m-dialog__confirm').click();
+      expect(document.querySelector('.m-dialog').style.display).to.equal('');
     }, 300);
   });
 });

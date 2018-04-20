@@ -14,8 +14,8 @@ describe('Circle', () => {
       }
     });
 
-    expect(wrapper.hasClass('van-circle')).to.be.true;
-    expect(wrapper.find('.van-circle__text')[0].text()).to.equal('test');
+    expect(wrapper.hasClass('m-circle')).to.be.true;
+    expect(wrapper.find('.m-circle__text')[0].text()).to.equal('test');
   });
 
   it('circle rate', done => {

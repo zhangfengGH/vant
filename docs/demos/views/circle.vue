@@ -1,14 +1,14 @@
 <template>
   <demo-section>
     <demo-block :title="$t('basicUsage')">
-      <van-circle
+      <m-circle
         v-model="currentRate1"
         :rate="rate"
         :speed="100"
         size="120px"
         :text="currentRate1.toFixed(0) + '%'"
       />
-      <van-circle
+      <m-circle
         v-model="currentRate2"
         color="#13ce66"
         fill="#fff"
@@ -21,8 +21,8 @@
         :text="currentRate2.toFixed(0) + '%'"
       />
       <div>
-        <van-button :text="$t('add')" type="primary" size="small" @click="add" />
-        <van-button :text="$t('decrease')" type="danger" size="small" @click="reduce" />
+        <m-button :text="$t('add')" type="primary" size="small" @click="add" />
+        <m-button :text="$t('decrease')" type="danger" size="small" @click="reduce" />
       </div>
     </demo-block>
   </demo-section>
@@ -63,11 +63,11 @@ export default {
 
 <style lang="postcss">
 .demo-circle {
-  .van-circle {
+  .m-circle {
     margin-left: 15px;
   }
 
-  .van-button {
+  .m-button {
     margin: 15px 0 0 10px;
 
     &:first-of-type {

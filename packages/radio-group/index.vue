@@ -1,5 +1,5 @@
 <template>
-  <div class="van-radio-group">
+  <div class="m-radio-group">
     <slot />
   </div>
 </template>

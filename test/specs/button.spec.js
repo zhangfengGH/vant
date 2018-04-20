@@ -12,9 +12,9 @@ describe('Button', () => {
   it('create a simple button', () => {
     wrapper = mount(Button);
 
-    expect(wrapper.hasClass('van-button')).to.be.true;
-    expect(wrapper.hasClass('van-button--default')).to.be.true;
-    expect(wrapper.hasClass('van-button--normal')).to.be.true;
+    expect(wrapper.hasClass('m-button')).to.be.true;
+    expect(wrapper.hasClass('m-button--default')).to.be.true;
+    expect(wrapper.hasClass('m-button--normal')).to.be.true;
 
     const eventStub = sinon.stub(wrapper.vm, '$emit');
     wrapper.trigger('click');
@@ -30,8 +30,8 @@ describe('Button', () => {
       }
     });
 
-    expect(wrapper.hasClass('van-button')).to.be.true;
-    expect(wrapper.hasClass('van-button--primary')).to.be.true;
+    expect(wrapper.hasClass('m-button')).to.be.true;
+    expect(wrapper.hasClass('m-button--primary')).to.be.true;
   });
 
   it('create a danger button', () => {
@@ -41,8 +41,8 @@ describe('Button', () => {
       }
     });
 
-    expect(wrapper.hasClass('van-button')).to.be.true;
-    expect(wrapper.hasClass('van-button--danger')).to.be.true;
+    expect(wrapper.hasClass('m-button')).to.be.true;
+    expect(wrapper.hasClass('m-button--danger')).to.be.true;
   });
 
   it('create a large button', () => {
@@ -52,8 +52,8 @@ describe('Button', () => {
       }
     });
 
-    expect(wrapper.hasClass('van-button')).to.be.true;
-    expect(wrapper.hasClass('van-button--large')).to.be.true;
+    expect(wrapper.hasClass('m-button')).to.be.true;
+    expect(wrapper.hasClass('m-button--large')).to.be.true;
   });
 
   it('create a small button', () => {
@@ -63,8 +63,8 @@ describe('Button', () => {
       }
     });
 
-    expect(wrapper.hasClass('van-button')).to.be.true;
-    expect(wrapper.hasClass('van-button--small')).to.be.true;
+    expect(wrapper.hasClass('m-button')).to.be.true;
+    expect(wrapper.hasClass('m-button--small')).to.be.true;
   });
 
   it('create a mini button', () => {
@@ -74,8 +74,8 @@ describe('Button', () => {
       }
     });
 
-    expect(wrapper.hasClass('van-button')).to.be.true;
-    expect(wrapper.hasClass('van-button--mini')).to.be.true;
+    expect(wrapper.hasClass('m-button')).to.be.true;
+    expect(wrapper.hasClass('m-button--mini')).to.be.true;
   });
 
   it('create a block button', () => {
@@ -85,8 +85,8 @@ describe('Button', () => {
       }
     });
 
-    expect(wrapper.hasClass('van-button')).to.be.true;
-    expect(wrapper.hasClass('van-button--block')).to.be.true;
+    expect(wrapper.hasClass('m-button')).to.be.true;
+    expect(wrapper.hasClass('m-button--block')).to.be.true;
   });
 
   it('create a bottom action button', () => {
@@ -96,8 +96,8 @@ describe('Button', () => {
       }
     });
 
-    expect(wrapper.hasClass('van-button')).to.be.true;
-    expect(wrapper.hasClass('van-button--bottom-action')).to.be.true;
+    expect(wrapper.hasClass('m-button')).to.be.true;
+    expect(wrapper.hasClass('m-button--bottom-action')).to.be.true;
   });
 
   it('create a disabled button', () => {
@@ -107,8 +107,8 @@ describe('Button', () => {
       }
     });
 
-    expect(wrapper.hasClass('van-button')).to.be.true;
-    expect(wrapper.hasClass('van-button--disabled')).to.be.true;
+    expect(wrapper.hasClass('m-button')).to.be.true;
+    expect(wrapper.hasClass('m-button--disabled')).to.be.true;
 
     const eventStub = sinon.stub(wrapper.vm, '$emit');
     wrapper.trigger('click');
@@ -124,7 +124,7 @@ describe('Button', () => {
     });
     const loading = wrapper.find(VanLoading)[0];
 
-    expect(wrapper.hasClass('van-button')).to.be.true;
+    expect(wrapper.hasClass('m-button')).to.be.true;
     expect(loading.isVueComponent).to.be.true;
 
     const eventStub = sinon.stub(wrapper.vm, '$emit');
@@ -141,8 +141,8 @@ describe('Button', () => {
       }
     });
 
-    expect(wrapper.hasClass('van-button')).to.be.true;
-    expect(wrapper.hasClass('van-button--primary')).to.be.true;
+    expect(wrapper.hasClass('m-button')).to.be.true;
+    expect(wrapper.hasClass('m-button--primary')).to.be.true;
 
     const loading = wrapper.find(VanLoading)[0];
     expect(loading.isVueComponent).to.be.true;

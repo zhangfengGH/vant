@@ -22,7 +22,7 @@
                 {{ navItem.title }}
               </p>
             </router-link>
-            <van-icon name="arrow" />
+            <m-icon name="arrow" />
           </li>
         </template>
       </ul>
@@ -105,7 +105,7 @@ export default {
       }
     }
 
-    .van-icon-arrow {
+    .m-icon-arrow {
       position: absolute;
       font-size: 12px;
       line-height: 1;

@@ -1,18 +1,18 @@
 <template>
-  <div class="van-doc-nav" :style="style">
+  <div class="m-doc-nav" :style="style">
     <ul>
-      <li class="van-doc-nav__item" v-for="(item, index) in navConfig" :key="index">
-        <van-doc-nav-link :item="item" :base="base" />
+      <li class="m-doc-nav__item" v-for="(item, index) in navConfig" :key="index">
+        <m-doc-nav-link :item="item" :base="base" />
         <ul v-if="item.children">
           <li class="nav-item" v-for="(navItem, index) in item.children" :key="index">
-            <van-doc-nav-link :item="navItem" :base="base" />
+            <m-doc-nav-link :item="navItem" :base="base" />
           </li>
         </ul>
         <div v-if="item.groups" v-for="(group, index) in item.groups" :key="index">
-          <div class="van-doc-nav__group-title">{{ group.groupName }}</div>
+          <div class="m-doc-nav__group-title">{{ group.groupName }}</div>
           <ul>
-            <li :key="index" class="van-doc-nav__subitem" v-for="(navItem, index) in group.list" v-if="!navItem.disabled">
-              <van-doc-nav-link :item="navItem" :base="base" />              
+            <li :key="index" class="m-doc-nav__subitem" v-for="(navItem, index) in group.list" v-if="!navItem.disabled">
+              <m-doc-nav-link :item="navItem" :base="base" />              
             </li>
           </ul>
         </div>
@@ -25,7 +25,7 @@
 import NavLink from './NavLink.vue';
 
 export default {
-  name: 'van-doc-nav',
+  name: 'm-doc-nav',
 
   components: {
     [NavLink.name]: NavLink
@@ -72,7 +72,7 @@ export default {
 <style lang="postcss">
 @import '../style/variable';
 
-.van-doc-nav {
+.m-doc-nav {
   left: 0;
   top: 60px;
   bottom: 0;
@@ -88,9 +88,9 @@ export default {
     max-width: 220px;
   }
 
-  @media (min-width: $van-doc-row-max-width) {
+  @media (min-width: $m-doc-row-max-width) {
     left: 50%;
-    margin-left: calc(-$van-doc-row-max-width/2);
+    margin-left: calc(-$m-doc-row-max-width/2);
   }
 
   &::-webkit-scrollbar {
@@ -115,12 +115,12 @@ export default {
       display: block;
       color: #455a64;
       font-size: 16px;
-      padding: 10px calc($van-doc-padding/2) 10px $van-doc-padding;
+      padding: 10px calc($m-doc-padding/2) 10px $m-doc-padding;
       line-height: 24px;
       transition: all .3s;
 
       &.active {
-        color: $van-doc-blue;
+        color: $m-doc-blue;
         background-color: #f5f7fa;
       }
     }
@@ -137,7 +137,7 @@ export default {
       font-size: 14px;
 
       &:hover {
-        color: $van-doc-blue;
+        color: $m-doc-blue;
         background-color: #f5f7fa;
       }
     }
@@ -151,8 +151,8 @@ export default {
   &__group-title {
     font-size: 12px;
     line-height: 40px;
-    padding-left: $van-doc-padding;
-    color: $van-doc-text-light-blue;
+    padding-left: $m-doc-padding;
+    color: $m-doc-text-light-blue;
   }
 
   @media (max-width: 1300px) {

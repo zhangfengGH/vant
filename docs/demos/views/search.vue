@@ -1,12 +1,12 @@
 <template>
   <demo-section>
     <demo-block :title="$t('basicUsage')">
-      <van-search :placeholder="$t('placeholder')" v-model="value" />
+      <m-search :placeholder="$t('placeholder')" v-model="value" />
     </demo-block>
 
     <demo-block :title="$t('title2')">
       <form action="/">
-        <van-search
+        <m-search
           v-model="value"
           :placeholder="$t('placeholder')"
           show-action
@@ -17,13 +17,13 @@
     </demo-block>
 
     <demo-block :title="$t('title3')">
-      <van-search
+      <m-search
         v-model="value"
         show-action
         @search="onSearch"
       >
         <div slot="action" @click="onSearch">{{ $t('search') }}</div>
-      </van-search>
+      </m-search>
     </demo-block>
   </demo-section>
 </template>
@@ -62,7 +62,7 @@ export default {
 
 <style lang="postcss">
 .demo-search {
-  .van-search__action div {
+  .m-search__action div {
     padding: 0 10px;
   }
 }

@@ -14,14 +14,14 @@ Vue.use(PasswordInput).use(NumberKeyboard);
 
 ```html
 <!-- 密码输入框 -->
-<van-password-input
+<m-password-input
   :value="value"
   info="密码为 6 位数字"
   @focus="showKeyboard = true"
 />
 
 <!-- 数字键盘 -->
-<van-number-keyboard
+<m-number-keyboard
   :show="showKeyboard"
   @input="onInput"
   @delete="onDelete"

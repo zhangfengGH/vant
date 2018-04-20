@@ -1,6 +1,6 @@
 @import './common/var.css';
 
-.van-pull-refresh {
+.m-pull-refresh {
   user-select: none;
   overflow: hidden;
 
@@ -22,14 +22,14 @@
   }
 
   &__loading {
-    .van-loading {
+    .m-loading {
       width: 16px;
       height: 16px;
       margin-right: 5px;
     }
 
     span,
-    .van-loading {
+    .m-loading {
       vertical-align: middle;
       display: inline-block;
     }

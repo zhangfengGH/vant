@@ -12,11 +12,11 @@ Vue.use(NumberKeyboard);
 #### 默认样式
 
 ```html
-<van-button @touchstart.native.stop="show = true">
+<m-button @touchstart.native.stop="show = true">
   弹出默认键盘
-</van-button>
+</m-button>
 
-<van-number-keyboard
+<m-number-keyboard
   :show="show"
   extra-key="."
   close-button-text="完成"
@@ -48,7 +48,7 @@ export default {
 #### 自定义样式
 
 ```html
-<van-number-keyboard
+<m-number-keyboard
   :show="show"
   theme="custom"
   extra-key="."

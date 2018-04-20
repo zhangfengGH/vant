@@ -18,15 +18,15 @@ describe('Pagination', () => {
         value: 2
       }
     });
-    expect(wrapper.hasClass('van-pagination')).to.be.true;
-    expect(wrapper.find('.van-pagination__item').length).to.equal(7);
+    expect(wrapper.hasClass('m-pagination')).to.be.true;
+    expect(wrapper.find('.m-pagination__item').length).to.equal(7);
     expect(
-      wrapper.find('.van-pagination__item')[0].hasClass('van-pagination__prev')
+      wrapper.find('.m-pagination__item')[0].hasClass('m-pagination__prev')
     ).to.be.true;
     expect(wrapper.vm.value).to.equal(2);
 
     const eventStub = sinon.stub(wrapper.vm, '$emit');
-    wrapper.find('.van-pagination__next')[0].trigger('click');
+    wrapper.find('.m-pagination__next')[0].trigger('click');
     Vue.nextTick(() => {
       expect(eventStub.calledWith('input'));
       expect(eventStub.calledWith('change'));
@@ -37,8 +37,8 @@ describe('Pagination', () => {
       Vue.nextTick(() => {
         expect(
           wrapper
-            .find('.van-pagination__next')[0]
-            .hasClass('van-pagination--disabled')
+            .find('.m-pagination__next')[0]
+            .hasClass('m-pagination--disabled')
         ).to.be.true;
         done();
       });
@@ -57,18 +57,18 @@ describe('Pagination', () => {
       }
     });
 
-    const ellipsesLink = wrapper.find('.van-pagination__page')[5];
+    const ellipsesLink = wrapper.find('.m-pagination__page')[5];
     expect(ellipsesLink.text().trim()).to.equal('...');
 
     wrapper.vm.value = 7;
     wrapper.update();
     Vue.nextTick(() => {
-      const ellipsesLink = wrapper.find('.van-pagination__page')[0];
+      const ellipsesLink = wrapper.find('.m-pagination__page')[0];
       expect(ellipsesLink.text().trim()).to.equal('...');
 
       wrapper.vm.value = 12;
       Vue.nextTick(() => {
-        const pages = wrapper.find('.van-pagination__page');
+        const pages = wrapper.find('.m-pagination__page');
         const ellipsesLink = pages[pages.length - 1];
         expect(ellipsesLink.text().trim()).to.equal('12');
         done();
@@ -85,10 +85,10 @@ describe('Pagination', () => {
         value: 1
       }
     });
-    expect(wrapper.hasClass('van-pagination')).to.be.true;
-    expect(wrapper.find('.van-pagination__item').length).to.equal(2);
+    expect(wrapper.hasClass('m-pagination')).to.be.true;
+    expect(wrapper.find('.m-pagination__item').length).to.equal(2);
     expect(
-      wrapper.find('.van-pagination__item')[0].hasClass('van-pagination__prev')
+      wrapper.find('.m-pagination__item')[0].hasClass('m-pagination__prev')
     ).to.be.true;
   });
 
@@ -105,13 +105,13 @@ describe('Pagination', () => {
       }
     });
 
-    expect(wrapper.find('.van-pagination__prev')[0].text().trim()).to.equal('上一页');
-    expect(wrapper.find('.van-pagination__next')[0].text().trim()).to.equal('下一页');
+    expect(wrapper.find('.m-pagination__prev')[0].text().trim()).to.equal('上一页');
+    expect(wrapper.find('.m-pagination__next')[0].text().trim()).to.equal('下一页');
 
     wrapper.vm.value = { currentPage: 18 };
     wrapper.update();
     Vue.nextTick(() => {
-      expect(wrapper.find('.van-pagination__page').length).to.equal(0);
+      expect(wrapper.find('.m-pagination__page').length).to.equal(0);
       done();
     });
   });
@@ -128,7 +128,7 @@ describe('Pagination', () => {
       }
     });
 
-    const ellipsesLink = wrapper.find('.van-pagination__page')[11];
+    const ellipsesLink = wrapper.find('.m-pagination__page')[11];
     expect(ellipsesLink.text().trim()).to.equal('12');
   });
 });

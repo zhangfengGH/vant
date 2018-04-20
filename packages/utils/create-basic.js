@@ -9,7 +9,7 @@ const install = function(Vue) {
 };
 
 export default function(sfc) {
-  sfc.name = 'van-' + sfc.name;
+  sfc.name = 'm-' + sfc.name;
   sfc.install = sfc.install || install;
   sfc.mixins = sfc.mixins || [];
   sfc.mixins.push(i18n);

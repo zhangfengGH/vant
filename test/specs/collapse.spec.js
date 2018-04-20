@@ -10,11 +10,11 @@ describe('Circle', () => {
   it('basic mode', () => {
     wrapper = mount(Collapse);
 
-    const firstTitle = wrapper.find('.van-collapse-item__title')[0];
+    const firstTitle = wrapper.find('.m-collapse-item__title')[0];
     firstTitle.trigger('click');
     expect(wrapper.vm.active).to.eql(['first']);
 
-    const secondTitle = wrapper.find('.van-collapse-item__title')[1];
+    const secondTitle = wrapper.find('.m-collapse-item__title')[1];
     secondTitle.trigger('click');
     expect(wrapper.vm.active).to.eql(['first', 1]);
 
@@ -29,11 +29,11 @@ describe('Circle', () => {
       }
     });
 
-    const firstTitle = wrapper.find('.van-collapse-item__title')[0];
+    const firstTitle = wrapper.find('.m-collapse-item__title')[0];
     firstTitle.trigger('click');
     expect(wrapper.vm.active).to.eql('first');
 
-    const secondTitle = wrapper.find('.van-collapse-item__title')[1];
+    const secondTitle = wrapper.find('.m-collapse-item__title')[1];
     secondTitle.trigger('click');
     expect(wrapper.vm.active).to.eql(1);
 

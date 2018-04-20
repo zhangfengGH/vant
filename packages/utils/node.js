@@ -2,7 +2,7 @@
  * VNode helper
  */
 export default {
-  name: 'van-node',
+  name: 'm-node',
   functional: true,
   props: {
     node: Array

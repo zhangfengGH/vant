@@ -1,19 +1,19 @@
 <template>
   <demo-section>
     <demo-block :title="$t('basicUsage')">
-      <van-switch v-model="checked" />
+      <m-switch v-model="checked" />
     </demo-block>
 
     <demo-block :title="$t('disabled')">
-      <van-switch v-model="checked" disabled />
+      <m-switch v-model="checked" disabled />
     </demo-block>
 
     <demo-block :title="$t('loading')">
-      <van-switch v-model="checked" loading />
+      <m-switch v-model="checked" loading />
     </demo-block>
 
     <demo-block :title="$t('advancedUsage')">
-      <van-switch :value="checked2" size="36px" @input="onInput" />
+      <m-switch :value="checked2" size="36px" @input="onInput" />
     </demo-block>
   </demo-section>
 </template>
@@ -53,7 +53,7 @@ export default {
 
 <style lang="postcss">
 .demo-switch {
-  .van-switch {
+  .m-switch {
     margin: 0 15px;
   }
 }

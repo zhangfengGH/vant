@@ -880,7 +880,7 @@
 
 **Breaking changes**
 
-* 内置 van-hairline 类，用于添加 0.5px 边框 [\#110](https://github.com/youzan/matrix/pull/110) [@chenjiahan](https://github.com/chenjiahan)
+* 内置 m-hairline 类，用于添加 0.5px 边框 [\#110](https://github.com/youzan/matrix/pull/110) [@chenjiahan](https://github.com/chenjiahan)
 * Quantity：重命名为 Stepper [\#120](https://github.com/youzan/matrix/pull/120) [@chenjiahan](https://github.com/chenjiahan)
 * PayOrder 重命名为 SubmitBar [\#120](https://github.com/youzan/matrix/pull/120) [@chenjiahan](https://github.com/chenjiahan)
 * DeepSelect: 重命名为 TreeSelect [\#120](https://github.com/youzan/matrix/pull/120) [@chenjiahan](https://github.com/chenjiahan)

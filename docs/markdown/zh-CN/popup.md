@@ -13,7 +13,7 @@ Vue.use(Popup);
 `popup`默认从中间弹出
 
 ```html
-<van-popup v-model="show">内容</van-popup>
+<m-popup v-model="show">内容</m-popup>
 ```
 
 ```javascript
@@ -30,9 +30,9 @@ export default {
 通过`position`属性设置 Popup 弹出位置
 
 ```html
-<van-popup v-model="show" position="top" :overlay="false">
+<m-popup v-model="show" position="top" :overlay="false">
   内容
-</van-popup>
+</m-popup>
 ```
 
 ### API

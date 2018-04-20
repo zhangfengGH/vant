@@ -18,15 +18,15 @@ const renderVueTemplate = function(html, componentTitle) {
   const output = {
     style: $.html('style'),
     script: $.html('script'),
-    demo: $.html('van-doc-demo-block')
+    demo: $.html('m-doc-demo-block')
   };
 
   const componentName = decamelize(componentTitle.split(' ')[0], '-');
   return `
     <template>
-      <van-doc-demo-section class="demo-${componentName}" title="${componentTitle}">
+      <m-doc-demo-section class="demo-${componentName}" title="${componentTitle}">
         ${output.demo}
-      </van-doc-demo-section>
+      </m-doc-demo-section>
     </template>
     ${output.style}
     ${output.script}
@@ -51,7 +51,7 @@ parser.use(markdownItContainer, 'demo', {
       const description = (m && m.length > 1) ? m[1] : '';
       const content = tokens[idx + 1].content;
       const html = convert(stripTags(content, ['script', 'style']));
-      return `<van-doc-demo-block title="${description}">${html}</van-doc-demo-block>\n`;
+      return `<m-doc-demo-block title="${description}">${html}</m-doc-demo-block>\n`;
     }
     return '';
   }

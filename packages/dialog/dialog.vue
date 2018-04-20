@@ -1,32 +1,32 @@
 <template>
-  <transition name="van-dialog-bounce">
-    <div class="van-dialog" v-show="value">
-      <div class="van-dialog__header" v-if="title" v-text="title" />
-      <div class="van-dialog__content van-hairline">
+  <transition name="m-dialog-bounce">
+    <div class="m-dialog" v-show="value">
+      <div class="m-dialog__header" v-if="title" v-text="title" />
+      <div class="m-dialog__content m-hairline">
         <slot>
-          <div class="van-dialog__message" v-if="message" :class="{ 'van-dialog__message--withtitle': title }" v-html="message" />
+          <div class="m-dialog__message" v-if="message" :class="{ 'm-dialog__message--withtitle': title }" v-html="message" />
         </slot>
       </div>
-      <div class="van-dialog__footer" :class="{ 'is-twobtn': showCancelButton && showConfirmButton }">
-        <van-button
+      <div class="m-dialog__footer" :class="{ 'is-twobtn': showCancelButton && showConfirmButton }">
+        <m-button
           v-show="showCancelButton"
           :loading="loading.cancel"
           size="large"
-          class="van-dialog__cancel"
+          class="m-dialog__cancel"
           @click="handleAction('cancel')"
         >
           {{ cancelButtonText || $t('cancel') }}
-        </van-button>
-        <van-button
+        </m-button>
+        <m-button
           v-show="showConfirmButton"
           size="large"
           :loading="loading.confirm"
-          class="van-dialog__confirm"
-          :class="{ 'van-hairline--left': showCancelButton && showConfirmButton }"
+          class="m-dialog__confirm"
+          :class="{ 'm-hairline--left': showCancelButton && showConfirmButton }"
           @click="handleAction('confirm')"
         >
           {{ confirmButtonText || $t('confirm') }}
-        </van-button>
+        </m-button>
       </div>
     </div>
   </transition>

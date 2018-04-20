@@ -1,13 +1,13 @@
 <template>
-  <van-tabbar v-model="active" @change="onChange">
-    <van-tabbar-item icon="shop">
+  <m-tabbar v-model="active" @change="onChange">
+    <m-tabbar-item icon="shop">
       <span>自定义</span>
       <img slot="icon" :src="active === 0 ? icon.active : icon.normal" >
-    </van-tabbar-item>
-    <van-tabbar-item icon="chat">标签</van-tabbar-item>
-    <van-tabbar-item icon="chat">标签</van-tabbar-item>
-    <van-tabbar-item icon="records">标签</van-tabbar-item>
-  </van-tabbar>
+    </m-tabbar-item>
+    <m-tabbar-item icon="chat">标签</m-tabbar-item>
+    <m-tabbar-item icon="chat">标签</m-tabbar-item>
+    <m-tabbar-item icon="records">标签</m-tabbar-item>
+  </m-tabbar>
 </template>
 
 <script>

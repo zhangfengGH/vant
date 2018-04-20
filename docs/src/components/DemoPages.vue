@@ -1,10 +1,10 @@
 <template>
-  <section class="van-doc-demo-pages">
+  <section class="m-doc-demo-pages">
     <h2>{{ $t('title') }}</h2>
     <p>{{ $t('description') }}</p>
-    <div class="van-doc-demo-pages__gallery">
+    <div class="m-doc-demo-pages__gallery">
       <div
-        :class="['van-doc-demo-pages__item', { 'van-doc-demo-pages__item--active': index === currentDemo }]"
+        :class="['m-doc-demo-pages__item', { 'm-doc-demo-pages__item--active': index === currentDemo }]"
         v-for="(demo, index) in demos"
       >
         <h4>{{ demo.title }}</h4>
@@ -17,7 +17,7 @@
 
 <script>
 export default {
-  name: 'van-doc-demo-pages',
+  name: 'm-doc-demo-pages',
 
   i18n: {
     'zh-CN': {
@@ -79,7 +79,7 @@ export default {
 </script>
 
 <style lang="postcss">
-.van-doc-demo-pages {
+.m-doc-demo-pages {
   &__gallery {
     margin-top: 30px;
   }

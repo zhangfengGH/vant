@@ -15,7 +15,7 @@ describe('Icon', () => {
       }
     });
 
-    expect(wrapper.hasClass('van-icon')).to.be.true;
-    expect(wrapper.hasClass('van-icon-arrow')).to.be.true;
+    expect(wrapper.hasClass('m-icon')).to.be.true;
+    expect(wrapper.hasClass('m-icon-arrow')).to.be.true;
   });
 });

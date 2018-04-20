@@ -13,7 +13,7 @@ describe('NoticeBar', () => {
       attachToDocument: true
     });
 
-    expect(wrapper.find('.van-notice-bar').length).to.equal(1);
+    expect(wrapper.find('.m-notice-bar').length).to.equal(1);
   });
 
   it('mode closeable', () => {
@@ -24,7 +24,7 @@ describe('NoticeBar', () => {
       attachToDocument: true
     });
 
-    const icon = wrapper.find('.van-icon-close');
+    const icon = wrapper.find('.m-icon-close');
     expect(icon.length).to.equal(1);
 
     icon[0].trigger('click');
@@ -39,7 +39,7 @@ describe('NoticeBar', () => {
       attachToDocument: true
     });
 
-    expect(wrapper.find('.van-icon-arrow').length).to.equal(1);
+    expect(wrapper.find('.m-icon-arrow').length).to.equal(1);
   });
 
   it('notice-bar transitionend', (done) => {
@@ -52,7 +52,7 @@ describe('NoticeBar', () => {
       attachToDocument: true
     });
 
-    const content = wrapper.find('.van-notice-bar__content')[0];
+    const content = wrapper.find('.m-notice-bar__content')[0];
     setTimeout(() => {
       expect(content.hasStyle('transition-delay', '0s')).to.be.true;
       done();

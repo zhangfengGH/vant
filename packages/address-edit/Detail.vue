@@ -15,23 +15,23 @@
       @blur="onBlur"
     >
       <div slot="icon">
-        <span v-if="showIcon && isAndroid" class="van-address-edit-detail__finish-edit">{{ $t('complete') }}</span>
+        <span v-if="showIcon && isAndroid" class="m-address-edit-detail__finish-edit">{{ $t('complete') }}</span>
         <icon v-else-if="showIcon" name="clear" />
       </div>
     </field>
 
-    <cell-group class="van-address-edit-detail__suggest-list" v-if="showSearchList">
+    <cell-group class="m-address-edit-detail__suggest-list" v-if="showSearchList">
       <cell
         v-for="express in searchResult"
         :key="express.name + express.address"
-        class="van-address-edit-detail__suggest-item"
+        class="m-address-edit-detail__suggest-item"
         clickable
         @click="onSuggestSelect(express)"
       >
-        <icon name="location" class="van-address-edit-detail__location" />
-        <div class="van-address-edit-detail__item-info">
-          <p class="van-address-edit-detail__title" v-if="isString(express.name)">{{ express.name }}</p>
-          <p class="van-address-edit-detail__subtitle" v-if="isString(express.address)">{{ express.address }}</p>
+        <icon name="location" class="m-address-edit-detail__location" />
+        <div class="m-address-edit-detail__item-info">
+          <p class="m-address-edit-detail__title" v-if="isString(express.name)">{{ express.name }}</p>
+          <p class="m-address-edit-detail__subtitle" v-if="isString(express.address)">{{ express.address }}</p>
         </div>
       </cell>
     </cell-group>
@@ -91,7 +91,7 @@ export default create({
 
     onIconClick() {
       if (this.isAndroid) {
-        this.$refs.root.querySelector('.van-field__control').blur();
+        this.$refs.root.querySelector('.m-field__control').blur();
       } else {
         this.$emit('input', '');
       }

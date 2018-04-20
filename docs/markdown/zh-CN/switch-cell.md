@@ -15,9 +15,9 @@ Vue.use(SwitchCell);
 
 
 ```html
-<van-cell-group>
-  <van-switch-cell v-model="checked" title="标题" />
-</van-cell-group>
+<m-cell-group>
+  <m-switch-cell v-model="checked" title="标题" />
+</m-cell-group>
 ```
 
 ```javascript
@@ -34,18 +34,18 @@ export default {
 通过`disabled`属性可以将组件设置为禁用状态
 
 ```html
-<van-cell-group>
-  <van-switch-cell v-model="checked" disabled title="标题" />
-</van-cell-group>
+<m-cell-group>
+  <m-switch-cell v-model="checked" disabled title="标题" />
+</m-cell-group>
 ```
 
 #### 加载状态
 通过`loading`属性可以将组件设置为加载状态
 
 ```html
-<van-cell-group>
-  <van-switch-cell v-model="checked" loading title="标题" />
-</van-cell-group>
+<m-cell-group>
+  <m-switch-cell v-model="checked" loading title="标题" />
+</m-cell-group>
 ```
 
 ### API

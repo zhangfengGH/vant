@@ -1,8 +1,8 @@
 @import './common/var.css';
 
-.van-collapse-item {
+.m-collapse-item {
   &__title {
-    .van-cell__right-icon::before {
+    .m-cell__right-icon::before {
       transition: .3s;
       transform: rotate(90deg);
     }
@@ -18,8 +18,8 @@
   }
 
   &--expanded {
-    .van-collapse-item__title {
-      .van-cell__right-icon::before {
+    .m-collapse-item__title {
+      .m-cell__right-icon::before {
         transform: rotate(-90deg);
       }
 

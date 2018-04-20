@@ -1,5 +1,5 @@
 <template>
-  <div class="van-address-edit">
+  <div class="m-address-edit">
     <cell-group>
       <field
         maxlength="15"
@@ -19,7 +19,7 @@
       />
       <cell
         clickable
-        class="van-address-edit__area"
+        class="m-address-edit__area"
         :title="$t('area')"
         @click="showArea = true"
       >
@@ -45,7 +45,7 @@
         :placeholder="$t('placeholder.postal')"
         v-model="data.postal_code"
         maxlength="6"
-        class="van-hairline--top"
+        class="m-hairline--top"
         :error="errorInfo.postal_code"
         @focus="onFocus('postal_code')"
       />
@@ -57,16 +57,16 @@
         :title="$t('defaultAddress')"
       />
     </cell-group>
-    <div v-show="!hideBottomFields" class="van-address-edit__buttons">
-      <van-button block :loading="isSaving" @click="onSave" type="primary">
+    <div v-show="!hideBottomFields" class="m-address-edit__buttons">
+      <m-button block :loading="isSaving" @click="onSave" type="primary">
         {{ $t('save') }}
-      </van-button>
-      <van-button block :loading="isDeleting" @click="onDelete" v-if="isEdit">
+      </m-button>
+      <m-button block :loading="isDeleting" @click="onDelete" v-if="isEdit">
         {{ $t('deleteAddress') }}
-      </van-button>
+      </m-button>
     </div>
     <popup v-model="showArea" position="bottom">
-      <van-area
+      <m-area
         ref="area"
         :loading="!areaListLoaded"
         :value="data.area_code"

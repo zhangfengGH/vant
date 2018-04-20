@@ -1,29 +1,29 @@
 <template>
   <div
-    class="van-cell"
+    class="m-cell"
     :class="{
-      'van-hairline': border,
-      'van-cell--center': center,
-      'van-cell--required': required,
-      'van-cell--clickable': isLink || clickable
+      'm-hairline': border,
+      'm-cell--center': center,
+      'm-cell--required': required,
+      'm-cell--clickable': isLink || clickable
     }"
     @click="onClick"
   >
     <slot name="icon">
-      <icon v-if="icon" class="van-cell__left-icon" :name="icon" />
+      <icon v-if="icon" class="m-cell__left-icon" :name="icon" />
     </slot>
-    <div class="van-cell__title" v-if="title || $slots.title">
+    <div class="m-cell__title" v-if="title || $slots.title">
       <slot name="title">
         <span v-text="title" />
-        <div class="van-cell__label" v-if="label" v-text="label" />
+        <div class="m-cell__label" v-if="label" v-text="label" />
       </slot>
     </div>
     <div
-      class="van-cell__value"
+      class="m-cell__value"
       v-if="value || $slots.default"
       :class="{
-        'van-cell__value--link': isLink,
-        'van-cell__value--alone': !$slots.title && !title && !label
+        'm-cell__value--link': isLink,
+        'm-cell__value--alone': !$slots.title && !title && !label
       }"
     >
       <slot>
@@ -31,7 +31,7 @@
       </slot>
     </div>
     <slot name="right-icon">
-      <icon name="arrow" class="van-cell__right-icon" v-if="isLink" />
+      <icon name="arrow" class="m-cell__right-icon" v-if="isLink" />
     </slot>
     <slot name="extra" />
   </div>

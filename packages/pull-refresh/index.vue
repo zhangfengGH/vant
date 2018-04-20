@@ -1,23 +1,23 @@
 <template>
-  <div class="van-pull-refresh">
+  <div class="m-pull-refresh">
     <div
-      class="van-pull-refresh__track"
+      class="m-pull-refresh__track"
       :style="style"
       @touchstart="onTouchStart"
       @touchmove="onTouchMove"
       @touchend="onTouchEnd"
       @touchcancel="onTouchEnd"
     >
-      <div class="van-pull-refresh__head">
+      <div class="m-pull-refresh__head">
         <slot name="normal" v-if="status === 'normal'"/>
         <slot name="pulling" v-if="status === 'pulling'">
-          <span class="van-pull-refresh__text">{{ pullingText || $t('pulling') }}</span>
+          <span class="m-pull-refresh__text">{{ pullingText || $t('pulling') }}</span>
         </slot>
         <slot name="loosing" v-if="status === 'loosing'">
-          <span class="van-pull-refresh__text">{{ loosingText || $t('loosing') }}</span>
+          <span class="m-pull-refresh__text">{{ loosingText || $t('loosing') }}</span>
         </slot>
         <slot name="loading" v-if="status === 'loading'">
-          <div class="van-pull-refresh__loading">
+          <div class="m-pull-refresh__loading">
             <loading />
             <span>{{ loadingText || $t('loadingTip') }}</span>
           </div>

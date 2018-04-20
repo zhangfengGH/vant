@@ -1,7 +1,7 @@
 <template>
   <demo-section>
     <demo-block :title="$t('basicUsage')">
-      <van-tree-select
+      <m-tree-select
         :items="items"
         :main-active-index="mainActiveIndex"
         :active-id="activeId"

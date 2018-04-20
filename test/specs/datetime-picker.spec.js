@@ -66,7 +66,7 @@ describe('DatetimePicker', () => {
       }
     });
 
-    const [hour, minute] = wrapper.find('.van-picker-column ul');
+    const [hour, minute] = wrapper.find('.m-picker-column ul');
     dragHelper(hour, 0, -50);
     dragHelper(minute, 0, -50);
 
@@ -88,7 +88,7 @@ describe('DatetimePicker', () => {
     });
 
     setTimeout(() => {
-      const [year, month, day] = wrapper.find('.van-picker-column ul');
+      const [year, month, day] = wrapper.find('.m-picker-column ul');
       dragHelper(year, 0, -50);
       dragHelper(month, 0, -50);
       dragHelper(day, 0, -50);
@@ -116,7 +116,7 @@ describe('DatetimePicker', () => {
     });
 
     setTimeout(() => {
-      const [year, month] = wrapper.find('.van-picker-column ul');
+      const [year, month] = wrapper.find('.m-picker-column ul');
       dragHelper(year, 0, -50);
       dragHelper(month, 0, -50);
       setTimeout(() => {
@@ -141,7 +141,7 @@ describe('DatetimePicker', () => {
     });
 
     setTimeout(() => {
-      const [year, month, day, hour, minute] = wrapper.find('.van-picker-column ul');
+      const [year, month, day, hour, minute] = wrapper.find('.m-picker-column ul');
       dragHelper(year, 0, -50);
       dragHelper(month, 0, -50);
       dragHelper(day, 0, -50);

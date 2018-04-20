@@ -1,28 +1,28 @@
 <template>
   <demo-section>
     <demo-block :title="$t('basicUsage')">
-      <van-row>
-        <van-col span="8">span: 8</van-col>
-        <van-col span="8">span: 8</van-col>
-        <van-col span="8">span: 8</van-col>
-      </van-row>
+      <m-row>
+        <m-col span="8">span: 8</m-col>
+        <m-col span="8">span: 8</m-col>
+        <m-col span="8">span: 8</m-col>
+      </m-row>
 
-      <van-row>
-        <van-col span="4">span: 4</van-col>
-        <van-col span="10" offset="4">offset: 4, span: 10</van-col>
-      </van-row>
+      <m-row>
+        <m-col span="4">span: 4</m-col>
+        <m-col span="10" offset="4">offset: 4, span: 10</m-col>
+      </m-row>
 
-      <van-row>
-        <van-col offset="12" span="12">offset: 12, span: 12</van-col>
-      </van-row>
+      <m-row>
+        <m-col offset="12" span="12">offset: 12, span: 12</m-col>
+      </m-row>
     </demo-block>
 
     <demo-block :title="$t('title2')">
-      <van-row gutter="20">
-        <van-col span="8">span: 8</van-col>
-        <van-col span="8">span: 8</van-col>
-        <van-col span="8">span: 8</van-col>
-      </van-row>
+      <m-row gutter="20">
+        <m-col span="8">span: 8</m-col>
+        <m-col span="8">span: 8</m-col>
+        <m-col span="8">span: 8</m-col>
+      </m-row>
     </demo-block>
   </demo-section>
 </template>
@@ -42,15 +42,15 @@ export default {
 
 <style lang="postcss">
 .demo-layout {
-  .van-doc-demo-block {
+  .m-doc-demo-block {
     padding: 0 15px;
   }
 
-  .van-doc-demo-block__title {
+  .m-doc-demo-block__title {
     padding-left: 0;
   }
 
-  .van-col {
+  .m-col {
     color: #fff;
     font-size: 13px;
     line-height: 30px;

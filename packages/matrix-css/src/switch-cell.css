@@ -1,7 +1,7 @@
 @import './common/var.css';
 
-.van-switch-cell {
-  .van-switch {
+.m-switch-cell {
+  .m-switch {
     float: right;
   }
 }

@@ -1,15 +1,15 @@
 <template>
   <demo-section>
     <demo-block :title="$t('basicUsage')">
-      <van-button @click="showImagePreview">{{ $t('button1') }}</van-button>
+      <m-button @click="showImagePreview">{{ $t('button1') }}</m-button>
     </demo-block>
 
     <demo-block :title="$t('button2')">
-      <van-button @click="showImagePreview(1)">{{ $t('button2') }}</van-button>
+      <m-button @click="showImagePreview(1)">{{ $t('button2') }}</m-button>
     </demo-block>
 
     <demo-block :title="$t('button3')">
-      <van-button @click="showImagePreview(0, 1000)">{{ $t('button3') }}</van-button>
+      <m-button @click="showImagePreview(0, 1000)">{{ $t('button3') }}</m-button>
     </demo-block>
   </demo-section>
 </template>
@@ -51,11 +51,11 @@ export default {
 
 <style lang="postcss">
 .demo-image-preview {
-  .van-button {
+  .m-button {
     margin-left: 15px;
   }
 }
-.van-image-preview {
+.m-image-preview {
   img {
     pointer-events: none;
   }

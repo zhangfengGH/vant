@@ -13,30 +13,30 @@ Vue.use(Tag);
 通过 type 属性控制 Tag 颜色，默认为灰色
 
 ```html
-<van-tag>标签</van-tag>
-<van-tag type="danger">标签</van-tag>
-<van-tag type="success">标签</van-tag>
-<van-tag type="primary">标签</van-tag>
+<m-tag>标签</m-tag>
+<m-tag type="danger">标签</m-tag>
+<m-tag type="success">标签</m-tag>
+<m-tag type="primary">标签</m-tag>
 ```
 
 #### 空心样式
 设置`plain`属性设置为空心样式
 
 ```html
-<van-tag plain>标签</van-tag>
-<van-tag plain type="danger">标签</van-tag>
-<van-tag plain type="primary">标签</van-tag>
-<van-tag plain type="success">标签</van-tag>
+<m-tag plain>标签</m-tag>
+<m-tag plain type="danger">标签</m-tag>
+<m-tag plain type="primary">标签</m-tag>
+<m-tag plain type="success">标签</m-tag>
 ```
 
 #### 标记样式
 通过`mark`设置为标记样式
 
 ```html
-<van-tag mark>标签</van-tag>
-<van-tag mark type="danger">标签</van-tag>
-<van-tag mark type="primary">标签</van-tag>
-<van-tag mark type="success">标签</van-tag>
+<m-tag mark>标签</m-tag>
+<m-tag mark type="danger">标签</m-tag>
+<m-tag mark type="primary">标签</m-tag>
+<m-tag mark type="success">标签</m-tag>
 ```
 
 ### API

@@ -1,8 +1,8 @@
 <template>
   <div>
-    <van-nav-bar
+    <m-nav-bar
       v-show="title"
-      class="van-doc-nav-bar"
+      class="m-doc-nav-bar"
       :title="title"
       left-arrow
       @click-left="onBack"
@@ -39,14 +39,14 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-.van-doc-nav-bar {
-  .van-nav-bar__title {
+.m-doc-nav-bar {
+  .m-nav-bar__title {
     font-size: 15px;
     text-transform: capitalize;
   }
 }
 
-.van-doc-demo-section {
+.m-doc-demo-section {
   margin-top: -46px;
   padding-top: 46px;
 }

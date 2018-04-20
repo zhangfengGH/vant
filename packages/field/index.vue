@@ -3,12 +3,12 @@
     :title="label"
     :center="center"
     :required="required"
-    class="van-field"
+    class="m-field"
     :class="{
-      'van-field--disabled': $attrs.disabled,
-      'van-field--error': error,
-      'van-field--min-height': type === 'textarea' && !autosize,
-      'van-field--has-icon': hasIcon
+      'm-field--disabled': $attrs.disabled,
+      'm-field--error': error,
+      'm-field--min-height': type === 'textarea' && !autosize,
+      'm-field--has-icon': hasIcon
     }"
   >
     <textarea
@@ -16,33 +16,33 @@
       v-bind="$attrs"
       v-on="listeners"
       ref="textarea"
-      class="van-field__control"
+      class="m-field__control"
       :value="value"
     />
     <input
       v-else
       v-bind="$attrs"
       v-on="listeners"
-      class="van-field__control"
+      class="m-field__control"
       :type="type"
       :value="value"
     >
     <div
       v-if="errorMessage"
       v-text="errorMessage"
-      class="van-field__error-message"
+      class="m-field__error-message"
     />
     <div
       v-if="hasIcon"
       v-show="$slots.icon || value"
-      class="van-field__icon"
+      class="m-field__icon"
       @touchstart.prevent="onClickIcon"
     >
       <slot name="icon">
         <icon :name="icon" />
       </slot>
     </div>
-    <div class="van-field__button" v-if="$slots.button" slot="extra">
+    <div class="m-field__button" v-if="$slots.button" slot="extra">
       <slot name="button" />
     </div>
   </cell>

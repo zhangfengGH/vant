@@ -1,12 +1,12 @@
 <template>
-  <div class="van-tabbar-item" :class="{ 'van-tabbar-item--active': active }" @click="onClick">
-    <div class="van-tabbar-item__icon" :class="{ 'van-tabbar-item__icon-dot': dot }">
+  <div class="m-tabbar-item" :class="{ 'm-tabbar-item--active': active }" @click="onClick">
+    <div class="m-tabbar-item__icon" :class="{ 'm-tabbar-item__icon-dot': dot }">
       <slot name="icon" :active="active">
         <icon v-if="icon" :name="icon" />
       </slot>
-      <div v-if="isDef(info)" class="van-icon__info">{{ info }}</div>
+      <div v-if="isDef(info)" class="m-icon__info">{{ info }}</div>
     </div>
-    <div class="van-tabbar-item__text">
+    <div class="m-tabbar-item__text">
       <slot :active="active"/>
     </div>
   </div>

@@ -1,7 +1,7 @@
 <template>
   <demo-section>
     <demo-block :title="$t('basicUsage')">
-      <van-nav-bar
+      <m-nav-bar
         :title="$t('title')"
         :left-text="$t('back')"
         :right-text="$t('button')"
@@ -12,9 +12,9 @@
     </demo-block>
 
     <demo-block :title="$t('advancedUsage')">
-      <van-nav-bar :title="$t('title')" :left-text="$t('back')" left-arrow>
-        <van-icon name="search" slot="right" />
-      </van-nav-bar>
+      <m-nav-bar :title="$t('title')" :left-text="$t('back')" left-arrow>
+        <m-icon name="search" slot="right" />
+      </m-nav-bar>
     </demo-block>
   </demo-section>
 </template>

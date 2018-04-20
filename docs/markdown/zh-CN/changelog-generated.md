@@ -42,14 +42,14 @@
 **Breaking changes**
 
 - tabs 的 click 希望多传回一个 e 对象 [\#873](https://github.com/youzan/matrix/issues/873)
-- \<van-tabbar-item info="5"\>标签\</van-tabbar-item\>中info应该要支持Number类型 [\#844](https://github.com/youzan/matrix/issues/844)
+- \<m-tabbar-item info="5"\>标签\</m-tabbar-item\>中info应该要支持Number类型 [\#844](https://github.com/youzan/matrix/issues/844)
 
 **Bug Fixes**
 
 - NavBar标题栏文字过长会重叠左右按键空间 [\#865](https://github.com/youzan/matrix/issues/865)
 - CellSwipe  和 list 在一起使用，往下滑动的时候，很容易就触发了CellSwipe 的左滑或者右滑事件， [\#856](https://github.com/youzan/matrix/issues/856)
 - Collapse 的 title 以 slot 方式包含按钮，按钮在loading状态下不对齐 [\#850](https://github.com/youzan/matrix/issues/850)
-- 实例页面购物车 van-submit-bar\_\_bar里的van-submit-bar\_\_price文字会被设置的rem影响不能居中 [\#848](https://github.com/youzan/matrix/issues/848)
+- 实例页面购物车 m-submit-bar\_\_bar里的m-submit-bar\_\_price文字会被设置的rem影响不能居中 [\#848](https://github.com/youzan/matrix/issues/848)
 - 滑动tabs 和Swipe同时使用滑动优先级问题怎么处理 [\#817](https://github.com/youzan/matrix/issues/817)
 
 **Issue**
@@ -57,7 +57,7 @@
 - Uploader 小米5S的微信浏览器上传回调不成功 [\#872](https://github.com/youzan/matrix/issues/872)
 - 请问NoticeBar支持多条text内容滚动么？ [\#868](https://github.com/youzan/matrix/issues/868)
 - 引用toast组件会出现警告信息 [\#861](https://github.com/youzan/matrix/issues/861)
-- van-field的 type为 textarea 设置 高度自适应，高度被设置为0 [\#818](https://github.com/youzan/matrix/issues/818)
+- m-field的 type为 textarea 设置 高度自适应，高度被设置为0 [\#818](https://github.com/youzan/matrix/issues/818)
 
 **Improvements**
 
@@ -77,7 +77,7 @@
 - NavBar @click-left默认没有返回上一页Event么 每个页面需要自己添加Event么 [\#851](https://github.com/youzan/matrix/issues/851)
 - 部分样式无法覆盖 ，现项目中有些细节需要修改样式表 我是在vue文件里覆盖修改的 但是有些可以覆盖有效 有些覆盖无效 [\#847](https://github.com/youzan/matrix/issues/847)
 - 标签页切换后导致左边tab标签页的分页方法失效，求大神解答。 [\#843](https://github.com/youzan/matrix/issues/843)
-- 在使用sku弹层的时候  van-sku-row的高度会被设置的rem影响 [\#839](https://github.com/youzan/matrix/issues/839)
+- 在使用sku弹层的时候  m-sku-row的高度会被设置的rem影响 [\#839](https://github.com/youzan/matrix/issues/839)
 - List 列表 瀑布流滚动加载 [\#834](https://github.com/youzan/matrix/issues/834)
 
 **Improvements**
@@ -105,17 +105,17 @@
 - 通过cdn形式使用时，bug太多 [\#830](https://github.com/youzan/matrix/issues/830)
 - Stepper 按钮怎么阻止冒泡 [\#829](https://github.com/youzan/matrix/issues/829)
 - area.json 数据  215090 没有父节点 [\#827](https://github.com/youzan/matrix/issues/827)
-- van-filed 组件的 button slot 无效。 [\#826](https://github.com/youzan/matrix/issues/826)
+- m-filed 组件的 button slot 无效。 [\#826](https://github.com/youzan/matrix/issues/826)
 - picker 组件 单列情况下 defaultIndex 参数不生效 [\#825](https://github.com/youzan/matrix/issues/825)
 - 希望DatetimePicker的type能够更灵活一点 [\#824](https://github.com/youzan/matrix/issues/824)
-- van-field中使用type="date"无效 [\#823](https://github.com/youzan/matrix/issues/823)
+- m-field中使用type="date"无效 [\#823](https://github.com/youzan/matrix/issues/823)
 - Uploader 图片上传  的属性disable  资料有误！ [\#822](https://github.com/youzan/matrix/issues/822)
 - used vue-lazyload? [\#821](https://github.com/youzan/matrix/issues/821)
 - Dialog使用中产生的问题 [\#819](https://github.com/youzan/matrix/issues/819)
 - 关于修改控件默认样式及尺寸的问题 [\#816](https://github.com/youzan/matrix/issues/816)
 - 急急急！！Popup在安卓手机上出现严重问题 [\#815](https://github.com/youzan/matrix/issues/815)
-- 当有一个van-popup组件弹出时，如果再触发toast组件 弹出提示 [\#814](https://github.com/youzan/matrix/issues/814)
-- van-tabs 组件点击事件第二个title参数显示undefined [\#813](https://github.com/youzan/matrix/issues/813)
+- 当有一个m-popup组件弹出时，如果再触发toast组件 弹出提示 [\#814](https://github.com/youzan/matrix/issues/814)
+- m-tabs 组件点击事件第二个title参数显示undefined [\#813](https://github.com/youzan/matrix/issues/813)
 - Radio与Cell组件一起使用时和示例的样式不一样，不知道时候需要手动重新设置样式？ [\#811](https://github.com/youzan/matrix/issues/811)
 - 使用CDN时cell组件的bug [\#810](https://github.com/youzan/matrix/issues/810)
 - 希望能出一个视频播放组件 [\#809](https://github.com/youzan/matrix/issues/809)
@@ -127,12 +127,12 @@
 - 布局都是PX，没有用rem。 [\#803](https://github.com/youzan/matrix/issues/803)
 - NumberKeyboard组件能给一个配合输入框使用的demo吗？考虑到阻止虚拟键盘之类的 [\#802](https://github.com/youzan/matrix/issues/802)
 - tab 标签页 [\#801](https://github.com/youzan/matrix/issues/801)
-- 外联引用matrix，\<van-cell-group\>组件渲染出错 [\#800](https://github.com/youzan/matrix/issues/800)
+- 外联引用matrix，\<m-cell-group\>组件渲染出错 [\#800](https://github.com/youzan/matrix/issues/800)
 - 关于文档中 Badge 与 Cell 的引入问题 [\#797](https://github.com/youzan/matrix/issues/797)
 - Actionsheet组件应有一个取消按钮事件，以便于处理一些额外逻辑 [\#795](https://github.com/youzan/matrix/issues/795)
 - area 控件设置value会出现问题，我设置了350104 [\#794](https://github.com/youzan/matrix/issues/794)
 - 关于 matrix 样式适配 [\#793](https://github.com/youzan/matrix/issues/793)
-- matrix 的标签 \<van-button/\> 的click属性不好用 [\#792](https://github.com/youzan/matrix/issues/792)
+- matrix 的标签 \<m-button/\> 的click属性不好用 [\#792](https://github.com/youzan/matrix/issues/792)
 - Circle 组件能否对中间内容提供slot支持 [\#791](https://github.com/youzan/matrix/issues/791)
 - Dont import base css when use babel-plugin-import [\#790](https://github.com/youzan/matrix/issues/790)
 - collapse折叠面板不设置accordion时报错Error in render: "TypeError: activeNames.some is not a function" [\#789](https://github.com/youzan/matrix/issues/789)
@@ -153,7 +153,7 @@
 
 - \[bugfix\] Popup: lock-scroll not work when open multi popup [\#842](https://github.com/youzan/matrix/pull/842) ([chenjiahan](https://github.com/chenjiahan))
 - \[bugfix\] Dialog: close method may cause error [\#841](https://github.com/youzan/matrix/pull/841) ([chenjiahan](https://github.com/chenjiahan))
-- \[bugfix\] Sku: van-sku-row font-size [\#840](https://github.com/youzan/matrix/pull/840) ([chenjiahan](https://github.com/chenjiahan))
+- \[bugfix\] Sku: m-sku-row font-size [\#840](https://github.com/youzan/matrix/pull/840) ([chenjiahan](https://github.com/chenjiahan))
 - \[Doc\] fix documentation error [\#828](https://github.com/youzan/matrix/pull/828) ([cookfront](https://github.com/cookfront))
 -  \[bug fix\]submit-bar: Decimal rounding [\#820](https://github.com/youzan/matrix/pull/820) ([ddchef](https://github.com/ddchef))
 - \[locate\] add zh-HK [\#812](https://github.com/youzan/matrix/pull/812) ([jasonc08](https://github.com/jasonc08))

@@ -13,7 +13,7 @@ Vue.use(Actionsheet);
 需要传入一个`actions`的数组，数组的每一项是一个对象，对象属性见文档下方表格。
 
 ```html
-<van-actionsheet v-model="show" :actions="actions" />
+<m-actionsheet v-model="show" :actions="actions" />
 ```
 
 ```javascript
@@ -51,7 +51,7 @@ export default {
 如果传入了`cancelText`属性，且不为空，则会在下方显示一个取消按钮，点击会将当前`Actionsheet`关闭。
 
 ```html
-<van-actionsheet v-model="show" :actions="actions" cancel-text="取消" />
+<m-actionsheet v-model="show" :actions="actions" cancel-text="取消" />
 ```
 
 #### 带标题的 Actionsheet
@@ -59,9 +59,9 @@ export default {
 如果传入了`title`属性，且不为空，则另外一种样式的`Actionsheet`，里面内容需要自定义。
 
 ```html
-<van-actionsheet v-model="show" title="支持以下配送方式">
+<m-actionsheet v-model="show" title="支持以下配送方式">
   <p>一些内容</p>
-</van-actionsheet>
+</m-actionsheet>
 ```
 
 ### API

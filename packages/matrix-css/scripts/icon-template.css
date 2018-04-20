@@ -7,7 +7,7 @@
   src: url('https://img.yzcdn.cn/zanui/icon/<%= fontName %>.ttf') format('truetype');
 }
 
-.van-icon {
+.m-icon {
   position: relative;
   display: inline-block;
   font: normal normal normal 14px/1 "<%= fontName %>";
@@ -36,7 +36,7 @@
   }
 }
 
-<% _.each(glyphs, function(glyph) { %>.van-<%= cssClass %>-<%= glyph.fileName %>:before {
+<% _.each(glyphs, function(glyph) { %>.m-<%= cssClass %>-<%= glyph.fileName %>:before {
   content: "\<%= glyph.codePoint %>";
 }
 <% }); %>

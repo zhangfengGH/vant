@@ -12,22 +12,22 @@ Vue.use(Loading);
 #### Circular
 
 ```html
-<van-loading color="black" />
-<van-loading color="white" />
+<m-loading color="black" />
+<m-loading color="white" />
 ```
 
 #### Spinner
 
 ```html
-<van-loading type="spinner" color="black" />
-<van-loading type="spinner" color="white" />
+<m-loading type="spinner" color="black" />
+<m-loading type="spinner" color="white" />
 ```
 
 #### Circle
 
 ```html
-<van-loading type="circle" color="black" />
-<van-loading type="circle" color="white" />
+<m-loading type="circle" color="black" />
+<m-loading type="circle" color="white" />
 ```
 
 ### API

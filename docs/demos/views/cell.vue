@@ -1,44 +1,44 @@
 <template>
   <demo-section>
     <demo-block :title="$t('basicUsage')">
-      <van-cell-group>
-        <van-cell :title="$t('cell')" :value="$t('content')" />
-        <van-cell :title="$t('cell')" :value="$t('content')" :label="$t('desc')" />
-      </van-cell-group>
+      <m-cell-group>
+        <m-cell :title="$t('cell')" :value="$t('content')" />
+        <m-cell :title="$t('cell')" :value="$t('content')" :label="$t('desc')" />
+      </m-cell-group>
     </demo-block>
 
     <demo-block :title="$t('title2')">
-      <van-cell-group>
-        <van-cell :value="$t('content')" />
-      </van-cell-group>
+      <m-cell-group>
+        <m-cell :value="$t('content')" />
+      </m-cell-group>
     </demo-block>
 
     <demo-block :title="$t('title3')">
-      <van-cell-group>
-        <van-cell :title="$t('cell')" icon="location" />
-      </van-cell-group>
+      <m-cell-group>
+        <m-cell :title="$t('cell')" icon="location" />
+      </m-cell-group>
     </demo-block>
 
     <demo-block :title="$t('title4')">
-      <van-cell-group>
-        <van-cell :title="$t('cell')" is-link />
-        <van-cell :title="$t('cell')" is-link :value="$t('content')" />
-      </van-cell-group>
+      <m-cell-group>
+        <m-cell :title="$t('cell')" is-link />
+        <m-cell :title="$t('cell')" is-link :value="$t('content')" />
+      </m-cell-group>
     </demo-block>
 
     <demo-block :title="$t('advancedUsage')">
-      <van-cell-group>
-        <van-cell :value="$t('content')" icon="shop" is-link>
+      <m-cell-group>
+        <m-cell :value="$t('content')" icon="shop" is-link>
           <template slot="title">
-            <span class="van-cell-text">{{ $t('cell') }}</span>
-            <van-tag type="danger">{{ $t('tag') }}</van-tag>
+            <span class="m-cell-text">{{ $t('cell') }}</span>
+            <m-tag type="danger">{{ $t('tag') }}</m-tag>
           </template>
-        </van-cell>
-        <van-cell :title="$t('cell')" icon="location" is-link />
-        <van-cell :title="$t('cell')">
-          <van-icon slot="right-icon" name="search" class="van-cell__right-icon" />
-        </van-cell>
-      </van-cell-group>
+        </m-cell>
+        <m-cell :title="$t('cell')" icon="location" is-link />
+        <m-cell :title="$t('cell')">
+          <m-icon slot="right-icon" name="search" class="m-cell__right-icon" />
+        </m-cell>
+      </m-cell-group>
     </demo-block>
   </demo-section>
 </template>
@@ -64,12 +64,12 @@ export default {
 
 <style lang="postcss">
 .demo-cell {
-  .van-cell-text {
+  .m-cell-text {
     margin-right: 5px;
   }
 
-  .van-cell-text,
-  .van-tag--danger {
+  .m-cell-text,
+  .m-tag--danger {
     vertical-align: middle;
   }
 }

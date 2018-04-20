@@ -13,17 +13,17 @@ Vue.use(Collapse).use(CollapseItem);
 通过`v-model`控制展开的面板列表，`activeNames`为数组格式
 
 ```html
-<van-collapse v-model="activeNames">
-  <van-collapse-item title="有赞微商城" name="1">
+<m-collapse v-model="activeNames">
+  <m-collapse-item title="有赞微商城" name="1">
     提供多样店铺模板，快速搭建网上商城
-  </van-collapse-item>
-  <van-collapse-item title="有赞零售" name="2">
+  </m-collapse-item>
+  <m-collapse-item title="有赞零售" name="2">
     网店吸粉获客、会员分层营销、一机多种收款，告别经营低效和客户流失
-  </van-collapse-item>
-  <van-collapse-item title="有赞美业" name="3">
+  </m-collapse-item>
+  <m-collapse-item title="有赞美业" name="3">
     线上拓客，随时预约，贴心顺手的开单收银
-  </van-collapse-item>
-</van-collapse>
+  </m-collapse-item>
+</m-collapse>
 ```
 
 ``` javascript
@@ -40,17 +40,17 @@ export default {
 通过`accordion`可以设置为手风琴模式，最多展开一个面板，此时`activeName`为字符串格式
 
 ```html
-<van-collapse v-model="activeName" accordion>
-  <van-collapse-item title="有赞微商城" name="1">
+<m-collapse v-model="activeName" accordion>
+  <m-collapse-item title="有赞微商城" name="1">
     提供多样店铺模板，快速搭建网上商城
-  </van-collapse-item>
-  <van-collapse-item title="有赞零售" name="2">
+  </m-collapse-item>
+  <m-collapse-item title="有赞零售" name="2">
     网店吸粉获客、会员分层营销、一机多种收款，告别经营低效和客户流失
-  </van-collapse-item>
-  <van-collapse-item title="有赞美业" name="3">
+  </m-collapse-item>
+  <m-collapse-item title="有赞美业" name="3">
     线上拓客，随时预约，贴心顺手的开单收银
-  </van-collapse-item>
-</van-collapse>
+  </m-collapse-item>
+</m-collapse>
 ```
 
 ``` javascript
@@ -66,15 +66,15 @@ export default {
 #### 自定义标题内容
 
 ```html
-<van-collapse v-model="activeNames">
-  <van-collapse-item name="1">
-    <div slot="title">有赞微商城<van-icon name="question" /></div>
+<m-collapse v-model="activeNames">
+  <m-collapse-item name="1">
+    <div slot="title">有赞微商城<m-icon name="question" /></div>
     提供多样店铺模板，快速搭建网上商城
-  </van-collapse-item>
-  <van-collapse-item title="有赞零售" name="2">
+  </m-collapse-item>
+  <m-collapse-item title="有赞零售" name="2">
     网店吸粉获客、会员分层营销、一机多种收款，告别经营低效和客户流失
-  </van-collapse-item>
-</van-collapse>
+  </m-collapse-item>
+</m-collapse>
 ```
 
 

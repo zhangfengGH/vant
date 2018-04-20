@@ -1,8 +1,8 @@
 @import "./common/var.css";
 
-$van-radio-size: 20px;
+$m-radio-size: 20px;
 
-.van-radio {
+.m-radio {
   overflow: hidden;
   user-select: none;
 
@@ -14,7 +14,7 @@ $van-radio-size: 20px;
 
   &__input {
     position: relative;
-    height: $van-radio-size;
+    height: $m-radio-size;
   }
 
   &__control {
@@ -28,25 +28,25 @@ $van-radio-size: 20px;
   }
 
   &__label {
-    line-height: $van-radio-size;
+    line-height: $m-radio-size;
     margin-left: 10px;
   }
 
-  .van-icon {
+  .m-icon {
     pointer-events: none;
-    font-size: $van-radio-size;
+    font-size: $m-radio-size;
   }
 
-  .van-icon-checked {
+  .m-icon-checked {
     color: $green;
   }
 
-  .van-icon-check {
+  .m-icon-check {
     color: $gray-dark;
   }
 
   &--disabled {
-    .van-icon {
+    .m-icon {
       color: $gray-light;
       border-radius: 100%;
       background-color: $background-color;

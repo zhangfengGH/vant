@@ -12,9 +12,9 @@ Vue.use(Uploader);
 #### 基础用法
 
 ```html
-<van-uploader :after-read="onRead">
-  <van-icon name="photograph" />
-</van-uploader>
+<m-uploader :after-read="onRead">
+  <m-icon name="photograph" />
+</m-uploader>
 ```
 
 ```javascript
@@ -31,9 +31,9 @@ export default {
 可以直接在 Uploader 上设置 accpet、multiple 等原生属性，input 会自动继承该属性
 
 ```html
-<van-uploader :after-read="onRead" accept="image/gif, image/jpeg" multiple>
-  <van-icon name="photograph" />
-</van-uploader>
+<m-uploader :after-read="onRead" accept="image/gif, image/jpeg" multiple>
+  <m-icon name="photograph" />
+</m-uploader>
 ```
 
 ### API

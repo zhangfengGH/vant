@@ -20,15 +20,15 @@ describe('NavBar', () => {
 
     DOMChecker(wrapper, {
       text: {
-        '.van-nav-bar__title': '标题',
-        '.van-nav-bar__left .van-nav-bar__text': '返回',
-        '.van-nav-bar__right .van-nav-bar__text': '按钮'
+        '.m-nav-bar__title': '标题',
+        '.m-nav-bar__left .m-nav-bar__text': '返回',
+        '.m-nav-bar__right .m-nav-bar__text': '按钮'
       },
       count: {
-        '.van-nav-bar__arrow': 1
+        '.m-nav-bar__arrow': 1
       }
     });
-    expect(wrapper.hasClass('van-nav-bar')).to.be.true;
+    expect(wrapper.hasClass('m-nav-bar')).to.be.true;
   });
 
   it('NavBar fixed', () => {
@@ -38,6 +38,6 @@ describe('NavBar', () => {
       }
     });
 
-    expect(wrapper.hasClass('van-nav-bar')).to.be.true;
+    expect(wrapper.hasClass('m-nav-bar')).to.be.true;
   });
 });

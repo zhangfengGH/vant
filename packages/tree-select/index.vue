@@ -1,26 +1,26 @@
 <template>
-  <div class="van-tree-select" :style="{ height: mainHeight + 'px' }">
-    <div class="van-tree-select__nav">
+  <div class="m-tree-select" :style="{ height: mainHeight + 'px' }">
+    <div class="m-tree-select__nav">
       <div
         v-for="(item, index) in items"
-        class="van-tree-select__nitem van-ellipsis"
-        :class="{ 'van-tree-select__nitem--active': mainActiveIndex === index }"
+        class="m-tree-select__nitem m-ellipsis"
+        :class="{ 'm-tree-select__nitem--active': mainActiveIndex === index }"
         @click="$emit('navclick', index)">
         {{ item.text }}
       </div>
     </div>
-    <div class="van-tree-select__content" :style="{ height: itemHeight + 'px' }">
+    <div class="m-tree-select__content" :style="{ height: itemHeight + 'px' }">
       <div
         v-for="item in subItems"
         :key="item.id"
-        class="van-tree-select__item van-ellipsis"
-        :class="{ 'van-tree-select__item--active': activeId === item.id }"
+        class="m-tree-select__item m-ellipsis"
+        :class="{ 'm-tree-select__item--active': activeId === item.id }"
         @click="onItemSelect(item)">
         {{ item.text }}
         <icon
           v-if="activeId === item.id"
           name="success"
-          class="van-tree-select__selected"
+          class="m-tree-select__selected"
         />
       </div>
     </div>

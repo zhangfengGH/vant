@@ -11,7 +11,7 @@ describe('Search', () => {
   it('create a search', () => {
     wrapper = mount(Search);
 
-    expect(wrapper.hasClass('van-search')).to.be.true;
+    expect(wrapper.hasClass('m-search')).to.be.true;
     expect(wrapper.data().focusStatus).to.be.false;
     expect(wrapper.data().isFocus).to.be.false;
   });
@@ -19,7 +19,7 @@ describe('Search', () => {
   it('focus on input', () => {
     wrapper = mount(Search);
 
-    const input = wrapper.find('.van-search__input')[0];
+    const input = wrapper.find('.m-search__input')[0];
     input.trigger('focus');
 
     expect(wrapper.data().isFocus).to.be.true;
@@ -33,7 +33,7 @@ describe('Search', () => {
     });
 
     wrapper.vm.$nextTick(() => {
-      const input = wrapper.find('.van-search__input')[0];
+      const input = wrapper.find('.m-search__input')[0];
       expect(input.element.value === 'search text').to.be.true;
       done();
     });
@@ -42,7 +42,7 @@ describe('Search', () => {
   it('emit input event', () => {
     wrapper = mount(Search);
 
-    const input = wrapper.find('.van-search__input')[0];
+    const input = wrapper.find('.m-search__input')[0];
     const eventStub = sinon.stub(wrapper.vm, '$emit');
     input.trigger('input', { target: { value: 'search' }});
 
@@ -65,10 +65,10 @@ describe('Search', () => {
       inputSpy();
     });
 
-    const input = wrapper.find('.van-search__input')[0];
+    const input = wrapper.find('.m-search__input')[0];
     input.trigger('focus');
 
-    const cleanBtn = wrapper.find('.van-icon-clear')[0];
+    const cleanBtn = wrapper.find('.m-icon-clear')[0];
     cleanBtn.trigger('click');
 
     wrapper.vm.$nextTick(() => {
@@ -87,7 +87,7 @@ describe('Search', () => {
 
     const eventStub = sinon.stub(wrapper.vm, '$emit');
 
-    const cancelBtn = wrapper.find('.van-search__action-text')[0];
+    const cancelBtn = wrapper.find('.m-search__action-text')[0];
     cancelBtn.trigger('click');
 
     wrapper.vm.$nextTick(() => {
@@ -106,7 +106,7 @@ describe('Search', () => {
     const searchSpy = sinon.spy();
     wrapper.vm.$on('search', searchSpy);
 
-    const input = wrapper.find('.van-search__input')[0];
+    const input = wrapper.find('.m-search__input')[0];
     input.trigger('keypress.enter');
     expect(searchSpy.calledOnce).to.be.true;
 
@@ -119,7 +119,7 @@ describe('Search', () => {
   it('blur after click outside', () => {
     wrapper = mount(Search);
 
-    const input = wrapper.find('.van-search__input')[0];
+    const input = wrapper.find('.m-search__input')[0];
     input.trigger('focus');
 
     expect(wrapper.vm.isFocus).to.be.true;

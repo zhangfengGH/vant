@@ -1,46 +1,46 @@
 <template>
   <demo-section>
     <demo-block :title="$t('basicUsage')">
-      <van-steps :active="active">
-        <van-step>{{ $t('step1') }}</van-step>
-        <van-step>{{ $t('step2') }}</van-step>
-        <van-step>{{ $t('step3') }}</van-step>
-        <van-step>{{ $t('step4') }}</van-step>
-      </van-steps>
+      <m-steps :active="active">
+        <m-step>{{ $t('step1') }}</m-step>
+        <m-step>{{ $t('step2') }}</m-step>
+        <m-step>{{ $t('step3') }}</m-step>
+        <m-step>{{ $t('step4') }}</m-step>
+      </m-steps>
 
-      <van-button @click="nextStep">{{ $t('nextStep') }}</van-button>
+      <m-button @click="nextStep">{{ $t('nextStep') }}</m-button>
     </demo-block>
 
     <demo-block :title="$t('title2')">
-      <van-steps
+      <m-steps
         :active="active"
         icon="logistics"
         icon-class="steps-success"
         :title="$t('title')"
         :description="$t('desc')"
       >
-        <van-step>{{ $t('step1') }}</van-step>
-        <van-step>{{ $t('step2') }}</van-step>
-        <van-step>{{ $t('step3') }}</van-step>
-        <van-step>{{ $t('step4') }}</van-step>
-      </van-steps>
+        <m-step>{{ $t('step1') }}</m-step>
+        <m-step>{{ $t('step2') }}</m-step>
+        <m-step>{{ $t('step3') }}</m-step>
+        <m-step>{{ $t('step4') }}</m-step>
+      </m-steps>
     </demo-block>
 
     <demo-block :title="$t('title3')">
-      <van-steps direction="vertical" :active="0" active-color="#f60">
-        <van-step>
+      <m-steps direction="vertical" :active="0" active-color="#f60">
+        <m-step>
           <h3>{{ $t('status1') }}</h3>
           <p>2016-07-12 12:40</p>
-        </van-step>
-        <van-step>
+        </m-step>
+        <m-step>
           <h3>{{ $t('status2') }}</h3>
           <p>2016-07-11 10:00</p>
-        </van-step>
-        <van-step>
+        </m-step>
+        <m-step>
           <h3>{{ $t('status3') }}</h3>
           <p>2016-07-10 09:30</p>
-        </van-step>
-      </van-steps>
+        </m-step>
+      </m-steps>
     </demo-block>
   </demo-section>
 </template>
@@ -91,15 +91,15 @@ export default {
 <style lang="postcss">
 .demo-steps {
   .steps-success,
-  .van-icon-location {
+  .m-icon-location {
     color: #06bf04;
   }
 
-  .van-button {
+  .m-button {
     margin: 15px 0 0 15px;
   }
 
-  .van-steps__message + p {
+  .m-steps__message + p {
     margin-bottom: 10px;
   }
 

@@ -1,6 +1,6 @@
 <template>
-  <transition name="van-fade">
-    <div class="van-toast" :class="[`van-toast--${displayStyle}`, `van-toast--${position}`]" v-show="value">
+  <transition name="m-fade">
+    <div class="m-toast" :class="[`m-toast--${displayStyle}`, `m-toast--${position}`]" v-show="value">
       <!-- text only -->
       <div v-if="displayStyle === 'text'">{{ message }}</div>
       <div v-if="displayStyle === 'html'" v-html="message" />
@@ -8,8 +8,8 @@
       <!-- with icon -->
       <template v-if="displayStyle === 'default'">
         <loading v-if="type === 'loading'" color="white" />
-        <icon v-else class="van-toast__icon" :name="type" />
-        <div v-if="hasMessage" class="van-toast__text">{{ message }}</div>
+        <icon v-else class="m-toast__icon" :name="type" />
+        <div v-if="hasMessage" class="m-toast__text">{{ message }}</div>
       </template>
     </div>
   </transition>

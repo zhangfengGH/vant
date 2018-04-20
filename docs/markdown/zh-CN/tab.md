@@ -14,11 +14,11 @@ Vue.use(Tab).use(Tabs);
 默认情况下启用第一个 tab，可以通过`v-model`绑定当前激活的标签索引
 
 ```html
-<van-tabs v-model="active">
-  <van-tab v-for="index in 4" :title="'选项 ' + index">
+<m-tabs v-model="active">
+  <m-tab v-for="index in 4" :title="'选项 ' + index">
     内容 {{ index }}
-  </van-tab>
-</van-tabs>
+  </m-tab>
+</m-tabs>
 ```
 
 ```js
@@ -36,23 +36,23 @@ export default {
 默认情况下多于4个tab时，可以横向滚动tab。可以通过设置`swipe-threshold`这个阙值，多于这个阙值时，tab就会支持横向滚动。
 
 ```html
-<van-tabs>
-  <van-tab v-for="index in 8" :title="'选项 ' + index">
+<m-tabs>
+  <m-tab v-for="index in 8" :title="'选项 ' + index">
     内容 {{ index }}
-  </van-tab>
-</van-tabs>
+  </m-tab>
+</m-tabs>
 ```
 
 #### 禁用标签
 
-在对应的`van-tab`上设置`disabled`属性即可。如果需要监听禁用事件，可以在`van-tabs`上监听`disabled`事件。
+在对应的`m-tab`上设置`disabled`属性即可。如果需要监听禁用事件，可以在`m-tabs`上监听`disabled`事件。
 
 ```html
-<van-tabs @disabled="onClickDisabled">
-  <van-tab v-for="index in 4" :title="'选项 ' + index" :disabled="index === 2">
+<m-tabs @disabled="onClickDisabled">
+  <m-tab v-for="index in 4" :title="'选项 ' + index" :disabled="index === 2">
     内容 {{ index }}
-  </van-tab>
-</van-tabs>
+  </m-tab>
+</m-tabs>
 ```
 
 ```javascript
@@ -67,26 +67,26 @@ export default {
 
 #### 样式风格
 
-`Tabs`目前有两种样式：`line`和`card`，默认为`line`样式，也就上面基础用法中的样式，你可以在`van-tabs`上设置`type`为`card`改为card样式。
+`Tabs`目前有两种样式：`line`和`card`，默认为`line`样式，也就上面基础用法中的样式，你可以在`m-tabs`上设置`type`为`card`改为card样式。
 
 ```html
-<van-tabs type="card">
-  <van-tab v-for="index in 4" :title="'选项 ' + index">
+<m-tabs type="card">
+  <m-tab v-for="index in 4" :title="'选项 ' + index">
     内容 {{ index }}
-  </van-tab>
-</van-tabs>
+  </m-tab>
+</m-tabs>
 ```
 
 #### 点击事件
 
-可以在`van-tabs`上绑定`click`事件，事件传参为标签对应的索引和标题
+可以在`m-tabs`上绑定`click`事件，事件传参为标签对应的索引和标题
 
 ```html
-<van-tabs @click="onClick">
-  <van-tab v-for="index in 4" :title="'选项 ' + index">
+<m-tabs @click="onClick">
+  <m-tab v-for="index in 4" :title="'选项 ' + index">
     内容 {{ index }}
-  </van-tab>
-</van-tabs>
+  </m-tab>
+</m-tabs>
 ```
 
 ```javascript
@@ -103,25 +103,25 @@ export default {
 通过`sticky`属性可以开启粘性布局，粘性布局下，当 Tab 滚动到顶部时会自动吸顶
 
 ```html
-<van-tabs v-model="active" sticky>
-  <van-tab v-for="index in 4" :title="'选项 ' + index">
+<m-tabs v-model="active" sticky>
+  <m-tab v-for="index in 4" :title="'选项 ' + index">
     内容 {{ index }}
-  </van-tab>
-</van-tabs>
+  </m-tab>
+</m-tabs>
 ```
 
 #### 自定义标签
 通过 title slot 可以自定义标签内容
 
 ```html
-<van-tabs v-model="active">
-  <van-tab v-for="index in 2">
+<m-tabs v-model="active">
+  <m-tab v-for="index in 2">
     <div slot="title">
-      <van-icon name="more-o" />选项
+      <m-icon name="more-o" />选项
     </div>
     内容 {{ index }}
-  </van-tab>
-</van-tabs>
+  </m-tab>
+</m-tabs>
 ```
 
 #### 滑动切换
@@ -129,11 +129,11 @@ export default {
 通过`swipeable`属性可以开启滑动切换tab
 
 ```html
-<van-tabs v-model="active" swipeable>
-  <van-tab v-for="index in 4" :title="'选项 ' + index">
+<m-tabs v-model="active" swipeable>
+  <m-tab v-for="index in 4" :title="'选项 ' + index">
     内容 {{ index }}
-  </van-tab>
-</van-tabs>
+  </m-tab>
+</m-tabs>
 ```
 
 ### Tabs API

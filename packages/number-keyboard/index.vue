@@ -1,23 +1,23 @@
 <template>
-  <transition :name="transition ? 'van-slide-bottom' : ''">
+  <transition :name="transition ? 'm-slide-bottom' : ''">
     <div
       v-show="show"
       :style="style"
-      class="van-number-keyboard"
-      :class="`van-number-keyboard--${theme}`"
+      class="m-number-keyboard"
+      :class="`m-number-keyboard--${theme}`"
       @animationend="onAnimationEnd"
       @webkitAnimationEnd="onAnimationEnd"
     >
-      <div class="van-number-keyboard__title van-hairline--top" v-if="title || showTitleClose">
+      <div class="m-number-keyboard__title m-hairline--top" v-if="title || showTitleClose">
         <span v-text="title" />
         <span
-          class="van-number-keyboard__close"
+          class="m-number-keyboard__close"
           v-if="showTitleClose"
           v-text="closeButtonText"
           @click="onBlur"
         />
       </div>
-      <div class="van-number-keyboard__body">
+      <div class="m-number-keyboard__body">
         <key
           v-for="(key, index) in keys"
           :key="index"
@@ -26,7 +26,7 @@
           @press="onPressKey"
         />
       </div>
-      <div class="van-number-keyboard__sidebar" v-if="theme === 'custom'">
+      <div class="m-number-keyboard__sidebar" v-if="theme === 'custom'">
         <key :text="'delete'" :type="['delete', 'big']" @press="onPressKey" />
         <key :text="closeButtonText" :type="['green', 'big']" @press="onPressKey" />
       </div>

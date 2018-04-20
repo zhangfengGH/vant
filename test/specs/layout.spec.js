@@ -12,7 +12,7 @@ describe('Layout', () => {
   it('create a simple row', () => {
     wrapper = mount(Row);
 
-    expect(wrapper.hasClass('van-row')).to.be.true;
+    expect(wrapper.hasClass('m-row')).to.be.true;
     expect(wrapper.vm.style).to.be.empty;
   });
 
@@ -23,9 +23,9 @@ describe('Layout', () => {
         offset: 8
       }
     });
-    expect(wrapper.hasClass('van-col')).to.be.true;
-    expect(wrapper.hasClass('van-col-8')).to.be.true;
-    expect(wrapper.hasClass('van-col-offset-8')).to.be.true;
+    expect(wrapper.hasClass('m-col')).to.be.true;
+    expect(wrapper.hasClass('m-col-8')).to.be.true;
+    expect(wrapper.hasClass('m-col-offset-8')).to.be.true;
     expect(wrapper.vm.gutter).to.equal(0);
   });
 

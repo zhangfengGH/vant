@@ -1,11 +1,11 @@
 <template>
-  <div class="van-circle" :style="style">
+  <div class="m-circle" :style="style">
     <svg viewBox="0 0 1060 1060">
-      <path class="van-circle__hover" :style="hoverStyle" :d="path" />
-      <path class="van-circle__layer" :style="layerStyle" :d="path" />
+      <path class="m-circle__hover" :style="hoverStyle" :d="path" />
+      <path class="m-circle__layer" :style="layerStyle" :d="path" />
     </svg>
     <slot>
-      <div class="van-circle__text">{{ text }}</div>
+      <div class="m-circle__text">{{ text }}</div>
     </slot>
   </div>
 </template>

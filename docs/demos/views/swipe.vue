@@ -1,29 +1,29 @@
 <template>
   <demo-section>
     <demo-block :title="$t('basicUsage')">
-      <van-swipe :autoplay="3000">
-        <van-swipe-item>1</van-swipe-item>
-        <van-swipe-item>2</van-swipe-item>
-        <van-swipe-item>3</van-swipe-item>
-        <van-swipe-item>4</van-swipe-item>
-      </van-swipe>
+      <m-swipe :autoplay="3000">
+        <m-swipe-item>1</m-swipe-item>
+        <m-swipe-item>2</m-swipe-item>
+        <m-swipe-item>3</m-swipe-item>
+        <m-swipe-item>4</m-swipe-item>
+      </m-swipe>
     </demo-block>
 
     <demo-block :title="$t('title2')">
-      <van-swipe :autoplay="3000">
-        <van-swipe-item v-for="(image, index) in images" :key="index">
+      <m-swipe :autoplay="3000">
+        <m-swipe-item v-for="(image, index) in images" :key="index">
           <img v-lazy="image" >
-        </van-swipe-item>
-      </van-swipe>
+        </m-swipe-item>
+      </m-swipe>
     </demo-block>
 
     <demo-block :title="$t('title3')">
-      <van-swipe @change="onChange">
-        <van-swipe-item>1</van-swipe-item>
-        <van-swipe-item>2</van-swipe-item>
-        <van-swipe-item>3</van-swipe-item>
-        <van-swipe-item>4</van-swipe-item>
-      </van-swipe>
+      <m-swipe @change="onChange">
+        <m-swipe-item>1</m-swipe-item>
+        <m-swipe-item>2</m-swipe-item>
+        <m-swipe-item>3</m-swipe-item>
+        <m-swipe-item>4</m-swipe-item>
+      </m-swipe>
     </demo-block>
   </demo-section>
 </template>
@@ -66,7 +66,7 @@ export default {
 .demo-swipe {
   padding-bottom: 30px;
 
-  .van-swipe {
+  .m-swipe {
     cursor: pointer;
 
     &-item {

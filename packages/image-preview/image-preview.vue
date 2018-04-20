@@ -1,7 +1,7 @@
 <template>
   <div
     v-show="value"
-    class="van-image-preview"
+    class="m-image-preview"
     @touchstart="onTouchStart"
     @touchmove.prevent="touchMove"
     @touchend="onTouchEnd"
@@ -9,7 +9,7 @@
   >
     <swipe :initial-swipe="startPosition">
       <swipe-item v-for="(item, index) in images" :key="index">
-        <img class="van-image-preview__image" :src="item" >
+        <img class="m-image-preview__image" :src="item" >
       </swipe-item>
     </swipe>
   </div>

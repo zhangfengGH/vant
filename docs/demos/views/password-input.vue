@@ -1,13 +1,13 @@
 <template>
   <demo-section>
     <demo-block :title="$t('basicUsage')">
-      <van-password-input
+      <m-password-input
         :value="value"
         :info="$t('info')"
         @focus="showKeyboard = true"
       />
 
-      <van-number-keyboard
+      <m-number-keyboard
         :show="showKeyboard"
         @input="onInput"
         @delete="onDelete"

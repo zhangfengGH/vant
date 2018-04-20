@@ -1,70 +1,70 @@
 <template>
   <demo-section>
     <demo-block :title="$t('basicUsage')">
-      <van-tabs v-model="active">
-        <van-tab :title="$t('tab') + index" v-for="index in tabs" :key="index">
+      <m-tabs v-model="active">
+        <m-tab :title="$t('tab') + index" v-for="index in tabs" :key="index">
           {{ $t('content') }} {{ index }}
-        </van-tab>
-      </van-tabs>
+        </m-tab>
+      </m-tabs>
     </demo-block>
 
     <demo-block :title="$t('title2')">
-      <van-tabs>
-        <van-tab v-for="index in 8" :title="$t('tab') + index" :key="index">
+      <m-tabs>
+        <m-tab v-for="index in 8" :title="$t('tab') + index" :key="index">
           {{ $t('content') }} {{ index }}
-        </van-tab>
-      </van-tabs>
+        </m-tab>
+      </m-tabs>
     </demo-block>
 
     <demo-block :title="$t('title3')">
-      <van-tabs @disabled="onClickDisabled">
-        <van-tab v-for="index in 4" :title="$t('tab') + index" :disabled="index === 2" :key="index">
+      <m-tabs @disabled="onClickDisabled">
+        <m-tab v-for="index in 4" :title="$t('tab') + index" :disabled="index === 2" :key="index">
           {{ $t('content') }} {{ index }}
-        </van-tab>
-      </van-tabs>
+        </m-tab>
+      </m-tabs>
     </demo-block>
 
     <demo-block :title="$t('title4')">
-      <van-tabs type="card">
-        <van-tab v-for="index in 4" :title="$t('tab') + index" :key="index">
+      <m-tabs type="card">
+        <m-tab v-for="index in 4" :title="$t('tab') + index" :key="index">
           {{ $t('content') }} {{ index }}
-        </van-tab>
-      </van-tabs>
+        </m-tab>
+      </m-tabs>
     </demo-block>
 
     <demo-block :title="$t('title5')">
-      <van-tabs @click="onClick">
-        <van-tab v-for="index in 4" :title="$t('tab') + index" :key="index">
+      <m-tabs @click="onClick">
+        <m-tab v-for="index in 4" :title="$t('tab') + index" :key="index">
           {{ $t('content') }} {{ index }}
-        </van-tab>
-      </van-tabs>
+        </m-tab>
+      </m-tabs>
     </demo-block>
 
     <demo-block :title="$t('title6')">
-      <van-tabs :active="active" sticky>
-        <van-tab :title="$t('tab') + index" v-for="index in tabs" :key="index">
+      <m-tabs :active="active" sticky>
+        <m-tab :title="$t('tab') + index" v-for="index in tabs" :key="index">
           {{ $t('content') }} {{ index }}
-        </van-tab>
-      </van-tabs>
+        </m-tab>
+      </m-tabs>
     </demo-block>
 
     <demo-block :title="$t('title7')">
-      <van-tabs :active="active">
-        <van-tab v-for="index in 2" :key="index">
+      <m-tabs :active="active">
+        <m-tab v-for="index in 2" :key="index">
           <div slot="title">
-            <van-icon name="more-o" />{{ $t('tab') }}
+            <m-icon name="more-o" />{{ $t('tab') }}
           </div>
           {{ $t('content') }} {{ index }}
-        </van-tab>
-      </van-tabs>
+        </m-tab>
+      </m-tabs>
     </demo-block>
 
     <demo-block :title="$t('title8')">
-      <van-tabs :active="active" swipeable>
-        <van-tab :title="$t('tab') + index" v-for="index in tabs" :key="index">
+      <m-tabs :active="active" swipeable>
+        <m-tab :title="$t('tab') + index" v-for="index in tabs" :key="index">
           {{ $t('content') }} {{ index }}
-        </van-tab>
-      </van-tabs>
+        </m-tab>
+      </m-tabs>
     </demo-block>
   </demo-section>
 </template>
@@ -120,24 +120,24 @@ export default {
 .demo-tab {
   margin-bottom: 300px;
 
-  .van-tab .van-icon {
+  .m-tab .m-icon {
     margin-right: 5px;
     vertical-align: -2px;
   }
 
-  .van-tab__pane {
+  .m-tab__pane {
     background-color: #fff;
     padding: 20px;
   }
 
-  .van-tabs--card .van-tab__pane {
+  .m-tabs--card .m-tab__pane {
     background-color: transparent;
   }
 
-  .custom-tabwrap .van-tab-active {
+  .custom-tabwrap .m-tab-active {
     color: #20a0ff;
   }
-  .custom-tabwrap .van-tabs-nav-bar {
+  .custom-tabwrap .m-tabs-nav-bar {
     background: #20a0ff;
   }
   .custom-pane {
@@ -146,8 +146,8 @@ export default {
     line-height: 50px;
   }
 
-  .van-doc-demo-block:last-child {
-    .van-tab__pane {
+  .m-doc-demo-block:last-child {
+    .m-tab__pane {
       padding: 50px 20px;
     }
   }

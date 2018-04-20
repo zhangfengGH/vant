@@ -1,20 +1,20 @@
 <template>
   <div
-    class="van-radio"
-    :class="{ 'van-radio--disabled': isDisabled }"
+    class="m-radio"
+    :class="{ 'm-radio--disabled': isDisabled }"
     @click="$emit('click')"
   >
-    <span class="van-radio__input">
+    <span class="m-radio__input">
       <input
         :value="name"
         v-model="currentValue"
         type="radio"
-        class="van-radio__control"
+        class="m-radio__control"
         :disabled="isDisabled"
       >
       <icon :name="currentValue === name ? 'checked' : 'check'" />
     </span>
-    <span class="van-radio__label" @click="onClickLabel">
+    <span class="m-radio__label" @click="onClickLabel">
       <slot />
     </span>
   </div>
@@ -54,7 +54,7 @@ export default create({
   },
 
   created() {
-    this.findParent('van-radio-group');
+    this.findParent('m-radio-group');
   },
 
   methods: {

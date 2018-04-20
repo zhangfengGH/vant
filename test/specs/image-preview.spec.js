@@ -20,11 +20,11 @@ describe('ImagePreview', () => {
   it('call ImagePreview Function', (done) => {
     ImagePreview(images);
     Vue.nextTick(() => {
-      expect(document.querySelectorAll('.van-image-preview img').length).to.equal(3);
+      expect(document.querySelectorAll('.m-image-preview img').length).to.equal(3);
       ImagePreview(images.slice(0, 2));
 
       Vue.nextTick(() => {
-        expect(document.querySelectorAll('.van-image-preview img').length).to.equal(2);
+        expect(document.querySelectorAll('.m-image-preview img').length).to.equal(2);
         done();
       });
     });
@@ -38,7 +38,7 @@ describe('ImagePreview', () => {
       wrapper.vm.value = val;
     });
 
-    expect(wrapper.hasClass('van-image-preview')).to.be.true;
+    expect(wrapper.hasClass('m-image-preview')).to.be.true;
 
     wrapper.vm.$nextTick(() => {
       expect(wrapper.find('img').length).to.equal(3);
@@ -57,6 +57,6 @@ describe('ImagePreview', () => {
 
   it('register component', () => {
     Vue.use(ImagePreview);
-    expect(!!Vue.component('van-image-preview')).to.be.true;
+    expect(!!Vue.component('m-image-preview')).to.be.true;
   });
 });

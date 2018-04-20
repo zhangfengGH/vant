@@ -1,6 +1,6 @@
 <template>
-  <ul class="van-doc-dropdown" :style="{ top: top + 'px'}">
-    <li v-for="(value, key) in nav" class="van-doc-dropdown__item">
+  <ul class="m-doc-dropdown" :style="{ top: top + 'px'}">
+    <li v-for="(value, key) in nav" class="m-doc-dropdown__item">
       <a :href="value">{{ key }}</a>
     </li>
   </ul>
@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: 'van-doc-dropdown',
+  name: 'm-doc-dropdown',
 
   props: {
     nav: Object,
@@ -23,14 +23,14 @@ export default {
 <style lang="postcss">
 @import '../style/variable';
 
-.van-doc-dropdown {
+.m-doc-dropdown {
   position: absolute;
   top: 40px;
   right: 0px;
   padding: 8px 0;
   z-index: 10;
   background: #fff;
-  border: 1px solid $van-doc-border-color;
+  border: 1px solid $m-doc-border-color;
   text-align: left;
   border-radius: 4px;
 
@@ -44,10 +44,10 @@ export default {
     a {
       display: block;
       padding: 0 20px;
-      color: $van-doc-text-color;
+      color: $m-doc-text-color;
 
       &:hover {
-        color: $van-doc-blue;
+        color: $m-doc-blue;
       }
     }
   }

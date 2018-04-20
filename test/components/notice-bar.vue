@@ -1,6 +1,6 @@
 <template>
   <div class="notice-bar-container" style="width: 100px;">
-    <van-notice-bar :speed="speed" :text="text" :mode="mode" :delay="delay" />
+    <m-notice-bar :speed="speed" :text="text" :mode="mode" :delay="delay" />
   </div>
 </template>
 

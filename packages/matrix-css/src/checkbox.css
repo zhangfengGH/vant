@@ -1,8 +1,8 @@
 @import './common/var.css';
 
-$van-checkbox-size: 20px;
+$m-checkbox-size: 20px;
 
-.van-checkbox {
+.m-checkbox {
   overflow: hidden;
   user-select: none;
 
@@ -10,7 +10,7 @@ $van-checkbox-size: 20px;
   &__label {
     display: inline-block;
     vertical-align: middle;
-    line-height: $van-checkbox-size;
+    line-height: $m-checkbox-size;
   }
 
   &__icon {
@@ -18,8 +18,8 @@ $van-checkbox-size: 20px;
     color: transparent;
     text-align: center;
     border: 1px solid #aaa;
-    width: $van-checkbox-size;
-    height: $van-checkbox-size;
+    width: $m-checkbox-size;
+    height: $m-checkbox-size;
     box-sizing: border-box;
   }
 

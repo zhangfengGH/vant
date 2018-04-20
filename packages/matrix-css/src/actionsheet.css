@@ -1,6 +1,6 @@
 @import './common/var.css';
 
-.van-actionsheet {
+.m-actionsheet {
   position: fixed;
   left: 0;
   right: 0;
@@ -45,7 +45,7 @@
     line-height: 44px;
     text-align: center;
 
-    .van-icon-close {
+    .m-icon-close {
       top: 0;
       right: 0;
       padding: 0 15px;

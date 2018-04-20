@@ -1,49 +1,49 @@
 <template>
   <demo-section>
     <demo-block :title="$t('basicUsage')">
-      <van-checkbox v-model="checkbox1">{{ $t('checkbox') }} 1</van-checkbox>
+      <m-checkbox v-model="checkbox1">{{ $t('checkbox') }} 1</m-checkbox>
     </demo-block>
 
     <demo-block :title="$t('disabled')">
-      <van-checkbox :value="false" disabled>{{ $t('checkbox') }} 2</van-checkbox>
-      <van-checkbox :value="true" disabled>{{ $t('checkbox') }} 2</van-checkbox>
+      <m-checkbox :value="false" disabled>{{ $t('checkbox') }} 2</m-checkbox>
+      <m-checkbox :value="true" disabled>{{ $t('checkbox') }} 2</m-checkbox>
     </demo-block>
 
     <demo-block :title="$t('labelDisabled')">
-      <van-checkbox v-model="checkbox3" label-disabled>{{ $t('checkbox') }} 2</van-checkbox>
-      <van-checkbox v-model="checkbox4" label-disabled>{{ $t('checkbox') }} 2</van-checkbox>
+      <m-checkbox v-model="checkbox3" label-disabled>{{ $t('checkbox') }} 2</m-checkbox>
+      <m-checkbox v-model="checkbox4" label-disabled>{{ $t('checkbox') }} 2</m-checkbox>
     </demo-block>
 
     <demo-block :title="$t('title3')">
-      <van-checkbox-group v-model="result">
-        <van-checkbox
+      <m-checkbox-group v-model="result">
+        <m-checkbox
           v-for="(item, index) in list"
           :key="index"
           :name="item"
         >
           {{ $t('checkbox') }} {{ item }}
-        </van-checkbox>
-      </van-checkbox-group>
+        </m-checkbox>
+      </m-checkbox-group>
     </demo-block>
 
     <demo-block :title="$t('title4')">
-      <van-checkbox-group v-model="result">
-        <van-cell-group>
-          <van-cell v-for="(item, index) in list" :key="index">
-            <van-checkbox :name="item">{{ $t('checkbox') }} {{ item }}</van-checkbox>
-          </van-cell>
-        </van-cell-group>
-      </van-checkbox-group>
+      <m-checkbox-group v-model="result">
+        <m-cell-group>
+          <m-cell v-for="(item, index) in list" :key="index">
+            <m-checkbox :name="item">{{ $t('checkbox') }} {{ item }}</m-checkbox>
+          </m-cell>
+        </m-cell-group>
+      </m-checkbox-group>
     </demo-block>
 
     <demo-block :title="$t('title5')">
-      <van-checkbox-group v-model="result2" :max="max">
-        <van-cell-group>
-          <van-cell v-for="(item, index) in list" :key="index">
-            <van-checkbox :name="item">{{ $t('checkbox') }} {{ item }}</van-checkbox>
-          </van-cell>
-        </van-cell-group>
-      </van-checkbox-group>
+      <m-checkbox-group v-model="result2" :max="max">
+        <m-cell-group>
+          <m-cell v-for="(item, index) in list" :key="index">
+            <m-checkbox :name="item">{{ $t('checkbox') }} {{ item }}</m-checkbox>
+          </m-cell>
+        </m-cell-group>
+      </m-checkbox-group>
     </demo-block>
   </demo-section>
 </template>
@@ -88,12 +88,12 @@ export default {
 
 <style lang="postcss">
 .demo-checkbox {
-  .van-checkbox {
+  .m-checkbox {
     margin: 10px 0 0 20px;
   }
 
-  .van-cell {
-    .van-checkbox {
+  .m-cell {
+    .m-checkbox {
       margin: 0;
       display: flex;
       flex-direction: row-reverse;

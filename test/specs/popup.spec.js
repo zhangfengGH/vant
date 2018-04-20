@@ -15,7 +15,7 @@ describe('Popup', () => {
       }
     });
 
-    expect(wrapper.hasClass('van-popup')).to.be.true;
+    expect(wrapper.hasClass('m-popup')).to.be.true;
     expect(wrapper.instance().currentTransition).to.equal('popup-slide-bottom');
   });
 
@@ -57,7 +57,7 @@ describe('Popup', () => {
       }
     });
 
-    expect(wrapper.hasClass('van-popup')).to.be.true;
+    expect(wrapper.hasClass('m-popup')).to.be.true;
     expect(wrapper.instance().currentTransition).to.equal('popup-fade');
   });
 
@@ -72,10 +72,10 @@ describe('Popup', () => {
       wrapper.vm.value = val;
     });
 
-    expect(wrapper.hasClass('van-popup')).to.be.true;
+    expect(wrapper.hasClass('m-popup')).to.be.true;
 
     setTimeout(() => {
-      const modal = document.querySelector('.van-modal');
+      const modal = document.querySelector('.m-modal');
       triggerTouch(modal, 'touchstart', 0, 0);
       triggerTouch(modal, 'touchmove', 0, 10);
       triggerTouch(modal, 'touchmove', 0, 30);
@@ -97,7 +97,7 @@ describe('Popup', () => {
       }
     });
 
-    expect(wrapper.hasClass('van-popup')).to.be.true;
+    expect(wrapper.hasClass('m-popup')).to.be.true;
 
     setTimeout(() => {
       expect(wrapper.element.style.display).to.equal('');
@@ -159,10 +159,10 @@ describe('Popup', () => {
       }
     });
 
-    expect(testNode.querySelectorAll('.van-modal').length).to.equal(0);
+    expect(testNode.querySelectorAll('.m-modal').length).to.equal(0);
     wrapper.vm.overlay = true;
     setTimeout(() => {
-      expect(testNode.querySelectorAll('.van-modal').length).to.equal(1);
+      expect(testNode.querySelectorAll('.m-modal').length).to.equal(1);
       done();
     }, 100);
   });
@@ -175,7 +175,7 @@ describe('Popup', () => {
     });
 
     setTimeout(() => {
-      expect(document.body.classList.contains('van-overflow-hidden')).to.be.true;
+      expect(document.body.classList.contains('m-overflow-hidden')).to.be.true;
       done();
     }, 50);
   });

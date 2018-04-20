@@ -1,6 +1,6 @@
 @import './common/var.css';
 
-.van-image-preview {
+.m-image-preview {
   top: 0;
   left: 0;
   width: 100%;
@@ -18,7 +18,7 @@
     position: absolute;
   }
 
-  .van-swipe {
+  .m-swipe {
     height: 100%;
   }
 }

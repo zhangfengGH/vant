@@ -1,20 +1,20 @@
 @import './common/var.css';
 
-.van-steps {
+.m-steps {
   overflow: hidden;
   background-color: $white;
 
   &--horizontal {
     padding: 0 10px;
 
-    .van-steps__items {
+    .m-steps__items {
       display: flex;
       margin: 0 0 10px;
       overflow: hidden;
       position: relative;
       padding-bottom: 22px;
 
-      &.van-steps__items--alone {
+      &.m-steps__items--alone {
         padding-top: 10px;
       }
     }
@@ -29,7 +29,7 @@
     margin-right: 10px;
   }
 
-  .van-icon {
+  .m-icon {
     font-size: 40px;
   }
 
@@ -51,7 +51,7 @@
   }
 }
 
-.van-step {
+.m-step {
   flex: 1;
   font-size: 14px;
   position: relative;
@@ -61,7 +61,7 @@
     float: left;
 
     &:first-child {
-      .van-step__title {
+      .m-step__title {
         transform: none;
         margin-left: 0;
       }
@@ -72,22 +72,22 @@
       right: 10px;
       width: auto;
 
-      .van-step__title {
+      .m-step__title {
         transform: none;
         margin-left: 0;
       }
 
-      .van-step__circle-container {
+      .m-step__circle-container {
         left: auto;
         right: -9px;
       }
 
-      .van-step__line {
+      .m-step__line {
         width: 0;
       }
     }
 
-    .van-step__circle-container {
+    .m-step__circle-container {
       position: absolute;
       top: 28px;
       left: -8px;
@@ -96,14 +96,14 @@
       z-index: 1;
     }
 
-    .van-step__title {
+    .m-step__title {
       font-size: 12px;
       transform: translate3d(-50%, 0, 0);
       display: inline-block;
       margin-left: 3px;
     }
 
-    .van-step__line {
+    .m-step__line {
       position: absolute;
       left: 0px;
       top: 30px;
@@ -112,23 +112,23 @@
       background-color: $gray-light;
     }
 
-    &.van-step--finish {
+    &.m-step--finish {
       color: $text-color;
 
-      .van-step__circle,
-      .van-step__line {
+      .m-step__circle,
+      .m-step__line {
         background-color: $green;
       }
     }
 
-    &.van-step--process {
+    &.m-step--process {
       color: $text-color;
 
-      .van-step__circle-container {
+      .m-step__circle-container {
         top: 24px;
       }
 
-      .van-icon {
+      .m-icon {
         font-size: 12px;
         color: $green;
         display: block;
@@ -136,7 +136,7 @@
     }
   }
 
-  .van-step__circle {
+  .m-step__circle {
     display: block;
     width: 5px;
     height: 5px;
@@ -168,24 +168,24 @@
       }
     }
 
-    .van-step__circle-container > i {
+    .m-step__circle-container > i {
       position: absolute;
       z-index: 2;
     }
 
-    .van-icon-checked {
+    .m-icon-checked {
       top: 12px;
       left: -20px;
       line-height: 1;
       font-size: 12px;
     }
 
-    .van-step__circle {
+    .m-step__circle {
       top: 16px;
       left: -17px;
     }
 
-    .van-step__line {
+    .m-step__line {
       position: absolute;
       top: 0;
       left: -15px;

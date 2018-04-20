@@ -15,8 +15,8 @@ describe('SwitchCell', () => {
 
     DOMChecker(wrapper, {
       count: {
-        '.van-switch--on': 0,
-        '.van-switch--disabled': 0
+        '.m-switch--on': 0,
+        '.m-switch--disabled': 0
       }
     });
   });
@@ -31,11 +31,11 @@ describe('SwitchCell', () => {
 
     DOMChecker(wrapper, {
       text: {
-        '.van-cell__title span': '测试标题'
+        '.m-cell__title span': '测试标题'
       },
       count: {
-        '.van-switch--on': 0,
-        '.van-switch--disabled': 0
+        '.m-switch--on': 0,
+        '.m-switch--disabled': 0
       }
     });
   });
@@ -50,8 +50,8 @@ describe('SwitchCell', () => {
 
     DOMChecker(wrapper, {
       count: {
-        '.van-switch--on': 1,
-        '.van-switch--disabled': 0
+        '.m-switch--on': 1,
+        '.m-switch--disabled': 0
       }
     });
   });
@@ -66,8 +66,8 @@ describe('SwitchCell', () => {
 
     DOMChecker(wrapper, {
       count: {
-        '.van-switch--on': 0,
-        '.van-switch--disabled': 1
+        '.m-switch--on': 0,
+        '.m-switch--disabled': 1
       }
     });
   });
@@ -89,7 +89,7 @@ describe('SwitchCell', () => {
       done();
     });
 
-    const switchEl = wrapper.find('.van-switch')[0];
+    const switchEl = wrapper.find('.m-switch')[0];
     switchEl.trigger('click');
   });
 });

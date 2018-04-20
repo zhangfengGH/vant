@@ -1,29 +1,29 @@
 <template>
   <demo-section>
     <demo-block :title="$t('basicUsage')">
-      <van-collapse v-model="active1">
-        <van-collapse-item :title="$t('title1')">{{ $t('content1') }}</van-collapse-item>
-        <van-collapse-item :title="$t('title2')">{{ $t('content2') }}</van-collapse-item>
-        <van-collapse-item :title="$t('title3')">{{ $t('content3') }}</van-collapse-item>
-      </van-collapse>
+      <m-collapse v-model="active1">
+        <m-collapse-item :title="$t('title1')">{{ $t('content1') }}</m-collapse-item>
+        <m-collapse-item :title="$t('title2')">{{ $t('content2') }}</m-collapse-item>
+        <m-collapse-item :title="$t('title3')">{{ $t('content3') }}</m-collapse-item>
+      </m-collapse>
     </demo-block>
 
     <demo-block :title="$t('accordion')">
-      <van-collapse v-model="active2" accordion>
-        <van-collapse-item :title="$t('title1')">{{ $t('content1') }}</van-collapse-item>
-        <van-collapse-item :title="$t('title2')">{{ $t('content2') }}</van-collapse-item>
-        <van-collapse-item :title="$t('title3')">{{ $t('content3') }}</van-collapse-item>
-      </van-collapse>
+      <m-collapse v-model="active2" accordion>
+        <m-collapse-item :title="$t('title1')">{{ $t('content1') }}</m-collapse-item>
+        <m-collapse-item :title="$t('title2')">{{ $t('content2') }}</m-collapse-item>
+        <m-collapse-item :title="$t('title3')">{{ $t('content3') }}</m-collapse-item>
+      </m-collapse>
     </demo-block>
 
     <demo-block :title="$t('titleSlot')">
-      <van-collapse v-model="active3">
-        <van-collapse-item>
-          <div slot="title">{{ $t('title1') }}<van-icon name="question" /></div>
+      <m-collapse v-model="active3">
+        <m-collapse-item>
+          <div slot="title">{{ $t('title1') }}<m-icon name="question" /></div>
           {{ $t('content1') }}
-        </van-collapse-item>
-        <van-collapse-item :title="$t('title2')">{{ $t('content2') }}</van-collapse-item>
-      </van-collapse>
+        </m-collapse-item>
+        <m-collapse-item :title="$t('title2')">{{ $t('content2') }}</m-collapse-item>
+      </m-collapse>
     </demo-block>
   </demo-section>
 </template>
@@ -67,13 +67,13 @@ export default {
 @import "../../../packages/matrix-css/src/common/var.css";
 
 .demo-collapse {
-  .van-collapse-item__content {
+  .m-collapse-item__content {
     font-size: 13px;
     line-height: 1.5;
     color: $gray-darker;
   }
 
-  .van-icon-question {
+  .m-icon-question {
     color: $blue;
     vertical-align: -3px;
     margin-left: 5px;

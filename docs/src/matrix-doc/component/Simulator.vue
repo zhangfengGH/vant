@@ -1,8 +1,8 @@
 <template>
-  <div :class="['van-doc-simulator', { 'van-doc-simulator-fixed': isFixed }]">
-    <div class="van-doc-simulator__nav">
-      <div class="van-doc-simulator__url">{{ iframeHostName }}</div>
-      <div class="van-doc-simulator__reload" @click="reloadIframe"></div>
+  <div :class="['m-doc-simulator', { 'm-doc-simulator-fixed': isFixed }]">
+    <div class="m-doc-simulator__nav">
+      <div class="m-doc-simulator__url">{{ iframeHostName }}</div>
+      <div class="m-doc-simulator__reload" @click="reloadIframe"></div>
     </div>
     <iframe ref="iframe" :src="srcWithTimestamp" :style="simulatorStyle" frameborder="0" />
   </div>
@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: 'van-doc-simulator',
+  name: 'm-doc-simulator',
 
   props: {
     src: String
@@ -92,22 +92,22 @@ export default {
 <style lang="postcss">
 @import '../style/variable';
 
-.van-doc-simulator {
+.m-doc-simulator {
   z-index: 1;
   overflow: hidden;
   position: absolute;
   border-radius: 6px;
   background: #f2f2f4;
   box-sizing: border-box;
-  right: $van-doc-padding;
-  width: $van-doc-simulator-width;
-  min-width: $van-doc-simulator-width;
-  top: calc($van-doc-padding + $van-doc-header-top-height);
+  right: $m-doc-padding;
+  width: $m-doc-simulator-width;
+  min-width: $m-doc-simulator-width;
+  top: calc($m-doc-padding + $m-doc-header-top-height);
   box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 6px, rgba(0, 0, 0, 0.2) 0px 1px 4px;
 
   @media (max-width: 1300px) {
-    width: $van-doc-simulator-small-width;
-    min-width: $van-doc-simulator-small-width;
+    width: $m-doc-simulator-small-width;
+    min-width: $m-doc-simulator-small-width;
   }
 
   @media (max-width: 1100px) {
@@ -115,14 +115,14 @@ export default {
     right: auto;
   }
 
-  @media (min-width: $van-doc-row-max-width) {
+  @media (min-width: $m-doc-row-max-width) {
     right: 50%;
-    margin-right: calc(-$van-doc-row-max-width/2 + 40px);
+    margin-right: calc(-$m-doc-row-max-width/2 + 40px);
   }
 
   &-fixed {
     position: fixed;
-    top: $van-doc-padding;
+    top: $m-doc-padding;
   }
 
   iframe {

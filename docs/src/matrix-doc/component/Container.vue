@@ -1,12 +1,12 @@
 <template>
-  <div class="van-doc-container van-doc-row" :class="{ 'van-doc-container--with-simulator': hasSimulator }">
+  <div class="m-doc-container m-doc-row" :class="{ 'm-doc-container--with-simulator': hasSimulator }">
     <slot></slot>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'van-doc-container',
+  name: 'm-doc-container',
 
   props: {
     hasSimulator: Boolean
@@ -17,17 +17,17 @@ export default {
 <style lang="postcss">
 @import '../style/variable';
 
-.van-doc-container {
+.m-doc-container {
   overflow: hidden;
   box-sizing: border-box;
   background-color: #fff;
   padding-left: 250px;
 
   &--with-simulator {
-    padding-right: calc($van-doc-simulator-width + $van-doc-padding);
+    padding-right: calc($m-doc-simulator-width + $m-doc-padding);
 
     @media (max-width: 1300px) {
-      padding-right: calc($van-doc-simulator-small-width + $van-doc-padding);
+      padding-right: calc($m-doc-simulator-small-width + $m-doc-padding);
     }
   }
 }

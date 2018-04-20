@@ -1,28 +1,28 @@
 <template>
-  <ul class="van-pagination" :class="{ 'van-pagination-simple': !isMultiMode }">
+  <ul class="m-pagination" :class="{ 'm-pagination-simple': !isMultiMode }">
     <li
-      class="van-pagination__item van-pagination__prev van-hairline"
-      :class="{ 'van-pagination--disabled': value === 1 }"
+      class="m-pagination__item m-pagination__prev m-hairline"
+      :class="{ 'm-pagination--disabled': value === 1 }"
       @click="selectPage(value - 1)"
     >
-      {{ prevText || $t('prev') }}
+      {{ previousText || $t('prev') }}
     </li>
     <li
       v-if="isMultiMode"
       v-for="(page, index) in pages"
       :key="index"
-      class="van-pagination__item van-pagination__page van-hairline"
-      :class="{ 'van-pagination--active': page.active }"
+      class="m-pagination__item m-pagination__page m-hairline"
+      :class="{ 'm-pagination--active': page.active }"
       @click="selectPage(page.number)"
     >
       {{ page.text }}
     </li>
-    <li v-if="!isMultiMode" class="van-pagination__page-desc">
+    <li v-if="!isMultiMode" class="m-pagination__page-desc">
       <slot name="pageDesc">{{ pageDesc }}</slot>
     </li>
     <li
-      class="van-pagination__item van-pagination__next van-hairline"
-      :class="{ 'van-pagination--disabled': value === computedPageCount }"
+      class="m-pagination__item m-pagination__next m-hairline"
+      :class="{ 'm-pagination--disabled': value === computedPageCount }"
       @click="selectPage(value + 1)"
     >
       {{ nextText || $t('next') }}
@@ -38,7 +38,7 @@ export default create({
 
   props: {
     value: Number,
-    prevText: String,
+    previousText: String,
     nextText: String,
     pageCount: Number,
     forceEllipses: Boolean,

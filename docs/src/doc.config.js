@@ -3,7 +3,7 @@ module.exports = {
   'zh-CN': {
     header: {
       logo: {
-        image: 'https://img.yzcdn.cn/public_files/2017/12/18/fd78cf6bb5d12e2a119d0576bedfd230.png',
+        image: 'https://m.lvmama.com/favicon.ico',
         title: 'matrix',
         href: 'http://www.youzanyun.com/zanui'
       },

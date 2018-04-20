@@ -1,13 +1,13 @@
 <template>
   <div class="side-nav">
     <h1 class="zanui-title">
-      <img src="https://img.yzcdn.cn/public_files/2017/12/18/fd78cf6bb5d12e2a119d0576bedfd230.png" >
+      <img src="https://m.lvmama.com/favicon.ico" >
       <span>matrix</span>
     </h1>
-    <div class="mobile-switch-lang">
+    <!-- <div class="mobile-switch-lang">
       <span :class="{ active: $matrixLang === 'en-US' }" @click="switchLang('en-US')">EN</span>
       <span :class="{ active: $matrixLang === 'zh-CN' }" @click="switchLang('zh-CN')">中文</span>
-    </div>
+    </div> -->
     <h2 class="zanui-desc">{{ description }}</h2>
     <div class="mobile-navs">
       <div class="mobile-nav-item" v-for="(item, index) in navList" v-if="item.showInMobile" :key="index">
@@ -39,7 +39,7 @@ export default {
     },
 
     description() {
-      return this.$matrixLang === 'zh-CN' ? '有赞移动端 Vue 组件库' : 'A Vue.js 2.0 Mobile UI at YouZan';
+      return this.$matrixLang === 'zh-CN' ? '驴妈妈移动端 Vue 组件库' : 'A Vue.js 2.0 Mobile UI at YouZan';
     }
   },
 

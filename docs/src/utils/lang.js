@@ -8,7 +8,7 @@ const langMap = {
     messages: enUS
   },
   'zh-CN': {
-    title: 'matrix - 有赞移动端 Vue 组件库',
+    title: 'matrix - 驴妈妈移动端 Vue 组件库',
     messages: zhCN
   }
 };

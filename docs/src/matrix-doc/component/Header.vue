@@ -6,7 +6,7 @@
           <img :src="config.logo.image">
           <span>{{ config.logo.title }}</span>
         </a>
-        <ul class="m-doc-header__top-nav">
+        <!-- <ul class="m-doc-header__top-nav">
           <li v-for="(value, key) in config.nav" class="m-doc-header__top-nav-item">
             <a
               class="m-doc-header__top-nav-title"
@@ -21,7 +21,7 @@
               <span v-else>{{ key }}</span>
             </a>
           </li>
-        </ul>
+        </ul> -->
       </div>
     </div>
   </div>

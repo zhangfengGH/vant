@@ -1,13 +1,11 @@
 <div class="m-doc-intro">
-  <img class="m-doc-intro__youzan" src="//img.yzcdn.cn/public_files/2017/02/09/e84aa8cbbf7852688c86218c1f3bbf17.png">
-  <img class="m-doc-intro__logo" src="//img.yzcdn.cn/public_files/2017/12/18/fd78cf6bb5d12e2a119d0576bedfd230.png">
   <h2>matrix</h2>
-  <p>有赞移动端 Vue 组件库</p>
+  <p>驴妈妈移动端 Vue 组件库</p>
 </div>
  
 ### 特性
 
-* 50+ 个经过有赞线上业务检验的组件
+* 50+ 个经过驴妈妈线上业务检验的组件
 * 单元测试覆盖率超过 90%
 * 完善的文档和示例
 * 支持 [babel-plugin-import](https://github.com/ant-design/babel-plugin-import)

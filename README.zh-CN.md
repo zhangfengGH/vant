@@ -15,7 +15,7 @@
 
 ## 特性
 
-* 50+ 个经过有赞线上业务检验的组件
+* 50+ 个经过驴妈妈线上业务检验的组件
 * 单元测试覆盖率超过 90%
 * 完善的中英文文档和示例
 * 支持 [babel-plugin-import](https://github.com/ant-design/babel-plugin-import)

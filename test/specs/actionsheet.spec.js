@@ -52,7 +52,7 @@ describe('ActionSheet', () => {
       propsData: {
         actions: [
           {
-            name: '有赞E卡',
+            name: '驴妈妈E卡',
             subname: '（剩余260.50元）'
           },
           {
@@ -77,7 +77,7 @@ describe('ActionSheet', () => {
       propsData: {
         actions: [
           {
-            name: '有赞E卡',
+            name: '驴妈妈E卡',
             callback: () => {
               called = true;
             }

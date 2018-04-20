@@ -2,7 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import App from './DocsApp';
 import routes from './router';
-import VantDoc from 'vant-doc';
+import VantDoc from './vant-doc';
 import { isMobile } from './utils';
 import './components/nprogress.css';
 

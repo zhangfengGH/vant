@@ -1,0 +1,21 @@
+$van-doc-blue: #3498db;
+$van-doc-text-color: #333;
+$van-doc-text-light-blue: rgba(69, 90, 100, .6);
+$van-doc-grey: #999;
+$van-doc-dark-grey: #666;
+$van-doc-light-grey: #ccc;
+$van-doc-border-color: #eaeefb;;
+$van-doc-code-color: #455a64;
+$van-doc-padding: 40px;
+$van-doc-row-max-width: 1440px;
+
+/* header */
+$van-doc-header-top-height: 60px;
+$van-doc-header-bottom-height: 50px;
+
+/* simulator */
+$van-doc-simulator-width: 360px;
+$van-doc-simulator-small-width: 320px;
+$van-doc-simulator-height: 620px;
+$van-doc-simulator-small-height: 560px;
+

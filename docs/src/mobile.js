@@ -3,10 +3,10 @@ import VueRouter from 'vue-router';
 import App from './WapApp';
 import routes from './router';
 import Vant, { Lazyload } from 'packages';
-import VantDoc from 'vant-doc';
+import VantDoc from './vant-doc';
 import 'packages/vant-css/src/index.css';
 import 'packages/vant-css/src/icon-local.css';
-import 'vant-doc/src/helper/touch-simulator';
+import './vant-doc/src/helper/touch-simulator';
 import './components/nprogress.css';
 
 Vue

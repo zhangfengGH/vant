@@ -5,7 +5,7 @@
 import Vue from 'vue';
 import i18n from 'packages/mixins/i18n';
 import { Locale, Toast, Dialog } from 'packages';
-import { DemoBlock, DemoSection } from 'vant-doc';
+import { DemoBlock, DemoSection } from '../src/vant-doc';
 import { camelize } from 'packages/utils';
 
 const demoBaseMixin = {

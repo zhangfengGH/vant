@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { NavBar } from 'vant';
+import { NavBar } from 'matrix';
 
 Vue.use(NavBar);
 ```

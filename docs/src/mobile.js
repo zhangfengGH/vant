@@ -2,16 +2,16 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import App from './WapApp';
 import routes from './router';
-import Vant, { Lazyload } from 'packages';
-import VantDoc from './vant-doc';
-import 'packages/vant-css/src/index.css';
-import 'packages/vant-css/src/icon-local.css';
-import './vant-doc/src/helper/touch-simulator';
+import matrix, { Lazyload } from 'packages';
+import matrixDoc from './matrix-doc';
+import 'packages/matrix-css/src/index.css';
+import 'packages/matrix-css/src/icon-local.css';
+import './matrix-doc/src/helper/touch-simulator';
 import './components/nprogress.css';
 
 Vue
-  .use(Vant)
-  .use(VantDoc)
+  .use(matrix)
+  .use(matrixDoc)
   .use(VueRouter)
   .use(Lazyload, {
     lazyComponent: true
@@ -19,7 +19,7 @@ Vue
 
 const router = new VueRouter({
   mode: 'hash',
-  base: '/zanui/vant/examples',
+  base: '/zanui/matrix/examples',
   routes: routes(true)
 });
 

@@ -4,7 +4,7 @@ module.exports = {
     header: {
       logo: {
         image: 'https://img.yzcdn.cn/public_files/2017/12/18/fd78cf6bb5d12e2a119d0576bedfd230.png',
-        title: 'Vant',
+        title: 'matrix',
         href: 'http://www.youzanyun.com/zanui'
       },
       nav: {
@@ -13,7 +13,7 @@ module.exports = {
           from: 'zh-CN',
           to: 'en-US'
         },
-        github: 'https://github.com/youzan/vant'
+        github: 'https://github.com/youzan/matrix'
       }
     },
     nav: [

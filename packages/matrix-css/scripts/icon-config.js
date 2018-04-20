@@ -1,5 +1,5 @@
 module.exports = {
-  name: 'vant-icon',
+  name: 'matrix-icon',
   glyphs: [
     {
       src: '关闭.svg',

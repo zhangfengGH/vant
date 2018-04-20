@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { Switch } from 'vant';
+import { Switch } from 'matrix';
 
 Vue.use(Switch);
 ```

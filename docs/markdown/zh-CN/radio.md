@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { Radio } from 'vant';
+import { Radio } from 'matrix';
 
 Vue.use(Radio);
 ```

@@ -4,7 +4,7 @@
 
 ### 使用指南
 ``` javascript
-import { SwitchCell } from 'vant';
+import { SwitchCell } from 'matrix';
 
 Vue.use(SwitchCell);
 ```

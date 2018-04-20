@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { Checkbox, CheckboxGroup } from 'vant';
+import { Checkbox, CheckboxGroup } from 'matrix';
 
 Vue.use(Checkbox).use(CheckboxGroup);
 ```

@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { Swipe, SwipeItem } from 'vant';
+import { Swipe, SwipeItem } from 'matrix';
 
 Vue.use(Swipe).use(SwipeItem);
 ```

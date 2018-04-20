@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { Popup } from 'vant';
+import { Popup } from 'matrix';
 
 Vue.use(Popup);
 ```

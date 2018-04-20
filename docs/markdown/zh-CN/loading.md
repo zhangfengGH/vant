@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { Loading } from 'vant';
+import { Loading } from 'matrix';
 
 Vue.use(Loading);
 ```

@@ -3,7 +3,7 @@
 
 ### 使用指南
 ``` javascript
-import { PasswordInput, NumberKeyboard } from 'vant';
+import { PasswordInput, NumberKeyboard } from 'matrix';
 
 Vue.use(PasswordInput).use(NumberKeyboard);
 ```

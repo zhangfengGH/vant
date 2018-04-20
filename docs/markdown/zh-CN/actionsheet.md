@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { Actionsheet } from 'vant';
+import { Actionsheet } from 'matrix';
 
 Vue.use(Actionsheet);
 ```

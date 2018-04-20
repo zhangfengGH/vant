@@ -3,7 +3,7 @@
 
 ### 使用指南
 ``` javascript
-import { List } from 'vant';
+import { List } from 'matrix';
 
 Vue.use(List);
 ```

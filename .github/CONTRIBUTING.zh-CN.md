@@ -1,8 +1,8 @@
-# 开发 vant
+# 开发 matrix
 
-首先感谢你使用 Vant。
+首先感谢你使用 matrix。
 
-以下是关于向 Vant 提交代码的指南。在向 Vant 提交 Issue 或者 PR 之前，请先花几分钟时间阅读以下文字。
+以下是关于向 matrix 提交代码的指南。在向 matrix 提交 Issue 或者 PR 之前，请先花几分钟时间阅读以下文字。
 
 ## Issue 规范
 如果遇到问题，请先确认这个是否已经在 issue 中有记录或者已被修复。你可以直接搜索已有的 Issue 或者 PR。
@@ -29,13 +29,13 @@ npm run dev
 ## 代码目录结构
 
 - 仓库的组件代码都位于 `packages` 下，每个组件一个文件夹
-- 所有的组件样式代码都位于 `packages/vant-css/src` 下，`vant-css` 也会在发布时单独发包
+- 所有的组件样式代码都位于 `packages/matrix-css/src` 下，`matrix-css` 也会在发布时单独发包
 - `docs/markdown` 目录下是文档网站的代码，根据语言划分为 zh-CN 和 en-US，本地开发时可以在根目录下运行 `npm run dev` 开启文档网站。
 
 项目目录大致如下：
 
 ```
-vant
+matrix
 ├── build            # 组件打包配置和编译需要的脚本
 ├── docs             # 文档网站代码
 ├── packages         # 组件源代码
@@ -52,9 +52,9 @@ vant
 
 - 添加样式代码
 
-组件对应的样式需要放到 `packages/vant-css/src` 目录下，`Button` 组件的话需要新建一个文件 `button.css`。如若个组件样式比较复杂，为了方便组织代码可以在 `packages/vant-css/src` 下面新建一个同名目录 `button`，里面可以放一些 partial 样式。
+组件对应的样式需要放到 `packages/matrix-css/src` 目录下，`Button` 组件的话需要新建一个文件 `button.css`。如若个组件样式比较复杂，为了方便组织代码可以在 `packages/matrix-css/src` 下面新建一个同名目录 `button`，里面可以放一些 partial 样式。
 
-新添加的 `button.css` 文件需要在 `packages/vant-css/src/index.css` 中手动 import。
+新添加的 `button.css` 文件需要在 `packages/matrix-css/src/index.css` 中手动 import。
 
 - 添加文档
 

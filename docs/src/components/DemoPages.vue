@@ -23,7 +23,7 @@ export default {
     'zh-CN': {
       title: '示例',
       source: '源代码',
-      description: '下面是一些使用 Vant 搭建的示例页面，点击图片切换至对应示例。',
+      description: '下面是一些使用 matrix 搭建的示例页面，点击图片切换至对应示例。',
       goodsDetail: '商品详情',
       userCenter: '会员中心',
       shoppingCart: '购物车'
@@ -31,7 +31,7 @@ export default {
     'en-US': {
       title: 'Demo Pages',
       source: 'Source code',
-      description: 'Here are some of the demo pages built using Vant, click on the picture to switch to the corresponding demo.',
+      description: 'Here are some of the demo pages built using matrix, click on the picture to switch to the corresponding demo.',
       goodsDetail: 'Goods Detail',
       userCenter: 'User Center',
       shoppingCart: 'Shopping Cart'
@@ -49,18 +49,18 @@ export default {
       return [{
         title: this.$t('goodsDetail'),
         preview: 'https://img.yzcdn.cn/public_files/2017/10/24/7070a8d1d6504b864c605114d32f2aae.png',
-        url: 'https://youzan.github.io/vant-demo/#/goods',
-        source: 'https://github.com/youzan/vant-demo/tree/master/src/view/goods/index.vue'
+        url: 'https://youzan.github.io/matrix-demo/#/goods',
+        source: 'https://github.com/youzan/matrix-demo/tree/master/src/view/goods/index.vue'
       }, {
         title: this.$t('userCenter'),
         preview: 'https://img.yzcdn.cn/public_files/2017/10/23/e1d70757e3ab88d39a360b704be8f43f.png',
-        url: 'https://youzan.github.io/vant-demo/#/user',
-        source: 'https://github.com/youzan/vant-demo/tree/master/src/view/user/index.vue'
+        url: 'https://youzan.github.io/matrix-demo/#/user',
+        source: 'https://github.com/youzan/matrix-demo/tree/master/src/view/user/index.vue'
       }, {
         title: this.$t('shoppingCart'),
         preview: 'https://img.yzcdn.cn/public_files/2017/10/24/06b8b5ed3692314d434db7f6854dcdbe.png',
-        url: 'https://youzan.github.io/vant-demo/#/cart',
-        source: 'https://github.com/youzan/vant-demo/tree/master/src/view/cart/index.vue'
+        url: 'https://youzan.github.io/matrix-demo/#/cart',
+        source: 'https://github.com/youzan/matrix-demo/tree/master/src/view/cart/index.vue'
       }];
     }
   },

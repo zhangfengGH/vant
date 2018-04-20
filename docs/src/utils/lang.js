@@ -4,11 +4,11 @@ import enUS from '../../../packages/locale/lang/en-US';
 
 const langMap = {
   'en-US': {
-    title: 'Vant - A Vue.js 2.0 Mobile UI at YouZan',
+    title: 'matrix - A Vue.js 2.0 Mobile UI at YouZan',
     messages: enUS
   },
   'zh-CN': {
-    title: 'Vant - 有赞移动端 Vue 组件库',
+    title: 'matrix - 有赞移动端 Vue 组件库',
     messages: zhCN
   }
 };
@@ -26,7 +26,7 @@ function getDefaultLang() {
     }
   }
 
-  const userLang = localStorage.getItem('VANT_LANGUAGE') || navigator.language || 'en-US';
+  const userLang = localStorage.getItem('matrix_LANGUAGE') || navigator.language || 'en-US';
   return userLang.indexOf('zh-') !== -1 ? 'zh-CN' : 'en-US';
 }
 
@@ -37,7 +37,7 @@ export function setLang(lang) {
 
   currentLang = lang;
   if (window.localStorage) {
-    localStorage.setItem('VANT_LANGUAGE', lang);
+    localStorage.setItem('matrix_LANGUAGE', lang);
   }
   Locale.use(lang, langMap[lang].messages);
   document.title = langMap[lang].title;

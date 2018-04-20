@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { Step, Steps } from 'vant';
+import { Step, Steps } from 'matrix';
 
 Vue.use(Step).use(Steps);
 ```

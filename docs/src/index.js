@@ -2,21 +2,21 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import App from './DocsApp';
 import routes from './router';
-import VantDoc from './vant-doc';
+import matrixDoc from './matrix-doc';
 import { isMobile } from './utils';
 import './components/nprogress.css';
 
-Vue.use(VueRouter).use(VantDoc);
+Vue.use(VueRouter).use(matrixDoc);
 
 const router = new VueRouter({
   mode: 'hash',
-  base: '/zanui/vant/',
+  base: '/zanui/matrix/',
   routes: routes()
 });
 
 router.beforeEach((route, redirect, next) => {
   if (isMobile) {
-    location.replace('/zanui/vant/examples' + location.hash);
+    location.replace('/zanui/matrix/examples' + location.hash);
   }
   document.title = route.meta.title || document.title;
   next();

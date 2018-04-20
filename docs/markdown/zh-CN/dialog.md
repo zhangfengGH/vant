@@ -4,7 +4,7 @@ Dialog 组件支持函数调用和组件调用两种形式
 ### 使用指南
 
 ```js
-import { Dialog } from 'vant';
+import { Dialog } from 'matrix';
 ```
 
 ### 代码演示

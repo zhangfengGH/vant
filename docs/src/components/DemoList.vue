@@ -2,16 +2,16 @@
   <div class="side-nav">
     <h1 class="zanui-title">
       <img src="https://img.yzcdn.cn/public_files/2017/12/18/fd78cf6bb5d12e2a119d0576bedfd230.png" >
-      <span>Vant</span>
+      <span>matrix</span>
     </h1>
     <div class="mobile-switch-lang">
-      <span :class="{ active: $vantLang === 'en-US' }" @click="switchLang('en-US')">EN</span>
-      <span :class="{ active: $vantLang === 'zh-CN' }" @click="switchLang('zh-CN')">中文</span>
+      <span :class="{ active: $matrixLang === 'en-US' }" @click="switchLang('en-US')">EN</span>
+      <span :class="{ active: $matrixLang === 'zh-CN' }" @click="switchLang('zh-CN')">中文</span>
     </div>
     <h2 class="zanui-desc">{{ description }}</h2>
     <div class="mobile-navs">
       <div class="mobile-nav-item" v-for="(item, index) in navList" v-if="item.showInMobile" :key="index">
-        <mobile-nav v-for="(group, index) in item.groups" :group="group" :base="$vantLang" :nav-key="index" :key="index" />
+        <mobile-nav v-for="(group, index) in item.groups" :group="group" :base="$matrixLang" :nav-key="index" :key="index" />
       </div>
     </div>
   </div>
@@ -35,11 +35,11 @@ export default {
 
   computed: {
     navList() {
-      return this.docConfig[this.$vantLang].nav || [];
+      return this.docConfig[this.$matrixLang].nav || [];
     },
 
     description() {
-      return this.$vantLang === 'zh-CN' ? '有赞移动端 Vue 组件库' : 'A Vue.js 2.0 Mobile UI at YouZan';
+      return this.$matrixLang === 'zh-CN' ? '有赞移动端 Vue 组件库' : 'A Vue.js 2.0 Mobile UI at YouZan';
     }
   },
 
@@ -54,7 +54,7 @@ export default {
 </script>
 
 <style lang="postcss">
-@import '../../../packages/vant-css/src/common/var.css';
+@import '../../../packages/matrix-css/src/common/var.css';
 
 .side-nav {
   width: 100%;

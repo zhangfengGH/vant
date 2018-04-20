@@ -26,8 +26,8 @@ gulp.task('compile', () => {
 gulp.task('lib', ['compile'], () => {
   const ttf = glob.sync(resolve('./src/*.ttf'));
   ttf.forEach(ttf => fs.copy(ttf, './lib/' + path.parse(ttf).base));
-  fs.copy('./lib', '../../lib/vant-css');
-  fs.copy('./lib', '../../es/vant-css');
+  fs.copy('./lib', '../../lib/matrix-css');
+  fs.copy('./lib', '../../es/matrix-css');
 });
 
 // extract svg from sketch
@@ -84,13 +84,13 @@ gulp.task('icon-font', ['icon-font-ttf'], () => {
   prevTTFs.forEach(ttf => fs.removeSync(ttf));
 
   // generate ttf hash
-  const fontPath = resolve('./icons/vant-icon.ttf');
+  const fontPath = resolve('./icons/matrix-icon.ttf');
   const hash = md5File.sync(fontPath).slice(0, 6);
-  fs.renameSync(fontPath, resolve(`./src/vant-icon-${hash}.ttf`));
+  fs.renameSync(fontPath, resolve(`./src/matrix-icon-${hash}.ttf`));
 
   // copy icon.css to src
   let source = fs.readFileSync(resolve('./icons/icon.css'), 'utf-8');
-  source = source.replace('vant-icon.ttf', `vant-icon-${hash}.ttf`);
+  source = source.replace('matrix-icon.ttf', `matrix-icon-${hash}.ttf`);
   fs.writeFileSync(resolve('./src/icon.css'), source);
 
   // generate icon-local.css
@@ -98,7 +98,7 @@ gulp.task('icon-font', ['icon-font-ttf'], () => {
   fs.writeFileSync(resolve('./src/icon-local.css'), localIconSource);
 
   // upload ttf to cdn
-  shelljs.exec(`superman cdn /zanui/icon ./src/vant-icon-${hash}.ttf`);
+  shelljs.exec(`superman cdn /zanui/icon ./src/matrix-icon-${hash}.ttf`);
 });
 
 gulp.task('build', ['lib']);

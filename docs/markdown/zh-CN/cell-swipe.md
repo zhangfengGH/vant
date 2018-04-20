@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { CellSwipe } from 'vant';
+import { CellSwipe } from 'matrix';
 
 Vue.use(CellSwipe);
 ```

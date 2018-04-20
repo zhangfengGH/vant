@@ -4,7 +4,7 @@
 
 ### 使用指南
 ``` javascript
-import { Field } from 'vant';
+import { Field } from 'matrix';
 
 Vue.use(Field);
 ```

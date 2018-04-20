@@ -7,11 +7,11 @@
 </p>
 <p align="center" style="margin: 30px 0 35px;">A Vue.js 2.0 Mobile UI at YouZan</p>
 
-[![Build Status](https://travis-ci.org/youzan/vant.svg?branch=master)](https://travis-ci.org/youzan/vant)
-[![downloads](https://img.shields.io/npm/dt/vant.svg)](https://www.npmjs.com/package/vant)
-[![Coverage Status](https://img.shields.io/codecov/c/github/youzan/vant/dev.svg)](https://codecov.io/github/youzan/vant?branch=dev)
-[![npm version](https://img.shields.io/npm/v/vant.svg?style=flat)](https://www.npmjs.com/package/vant)
-[![license](https://img.shields.io/npm/l/vant.svg)](https://www.npmjs.com/package/vant)
+[![Build Status](https://travis-ci.org/youzan/matrix.svg?branch=master)](https://travis-ci.org/youzan/matrix)
+[![downloads](https://img.shields.io/npm/dt/matrix.svg)](https://www.npmjs.com/package/matrix)
+[![Coverage Status](https://img.shields.io/codecov/c/github/youzan/matrix/dev.svg)](https://codecov.io/github/youzan/matrix?branch=dev)
+[![npm version](https://img.shields.io/npm/v/matrix.svg?style=flat)](https://www.npmjs.com/package/matrix)
+[![license](https://img.shields.io/npm/l/matrix.svg)](https://www.npmjs.com/package/matrix)
 
 ## 特性
 
@@ -25,7 +25,7 @@
 ## 安装
 
 ```shell
-npm i -S vant
+npm i -S matrix
 ```
 
 ## 快速上手
@@ -43,7 +43,7 @@ npm i babel-plugin-import -D
 {
   "plugins": [
     ["import", {
-      "libraryName": "vant",
+      "libraryName": "matrix",
       "libraryDirectory": "es",
       "style": true
     }]
@@ -51,47 +51,47 @@ npm i babel-plugin-import -D
 }
 ```
 
-接着你可以在代码中直接引入 Vant 组件，插件会自动将代码转化为方式二中的按需引入形式。
+接着你可以在代码中直接引入 matrix 组件，插件会自动将代码转化为方式二中的按需引入形式。
 
 ```js
-import { Button } from 'vant';
+import { Button } from 'matrix';
 ```
 
 #### 方式二. 按需引入组件
 
 ```js
-import Button from 'vant/lib/button';
-import 'vant/lib/vant-css/base.css';
-import 'vant/lib/vant-css/button.css';
+import Button from 'matrix/lib/button';
+import 'matrix/lib/matrix-css/base.css';
+import 'matrix/lib/matrix-css/button.css';
 ```
 
 #### 方式三. 导入所有组件
 
 ```js
 import Vue from 'vue';
-import Vant from 'vant';
-import 'vant/lib/vant-css/index.css';
+import matrix from 'matrix';
+import 'matrix/lib/matrix-css/index.css';
 
-Vue.use(Vant);
+Vue.use(matrix);
 ```
 
 ### CDN
 
 ```html
 <!-- 引入样式 -->
-<link rel="stylesheet" href="https://unpkg.com/vant/lib/vant-css/index.css">
+<link rel="stylesheet" href="https://unpkg.com/matrix/lib/matrix-css/index.css">
 
 <!-- 引入组件 -->
-<script src="https://unpkg.com/vant/lib/vant.min.js"></script>
+<script src="https://unpkg.com/matrix/lib/matrix.min.js"></script>
 ```
 
-更多内容请参考 [快速上手](https://www.youzanyun.com/zanui/vant#/zh-CN/quickstart).
+更多内容请参考 [快速上手](https://www.youzanyun.com/zanui/matrix#/zh-CN/quickstart).
 
 ## 贡献代码
 
 修改代码请阅读我们的 [开发指南](./.github/CONTRIBUTING.zh-CN.md)。
 
-使用过程中发现任何问题都可以提 [Issue](https://github.com/youzan/vant/issues) 给我们，当然，我们也非常欢迎你给我们发 [PR](https://github.com/youzan/vant/pulls)。
+使用过程中发现任何问题都可以提 [Issue](https://github.com/youzan/matrix/issues) 给我们，当然，我们也非常欢迎你给我们发 [PR](https://github.com/youzan/matrix/pulls)。
 
 ## 浏览器支持
 
@@ -105,12 +105,12 @@ Vue.use(Vant);
 
 ## 链接
 
-* [详细文档](https://www.youzanyun.com/zanui/vant)
-* [更新日志](https://www.youzanyun.com/zanui/vant#/zh-CN/changelog)
+* [详细文档](https://www.youzanyun.com/zanui/matrix)
+* [更新日志](https://www.youzanyun.com/zanui/matrix#/zh-CN/changelog)
 * [React 组件库](https://www.youzanyun.com/zanui/zent)
 * [微信小程序组件库](https://github.com/youzan/zanui-weapp)
-* [vant-demo](https://github.com/youzan/vant-demo)
-* [vue-cli-template-vant](https://github.com/youzan/vue-cli-template-vant)
+* [matrix-demo](https://github.com/youzan/matrix-demo)
+* [vue-cli-template-matrix](https://github.com/youzan/vue-cli-template-matrix)
 
 ## 开源协议
 

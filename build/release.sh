@@ -15,9 +15,9 @@ then
   # build
   VERSION=$VERSION npm run dist
 
-  # publish vant-css
-  echo "Releasing vant-css $VERSION ..."
-  cd packages/vant-css
+  # publish matrix-css
+  echo "Releasing matrix-css $VERSION ..."
+  cd packages/matrix-css
   npm version $VERSION --message "[release] $VERSION"
   npm publish
   cd ../..

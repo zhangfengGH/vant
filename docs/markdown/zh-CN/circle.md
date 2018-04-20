@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { Circle } from 'vant';
+import { Circle } from 'matrix';
 
 Vue.use(Circle);
 ```

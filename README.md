@@ -8,11 +8,11 @@
 
 <p align="center" style="margin: 30px 0 35px;">A Vue.js 2.0 Mobile UI at YouZan</p>
 
-[![Build Status](https://travis-ci.org/youzan/vant.svg?branch=master)](https://travis-ci.org/youzan/vant)
-[![downloads](https://img.shields.io/npm/dt/vant.svg)](https://www.npmjs.com/package/vant)
-[![Coverage Status](https://img.shields.io/codecov/c/github/youzan/vant/dev.svg)](https://codecov.io/github/youzan/vant?branch=dev)
-[![npm version](https://img.shields.io/npm/v/vant.svg?style=flat)](https://www.npmjs.com/package/vant)
-[![license](https://img.shields.io/npm/l/vant.svg)](https://www.npmjs.com/package/vant)
+[![Build Status](https://travis-ci.org/youzan/matrix.svg?branch=master)](https://travis-ci.org/youzan/matrix)
+[![downloads](https://img.shields.io/npm/dt/matrix.svg)](https://www.npmjs.com/package/matrix)
+[![Coverage Status](https://img.shields.io/codecov/c/github/youzan/matrix/dev.svg)](https://codecov.io/github/youzan/matrix?branch=dev)
+[![npm version](https://img.shields.io/npm/v/matrix.svg?style=flat)](https://www.npmjs.com/package/matrix)
+[![license](https://img.shields.io/npm/l/matrix.svg)](https://www.npmjs.com/package/matrix)
 
 [访问中文版](./README.zh-CN.md)
 
@@ -28,7 +28,7 @@
 ## Install
 
 ```shell
-npm i -S vant
+npm i -S matrix
 ```
 
 ## Quickstart
@@ -46,7 +46,7 @@ npm i babel-plugin-import -D
 {
   "plugins": [
     ["import", {
-      "libraryName": "vant",
+      "libraryName": "matrix",
       "libraryDirectory": "es",
       "style": true
     }]
@@ -54,41 +54,41 @@ npm i babel-plugin-import -D
 }
 ```
 
-Then you can import components from vant, equivalent to import manually below.
+Then you can import components from matrix, equivalent to import manually below.
 
 ```js
-import { Button } from 'vant';
+import { Button } from 'matrix';
 ```
 
 #### 2. Manually import
 
 ```js
-import Button from 'vant/lib/button';
-import 'vant/lib/vant-css/base.css';
-import 'vant/lib/vant-css/button.css';
+import Button from 'matrix/lib/button';
+import 'matrix/lib/matrix-css/base.css';
+import 'matrix/lib/matrix-css/button.css';
 ```
 
 #### 3. Import all components
 
 ```js
 import Vue from 'vue';
-import Vant from 'vant';
-import 'vant/lib/vant-css/index.css';
+import matrix from 'matrix';
+import 'matrix/lib/matrix-css/index.css';
 
-Vue.use(Vant);
+Vue.use(matrix);
 ```
 
 ### CDN
 
 ```html
 <!-- import style -->
-<link rel="stylesheet" href="https://unpkg.com/vant/lib/vant-css/index.css" />
+<link rel="stylesheet" href="https://unpkg.com/matrix/lib/matrix-css/index.css" />
 
 <!-- import script -->
-<script src="https://unpkg.com/vant/lib/vant.min.js"></script>
+<script src="https://unpkg.com/matrix/lib/matrix.min.js"></script>
 ```
 
-See more in [Quickstart](https://www.youzanyun.com/zanui/vant#/en-US/quickstart).
+See more in [Quickstart](https://www.youzanyun.com/zanui/matrix#/en-US/quickstart).
 
 ## Contribution
 
@@ -100,12 +100,12 @@ Modern browsers and Android 4.0+, iOS 6+.
 
 ## Links
 
-* [Documentation](https://www.youzanyun.com/zanui/vant)
-* [Changelog](https://www.youzanyun.com/zanui/vant#/en-US/changelog)
+* [Documentation](https://www.youzanyun.com/zanui/matrix)
+* [Changelog](https://www.youzanyun.com/zanui/matrix#/en-US/changelog)
 * [React UI](https://www.youzanyun.com/zanui/zent)
 * [Weapp UI](https://github.com/youzan/zanui-weapp)
-* [Vant Demo](https://github.com/youzan/vant-demo)
-* [vue-cli-template-vant](https://github.com/youzan/vue-cli-template-vant)
+* [matrix Demo](https://github.com/youzan/matrix-demo)
+* [vue-cli-template-matrix](https://github.com/youzan/vue-cli-template-matrix)
 
 ## Preview
 

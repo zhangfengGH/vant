@@ -3,7 +3,7 @@
 ### 安装
 
 ```shell
-npm i vant -S
+npm i matrix -S
 ```
 
 ### 引入组件
@@ -20,7 +20,7 @@ npm i babel-plugin-import -D
 {
   "plugins": [
     ["import", {
-      "libraryName": "vant",
+      "libraryName": "matrix",
       "libraryDirectory": "es",
       "style": true
     }]
@@ -28,18 +28,18 @@ npm i babel-plugin-import -D
 }
 ```
 
-接着你可以在代码中直接引入 Vant 组件，插件会自动将代码转化为方式二中的按需引入形式。
+接着你可以在代码中直接引入 matrix 组件，插件会自动将代码转化为方式二中的按需引入形式。
 
 ```js
-import { Button } from 'vant';
+import { Button } from 'matrix';
 ```
 
 #### 方式二. 按需引入组件
 
 ```js
-import Button from 'vant/lib/button';
-import 'vant/lib/vant-css/base.css';
-import 'vant/lib/vant-css/button.css';
+import Button from 'matrix/lib/button';
+import 'matrix/lib/matrix-css/base.css';
+import 'matrix/lib/matrix-css/button.css';
 ```
  
 #### 方式三. 导入所有组件
@@ -47,25 +47,25 @@ import 'vant/lib/vant-css/button.css';
 
 ```js
 import Vue from 'vue';
-import Vant from 'vant';
-import 'vant/lib/vant-css/index.css';
+import matrix from 'matrix';
+import 'matrix/lib/matrix-css/index.css';
 
-Vue.use(Vant);
+Vue.use(matrix);
 ```
 
 ### CDN
 
 ```html
 <!-- 引入样式 -->
-<link rel="stylesheet" href="https://unpkg.com/vant/lib/vant-css/index.css">
+<link rel="stylesheet" href="https://unpkg.com/matrix/lib/matrix-css/index.css">
 
 <!-- 引入组件 -->
-<script src="https://unpkg.com/vant/lib/vant.min.js"></script>
+<script src="https://unpkg.com/matrix/lib/matrix.min.js"></script>
 ```
 
 ### vue-cli 模板
-可以使用`vue-cli`来初始化`Vant`的通用模板：
+可以使用`vue-cli`来初始化`matrix`的通用模板：
 
 ```shell
-vue init youzan/vue-cli-template-vant projectName
+vue init youzan/vue-cli-template-matrix projectName
 ```

@@ -3,7 +3,7 @@
 ### 使用指南
 
 ```javascript
-import { Toast } from 'vant';
+import { Toast } from 'matrix';
 ```
 
 ### 代码演示

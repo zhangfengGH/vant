@@ -12,7 +12,7 @@ function build(folder, isESModule) {
   const dir = path.resolve(__dirname, '../../', folder);
   components.forEach(componentName => {
     const content = analyzeDependencies(componentName, dir)
-      .map(component => isESModule ? `import '../../vant-css/${component}.css';` : `require('../../vantcss/${component}.css');`);
+      .map(component => isESModule ? `import '../../matrix-css/${component}.css';` : `require('../../matrixcss/${component}.css');`);
     fs.outputFileSync(path.join(dir, componentName, './style/index.js'), content.join('\n'));
   });
 
@@ -23,7 +23,7 @@ function build(folder, isESModule) {
     search(dependencyTree({
       directory: dir,
       filename: path.resolve(dir, componentName, 'index.js'),
-      filter: path => path.indexOf(`matrixNew${SEP}${folder}${SEP}`) !== -1
+      filter: path => path.indexOf(`matrix${SEP}${folder}${SEP}`) !== -1
     }), checkList, whiteList);
     return checkList.filter(component => checkComponentHasStyle(component));
   }
@@ -31,7 +31,7 @@ function build(folder, isESModule) {
   function search(tree, checkList, whiteList) {
     tree && Object.keys(tree).forEach(key => {
       search(tree[key], checkList, whiteList);
-      const component = key.split(`${SEP}matrixNew${SEP}${folder}${SEP}`)[1].replace(`${SEP}index.js`, '').replace(`mixins${SEP}`, '');
+      const component = key.split(`${SEP}matrix${SEP}${folder}${SEP}`)[1].replace(`${SEP}index.js`, '').replace(`mixins${SEP}`, '');
       if (checkList.indexOf(component) === -1 && whiteList.indexOf(component) === -1) {
         checkList.push(component);
       }
@@ -39,7 +39,7 @@ function build(folder, isESModule) {
   }
 
   function checkComponentHasStyle(componentName) {
-    return fs.existsSync(path.join(__dirname, `../../${folder}/vant-css/`, `${componentName}.css`));
+    return fs.existsSync(path.join(__dirname, `../../${folder}/matrix-css/`, `${componentName}.css`));
   }
 }
 

@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { Stepper } from 'vant';
+import { Stepper } from 'matrix';
 
 Vue.use(Stepper);
 ```

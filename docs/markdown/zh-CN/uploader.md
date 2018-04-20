@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { Uploader } from 'vant';
+import { Uploader } from 'matrix';
 
 Vue.use(Uploader);
 ```

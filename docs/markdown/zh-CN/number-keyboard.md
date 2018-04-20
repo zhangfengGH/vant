@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { NumberKeyboard } from 'vant';
+import { NumberKeyboard } from 'matrix';
 
 Vue.use(NumberKeyboard);
 ```

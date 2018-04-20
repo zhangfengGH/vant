@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { Tag } from 'vant';
+import { Tag } from 'matrix';
 
 Vue.use(Tag);
 ```

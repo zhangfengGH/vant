@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { Tab, Tabs } from 'vant';
+import { Tab, Tabs } from 'matrix';
 
 Vue.use(Tab).use(Tabs);
 ```

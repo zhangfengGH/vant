@@ -10,5 +10,5 @@ node_modules
 example/dist
 /docs/dist
 test/coverage
-packages/vant-css/build
-packages/vant-css/icons
+packages/matrix-css/build
+packages/matrix-css/icons

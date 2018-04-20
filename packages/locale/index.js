@@ -6,20 +6,20 @@ const proto = Vue.prototype;
 const defaultLang = 'zh-CN';
 const locale = {
   install() {
-    if (proto.$vantLang) {
+    if (proto.$matrixLang) {
       return;
     }
-    Vue.util.defineReactive(proto, '$vantLang', defaultLang);
-    Vue.util.defineReactive(proto, '$vantMessages', { [defaultLang]: defaultMessages });
+    Vue.util.defineReactive(proto, '$matrixLang', defaultLang);
+    Vue.util.defineReactive(proto, '$matrixMessages', { [defaultLang]: defaultMessages });
   },
 
   use(lang, messages) {
-    proto.$vantLang = lang;
+    proto.$matrixLang = lang;
     this.add({ [lang]: messages });
   },
 
   add(messages = {}) {
-    deepAssign(proto.$vantMessages, messages);
+    deepAssign(proto.$matrixMessages, messages);
   }
 };
 

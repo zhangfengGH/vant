@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { Collapse, CollapseItem } from 'vant';
+import { Collapse, CollapseItem } from 'matrix';
 
 Vue.use(Collapse).use(CollapseItem);
 ```

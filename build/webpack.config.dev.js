@@ -8,8 +8,8 @@ const isProduction = process.env.NODE_ENV === 'production';
 module.exports = {
   mode: 'development',
   entry: {
-    'vant-docs': './docs/src/index.js',
-    'vant-mobile': './docs/src/mobile.js'
+    'matrix-docs': './docs/src/index.js',
+    'matrix-mobile': './docs/src/mobile.js'
   },
   output: {
     path: path.join(__dirname, '../docs/dist'),
@@ -20,8 +20,8 @@ module.exports = {
     host: '0.0.0.0',
     historyApiFallback: {
       rewrites: [
-        { from: /^\/zanui\/vant\/examples/, to: '/examples.html' },
-        { from: /^\/zanui\/vant/, to: '/index.html' }
+        { from: /^\/zanui\/matrix\/examples/, to: '/examples.html' },
+        { from: /^\/zanui\/matrix/, to: '/index.html' }
       ]
     },
     stats: 'errors-only'
@@ -77,13 +77,13 @@ module.exports = {
   plugins: [
     new ProgressBarPlugin(),
     new HtmlWebpackPlugin({
-      chunks: ['vendor', 'vant-docs'],
+      chunks: ['vendor', 'matrix-docs'],
       template: 'docs/src/index.tpl',
       filename: 'index.html',
       inject: true
     }),
     new HtmlWebpackPlugin({
-      chunks: ['vendor', 'vant-mobile'],
+      chunks: ['vendor', 'matrix-mobile'],
       template: 'docs/src/index.tpl',
       filename: 'examples.html',
       inject: true

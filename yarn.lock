@@ -9651,9 +9651,9 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "~1.0.0"
     spdx-expression-parse "~1.0.0"
 
-vant-doc@1.0.4:
+matrix-doc@1.0.4:
   version "1.0.4"
-  resolved "https://registry.yarnpkg.com/vant-doc/-/vant-doc-1.0.4.tgz#518182a4f0cb52b90e430474d4b4432d95306d31"
+  resolved "https://registry.yarnpkg.com/matrix-doc/-/matrix-doc-1.0.4.tgz#518182a4f0cb52b90e430474d4b4432d95306d31"
   dependencies:
     cheerio "0.22.0"
     decamelize "^1.2.0"

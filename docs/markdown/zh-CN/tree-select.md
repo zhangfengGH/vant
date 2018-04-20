@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { TreeSelect } from 'vant';
+import { TreeSelect } from 'matrix';
 
 Vue.use(TreeSelect);
 ```

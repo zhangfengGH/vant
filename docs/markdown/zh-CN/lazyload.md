@@ -6,7 +6,7 @@
 
 ```js
 import Vue from 'vue';
-import { Lazyload } from 'vant';
+import { Lazyload } from 'matrix';
 
 Vue.use(Lazyload, options);
 ```

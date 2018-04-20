@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { NoticeBar } from 'vant';
+import { NoticeBar } from 'matrix';
 
 Vue.use(NoticeBar);
 ```

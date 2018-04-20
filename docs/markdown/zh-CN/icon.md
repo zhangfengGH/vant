@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { Icon } from 'vant';
+import { Icon } from 'matrix';
 
 Vue.use(Icon);
 ```
@@ -20,7 +20,7 @@ Vue.use(Icon);
 Icon 组件默认引用 `yzcdn.cn` 域名下的字体文件，如果想要使用本地字体文件，请引入下面的 css 文件
 
 ```js
-import 'vant/lib/vant-css/icon-local.css';
+import 'matrix/lib/matrix-css/icon-local.css';
 ```
 
 #### 自定义图标
@@ -33,7 +33,7 @@ import 'vant/lib/vant-css/icon-local.css';
 }
 
 .van-icon {
-  font-family: 'vant-icon', 'custom-iconfont' !important;
+  font-family: 'matrix-icon', 'custom-iconfont' !important;
 }
 
 .van-icon-extra:before {

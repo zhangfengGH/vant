@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { PullRefresh } from 'vant';
+import { PullRefresh } from 'matrix';
 
 Vue.use(PullRefresh);
 ```

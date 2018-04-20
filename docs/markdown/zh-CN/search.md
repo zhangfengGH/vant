@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { Search } from 'vant';
+import { Search } from 'matrix';
 
 Vue.use(Search);
 ```

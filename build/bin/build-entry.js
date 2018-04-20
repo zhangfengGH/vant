@@ -5,7 +5,7 @@ const uppercamelize = require('uppercamelcase');
 const version = process.env.VERSION || require('../../package.json').version;
 const tips = '// This file is auto gererated by build/bin/build-entry.js';
 
-function buildVantEntry() {
+function buildmatrixEntry() {
   const uninstallComponents = [
     'Lazyload',
     'Waterfall'
@@ -113,6 +113,6 @@ export default {
   fs.writeFileSync(path.join(dir, './index.js'), content);
 }
 
-buildVantEntry();
+buildmatrixEntry();
 buildDemoEntry();
 buildDocsEntry();

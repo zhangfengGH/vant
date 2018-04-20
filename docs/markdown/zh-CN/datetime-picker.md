@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { DatetimePicker } from 'vant';
+import { DatetimePicker } from 'matrix';
 
 Vue.use(DatetimePicker);
 ```

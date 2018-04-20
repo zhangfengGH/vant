@@ -6,7 +6,7 @@ export default {
     $t() {
       const { name } = this.$options;
       const prefix = name ? camelize(name) + '.' : '';
-      const messages = this.$vantMessages[this.$vantLang];
+      const messages = this.$matrixMessages[this.$matrixLang];
 
       return (path, ...args) => {
         const message = get(messages, prefix + path) || get(messages, path);

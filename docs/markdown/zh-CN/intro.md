@@ -1,7 +1,7 @@
 <div class="van-doc-intro">
   <img class="van-doc-intro__youzan" src="//img.yzcdn.cn/public_files/2017/02/09/e84aa8cbbf7852688c86218c1f3bbf17.png">
   <img class="van-doc-intro__logo" src="//img.yzcdn.cn/public_files/2017/12/18/fd78cf6bb5d12e2a119d0576bedfd230.png">
-  <h2>Vant</h2>
+  <h2>matrix</h2>
   <p>有赞移动端 Vue 组件库</p>
 </div>
  
@@ -16,13 +16,13 @@
 
 ### 快速上手
 
-请参考 [快速上手](https://www.youzanyun.com/zanui/vant#/zh-CN/quickstart).
+请参考 [快速上手](https://www.youzanyun.com/zanui/matrix#/zh-CN/quickstart).
 
 ### 贡献代码
 
-修改代码请阅读我们的 [开发指南](https://github.com/youzan/vant/blob/dev/.github/CONTRIBUTING.zh-CN.md)。
+修改代码请阅读我们的 [开发指南](https://github.com/youzan/matrix/blob/dev/.github/CONTRIBUTING.zh-CN.md)。
 
-使用过程中发现任何问题都可以提 [Issue](https://github.com/youzan/vant/issues) 给我们，当然，我们也非常欢迎你给我们发 [PR](https://github.com/youzan/vant/pulls)。
+使用过程中发现任何问题都可以提 [Issue](https://github.com/youzan/matrix/issues) 给我们，当然，我们也非常欢迎你给我们发 [PR](https://github.com/youzan/matrix/pulls)。
 
 ### 浏览器支持
 
@@ -30,13 +30,13 @@
 
 ### 链接
 
-* [意见反馈](https://github.com/youzan/vant/issues)
+* [意见反馈](https://github.com/youzan/matrix/issues)
 * [加入我们](https://job.youzan.com)
-* [更新日志](https://www.youzanyun.com/zanui/vant#/zh-CN/changelog)
+* [更新日志](https://www.youzanyun.com/zanui/matrix#/zh-CN/changelog)
 * [React 组件库](https://www.youzanyun.com/zanui/zent)
 * [微信小程序组件库](https://github.com/youzan/zanui-weapp)
-* [vant-demo](https://github.com/youzan/vant-demo)
-* [vue-cli-template-vant](https://github.com/youzan/vue-cli-template-vant)
+* [matrix-demo](https://github.com/youzan/matrix-demo)
+* [vue-cli-template-matrix](https://github.com/youzan/vue-cli-template-matrix)
 
 ### 开源协议
 

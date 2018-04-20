@@ -3,7 +3,7 @@
 
 ### 使用指南
 ``` javascript
-import { Picker } from 'vant';
+import { Picker } from 'matrix';
 
 Vue.use(Picker);
 ```

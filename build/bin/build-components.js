@@ -29,8 +29,8 @@ function compile(dir, jsOnly = false) {
   files.forEach(file => {
     const absolutePath = path.join(dir, file);
 
-    // 移除 vant-css
-    if (file.indexOf('vant-css') !== -1) {
+    // 移除 matrix-css
+    if (file.indexOf('matrix-css') !== -1) {
       fs.removeSync(absolutePath);
       // 遍历文件夹
     } else if (isDir(absolutePath)) {

@@ -1,7 +1,7 @@
 {
-  "name": "vant-css",
+  "name": "matrix-css",
   "version": "1.0.8",
-  "description": "vant css.",
+  "description": "matrix css.",
   "main": "lib/index.css",
   "style": "lib/index.css",
   "files": [

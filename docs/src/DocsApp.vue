@@ -12,18 +12,18 @@ import docConfig from './doc.config';
 export default {
   data() {
     return {
-      simulators: [`/zanui/vant/examples${location.hash}`],
+      simulators: [`/zanui/matrix/examples${location.hash}`],
       demoURL: ''
     };
   },
 
   computed: {
     base() {
-      return `/${this.$vantLang}`;
+      return `/${this.$matrixLang}`;
     },
 
     config() {
-      return docConfig[this.$vantLang];
+      return docConfig[this.$matrixLang];
     },
 
     currentSimulator() {

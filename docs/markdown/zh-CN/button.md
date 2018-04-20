@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { Button } from 'vant';
+import { Button } from 'matrix';
 
 Vue.use(Button);
 ```

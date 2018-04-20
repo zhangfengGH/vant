@@ -10,7 +10,7 @@
 </template>
 
 <script>
-const icons = require('../../../packages/vant-css/scripts/icon-config');
+const icons = require('../../../packages/matrix-css/scripts/icon-config');
 
 export default {
   i18n: {

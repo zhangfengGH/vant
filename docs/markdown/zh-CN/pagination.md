@@ -3,7 +3,7 @@
 
 ### 使用指南
 ``` javascript
-import { Pagination } from 'vant';
+import { Pagination } from 'matrix';
 
 Vue.use(Pagination);
 ```

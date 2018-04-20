@@ -1,8 +1,8 @@
 import Vue from 'vue';
-import Vant from 'packages';
-require('packages/vant-css/src/index.css');
+import matrix from 'packages';
+require('packages/matrix-css/src/index.css');
 
-Vue.use(Vant);
+Vue.use(matrix);
 
 // hack for test touch event
 window.ontouchstart = {};

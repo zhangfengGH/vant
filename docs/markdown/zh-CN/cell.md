@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { Cell, CellGroup } from 'vant';
+import { Cell, CellGroup } from 'matrix';
 
 Vue.use(Cell).use(CellGroup);
 ```

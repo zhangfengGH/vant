@@ -9,7 +9,7 @@ import './utils/iframe-router';
 const registerRoute = (isExample) => {
   const route = [{
     path: '*',
-    redirect: to => `/${Vue.prototype.$vantLang}/`
+    redirect: to => `/${Vue.prototype.$matrixLang}/`
   }];
 
   Object.keys(docConfig).forEach((lang, index) => {

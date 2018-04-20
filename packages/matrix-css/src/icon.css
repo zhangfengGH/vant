@@ -3,14 +3,14 @@
 @font-face {
   font-style: normal;
   font-weight: normal;
-  font-family: 'vant-icon';
-  src: url('https://img.yzcdn.cn/zanui/icon/vant-icon-4c3245.ttf') format('truetype');
+  font-family: 'matrix-icon';
+  src: url('https://img.yzcdn.cn/zanui/icon/matrix-icon-4c3245.ttf') format('truetype');
 }
 
 .van-icon {
   position: relative;
   display: inline-block;
-  font: normal normal normal 14px/1 "vant-icon";
+  font: normal normal normal 14px/1 "matrix-icon";
   font-size: inherit;
   text-rendering: auto;
 

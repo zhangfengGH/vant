@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { Tabbar, TabbarItem } from 'vant';
+import { Tabbar, TabbarItem } from 'matrix';
 
 Vue.use(Tabbar).use(TabbarItem);
 ```

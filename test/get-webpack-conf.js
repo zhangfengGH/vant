@@ -77,24 +77,24 @@ function getWebpackConfig(testFileName) {
             }
           ]
         },
+        // {
+        //   test: /test\/components\/.*\.vue$|packages\/swipe.*\.vue$/,
+        //   use: [
+        //     {
+        //       loader: 'vue-loader',
+        //       options: {
+        //         loaders: {
+        //           css: ['style-loader', 'css-loader', {
+        //             loader: 'postcss-loader',
+        //             options: { sourceMap: true }
+        //           }]
+        //         }
+        //       }
+        //     }
+        //   ]
+        // },
         {
-          test: /test\/components\/.*\.vue$|packages\/swipe.*\.vue$/,
-          use: [
-            {
-              loader: 'vue-loader',
-              options: {
-                loaders: {
-                  css: ['style-loader', 'css-loader', {
-                    loader: 'postcss-loader',
-                    options: { sourceMap: true }
-                  }]
-                }
-              }
-            }
-          ]
-        },
-        {
-          test: /packages\/.*\.vue$/,
+          test: /\.vue$/,
           exclude: /packages\/swipe.*\.vue$/,
           use: [
             {
